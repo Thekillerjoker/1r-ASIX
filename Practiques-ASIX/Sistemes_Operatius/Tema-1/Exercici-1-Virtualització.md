@@ -88,20 +88,39 @@
 1. **MV amb adaptador pont, ping de MV -> Host i de Host -> MV:**
 ![Ping-2](./Captures/Ping-2.png)
 
-### Resposta
-*(Aquí va la teva resposta.)*
-
 ---
 
 ## 💾 Exercici 4: VirtualBox - Part pràctica: Exportació i discs
 
 ### 7. Cerca com fer còpies o exportació de màquines virtuals. Un cop fet, mira de crear una nova màquina important la primera màquina que has implementat:
+1. **Primer pas: Crea la nova maquina virtual:**
+ ![Windows-1](./Captures/Windows-1.png)
+2. **Segon pas: Seleccionar utilitzar dic existent i seleccionar el vdi de la vm:**
+  ![Windows-2](./Captures/windows-2.png)
+3. **Tercer pas: Comprovació:**
+   ![Windows-3](./Captures/windows-3.png)
 
 ### 8. Explica com pots afegir un disc dur nou a la primera màquina virtual que has creat. Arrenca la màquina virtual i mostra una captura on es vegi que el sistema operatiu ha detectar els 2 discos durs:
-### 9. Esborra la màquina virtual. Ves a la carpeta on n’has realitzat la instal·lació. Ha esborrat els fitxers?:
+1. **Primer pas:**
+ ![Disc-1](./Captures/Disco-1.png)
+2. **Segon pas:**
+  ![Disc-2](./Captures/Disco-2.png)
+1. **Tercer pas:**
+   ![Disc-3](./Captures/Disco-3.png)
+2. **Quart pas:**
+   ![Disc-4](./Captures/Dsico-4.png)
+3. **Cinque pas: Comprovació:**
+   ![Disc-5](./Captures/Disxo-5.png)
+4. **Sise pas: Comprovació:**
+   ![Disc-6](./Captures/Disco-6.png)
+5. **Septim pas: Comprovació:**
+   ![Disc-7](./Captures/Disco-7.png)
 
-### Resposta
-*(Aquí va la teva resposta.)*
+### 9. Esborra la màquina virtual. Ves a la carpeta on n’has realitzat la instal·lació. Ha esborrat els fitxers?:
+![Eliminar-1](./Captures/Eliinar-1.png)
+**Demostraciò:**
+![Eliminar-2](./Captures/Eliminar-2.png)
+
 
 ---
 
@@ -110,7 +129,8 @@
 ### Enunciat
 Realitzeu els passos següents i feu una captura de pantalla per confirmar que funciona.
 
-1. **Instal·lació:**  
-El motor de Docker utilitza característiques del nucli de Linux.  
-Si no disposem de Linux, utilitzar **Boot2docker** o **Docker Toolbox** per Mac/Windows.  
-Aquesta aplicació instal·larà i configurarà tot el necessari per utilitzar Docker.
+1. **Demostracio 1:**  
+![Docker-1](./Captures/Docker-1.png)
+2. **Demostracio 2:**
+![Docker-2](./Captures/Docker-2.png)
+
