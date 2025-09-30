@@ -10,7 +10,10 @@
             background-color: #333;
         }
 
-        [class^="cara-"] {
+        [class^="cara-1"] {
+            display:flex;
+            justify-content: center;
+            align-items: center;
             background-color: #e7e7e7;
             width: 120px;
             height: 120px;
@@ -33,6 +36,27 @@
             border-radius: 50%;
             box-shadow: inset 0 3px #111, inset 0 -3px #555;
         }
+        [class^="cara-2"] {
+            display:flex;;
+            justify-content: space-around; 
+            background-color: #e7e7e7;
+            width: 120px;
+            height: 120px;
+            padding: 10px;
+            display: flex;
+            margin: 1em;
+
+            box-shadow:
+                inset 0 5px white,
+                inset 0 -5px #bbb,
+                inset 5px 0 #d7d7d7,
+                inset -5px 0 #d7d7d7;
+            border-radius: 10%;
+        }
+        #cara-2 .punt:nth-child(2){
+            align-self: flex-end;
+        }
+        
     </style>
 
 </head>
