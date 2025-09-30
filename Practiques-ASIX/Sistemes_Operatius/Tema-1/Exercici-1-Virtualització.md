@@ -13,7 +13,7 @@
 - **Tamany del disc:** *El màxim és **2 TB**.*
 
 ---
-### 2. Tipus de Xarxa:
+### 1. Tipus de Xarxa:
 *Explica detalladament els tipus de xarxa bridge, NAT i Host-Only.*
 1. 🌉**Adaptador Pont (Bridge) :**
    *Funciona de la següent manera: si selecciones adaptador pont, VirtualBox connecta la màquina virtual directament a la xarxa real.*
@@ -34,10 +34,17 @@
 - *Les MV es poden comunicar amb la resta de màquines de la xarxa real, també amb les màquines virtuals, però a diferència de l’adaptador pont, les màquines reals no es podran comunicar amb les MV.*
  
 
-1. 🔒 **Host-Only:**
+3. 🔒 **Host-Only:**
    
 *És un tipus de xarxa que crea una xarxa virtual privada entre el teu ordinador i les màquines virtuals.*
 
 *Observacions:*
 - *La màquina virtual només es podrà comunicar amb el **host** (l’ordinador real) i amb altres MV connectades a la mateixa xarxa Host-Only.*
 - *Aquesta xarxa privada **no té connexió a internet** a no ser que configuris un altre adaptador de xarxa en NAT o Adaptador Pont.*
+
+----
+### 2.Si veiem que el disc dur no és prou gran, sabries dir si hi ha cap opció de fer-lo més gran un cop s’ha creat?
+
+*Sí, en el menú de **Archivo** i **Administrador de medis virtual** o fent **Ctrl+D**, i seleccionant el disc de la màquina virtual fent dos clics i en l’apartat de **Tamany** el podem augmentar.*  
+
+⚠️ *Amb cura: una vegada augmentat **no es pot tornar a reduir**.*
