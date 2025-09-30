@@ -101,19 +101,32 @@
 ![Windows-3](./Captures/Windws-3.png)
 
 ### 8. Explica com pots afegir un disc dur nou a la primera màquina virtual que has creat. Arrenca la màquina virtual i mostra una captura on es vegi que el sistema operatiu ha detectar els 2 discos durs:
+
 1. **Primer pas:**
  ![Disc-1](./Captures/Disco-1.png)
+
 2. **Segon pas:**
+   
   ![Disc-2](./Captures/Disco-2.png)
-1. **Tercer pas:**
+
+3. **Tercer pas:**
+   
    ![Disc-3](./Captures/Disco-3.png)
-2. **Quart pas:**
+
+4. **Quart pas:**
+   
    ![Disc-4](./Captures/Dsico-4.png)
-3. **Cinque pas: Comprovació:**
+
+5. **Cinque pas: Comprovació:**
+   
    ![Disc-5](./Captures/Disxo-5.png)
-4. **Sise pas: Comprovació:**
+  
+6. **Sise pas: Comprovació:**
+   
    ![Disc-6](./Captures/Disco-6.png)
-5. **Septim pas: Comprovació:**
+  
+7. **Septim pas: Comprovació:**
+   
    ![Disc-7](./Captures/Disco-7.png)
 
 ### 9. Esborra la màquina virtual. Ves a la carpeta on n’has realitzat la instal·lació. Ha esborrat els fitxers?:
