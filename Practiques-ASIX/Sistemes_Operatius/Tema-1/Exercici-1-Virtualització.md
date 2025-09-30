@@ -4,13 +4,13 @@
 
 ### Limitacions de les màquines virtuals:
 *Explica les limitacions (de hardware màxim) de les màquines virtuals per a la última versió. Ho trobaràs quan crees una màquina virtual nova:*
-- **Base Memory:** *És la RAM de la màquina virtual, i està limitada a un TB (1024GB)*
+- **Base Memory:** *És la RAM de la màquina virtual, i està limitada a **1TB (1024GB)***
  
+- **Number of CPUs:** *És el número de CPU que vols tenir a la màquina virtual; i aquest en la ultima versiò pot variar.*
 
-- **Base Memory (RAM):** la màquina virtual té un màxim igual a la RAM del teu ordinador.  
-  Exemple: 31 GB (31744 MB)
-- **Number of CPUs:** màxim 48 CPUs en el meu cas.
-- **Tamany del disc:** màxim 2 TB.
+*Per defecte el màxim és **32 cpu**, però si tens un processador amb 24 nuclis físics amb la tecnologia Hyper-Threading, VirtualBox permet **48 cpu***
+
+- **Tamany del disc:** *El màxim és **2 TB**.*
 
 ---
 ### 2. Tipus de Xarxa:
