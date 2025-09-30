@@ -98,7 +98,7 @@
 2. **Segon pas: Seleccionar utilitzar dic existent i seleccionar el vdi de la vm:**
   ![Windows-2](./Captures/windows-2.png)
 3. **Tercer pas: Comprovació:**
-   ![Windows-3](./Captures/windows-3.png)
+![Windows-3](./Captures/Windws-3.png)
 
 ### 8. Explica com pots afegir un disc dur nou a la primera màquina virtual que has creat. Arrenca la màquina virtual i mostra una captura on es vegi que el sistema operatiu ha detectar els 2 discos durs:
 1. **Primer pas:**
