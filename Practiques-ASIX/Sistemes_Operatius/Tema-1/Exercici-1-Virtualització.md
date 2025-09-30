@@ -83,9 +83,9 @@
 
 ### 6. A la segona pregunta, has explicat els diferents tipus de configuracions de xarxa virtuals. Per cada tipus, realitza’n una prova que ho justifiqui. Comenta què has fet. Pots fer una taula comparativa.
 
-1. **Maquina virtual amb xarxa NAT, comprovació de ping de MV -> Host i de Host -> MV:**
+1. **Maquina virtual amb xarxa NAT, ping de MV -> Host i la fallada de Host -> MV:**
 ![Ping-Nat-1](./Captures/Ping-Nat-1.png) 
-2. **MV amb adaptador pont, ping de MV -> Host i la fallada de Host -> MV:**
+1. **MV amb adaptador pont, ping de MV -> Host i de Host -> MV:**
 ![Ping-2](./Captures/Ping-2.png)
 
 ### Resposta
