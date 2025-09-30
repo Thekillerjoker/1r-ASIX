@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><device-widtht></device-widtht>
     <title>Document</title>
-</head>
+
 <style>
     
     .container {
@@ -18,17 +18,25 @@
     flex-flow: row wrap;
     /*justify-content: flex-end;*/
     justify-content: space-evenly;
+    align-items: flex-start;
+    }
+    #div1 {
+        order:10;
+        flex-grow: 3;
+        align-self: flex-end;
     }
     .container div {
-        width: 60px;
+        width: 80px;
         background-color: blue;
         margin: 5px;
         color: white;
+        flex-grow: 1;
     }
 </style>
+</head>
 <body>
     <div class="container">
-    <div>1</div>
+    <div id="div1">1</div>
     <div>2</div>
     <div>3</div>
     <div>4</div>
