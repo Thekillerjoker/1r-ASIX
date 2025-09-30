@@ -73,4 +73,44 @@
 1. **Captura del rendiment amb la màquina apagada:**
 ![Processos-1](./Captures/Processos-1.png) 
 
-2. 
+2. **Captura del rendiment amb la màquina virtual encesa:**
+![Processos-2](./Captures/Processos-2.png) 
+
+---
+
+
+## 🌐 Exercici 3: VirtualBox - Part pràctica: Proves de xarxa
+
+### 6. A la segona pregunta, has explicat els diferents tipus de configuracions de xarxa virtuals. Per cada tipus, realitza’n una prova que ho justifiqui. Comenta què has fet. Pots fer una taula comparativa.
+
+1. **Maquina virtual amb xarxa NAT, comprovació de ping de MV -> Host i de Host -> MV:**
+![Ping-Nat-1](./Captures/Ping-Nat-1.png) 
+2. **MV amb adaptador pont, ping de MV -> Host i la fallada de Host -> MV:**
+![Ping-2](./Captures/Ping-2.png)
+
+### Resposta
+*(Aquí va la teva resposta.)*
+
+---
+
+## 💾 Exercici 4: VirtualBox - Part pràctica: Exportació i discs
+
+### 7. Cerca com fer còpies o exportació de màquines virtuals. Un cop fet, mira de crear una nova màquina important la primera màquina que has implementat:
+
+### 8. Explica com pots afegir un disc dur nou a la primera màquina virtual que has creat. Arrenca la màquina virtual i mostra una captura on es vegi que el sistema operatiu ha detectar els 2 discos durs:
+### 9. Esborra la màquina virtual. Ves a la carpeta on n’has realitzat la instal·lació. Ha esborrat els fitxers?:
+
+### Resposta
+*(Aquí va la teva resposta.)*
+
+---
+
+## 🐳 Exercici 5: Prova de Docker
+
+### Enunciat
+Realitzeu els passos següents i feu una captura de pantalla per confirmar que funciona.
+
+1. **Instal·lació:**  
+El motor de Docker utilitza característiques del nucli de Linux.  
+Si no disposem de Linux, utilitzar **Boot2docker** o **Docker Toolbox** per Mac/Windows.  
+Aquesta aplicació instal·larà i configurarà tot el necessari per utilitzar Docker.
