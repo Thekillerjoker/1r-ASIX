@@ -48,6 +48,7 @@
 *Sí, en el menú de **Archivo** i **Administrador de medis virtual** o fent **Ctrl+D**, i seleccionant el disc de la màquina virtual fent dos clics i en l’apartat de **Tamany** el podem augmentar.*  
 
 ⚠️ Amb cura: una vegada augmentat **no es pot tornar a reduir**.
+
 ---
 ### 3. Fixa’t quan ocupa el disc dur un cop creada la màquina virtual (ves a la carpeta on es creen els fitxers de la màquina virtual). Ens hi cabrà un sistema operatiu? Explica’n el motiu i comenta avantatges i inconvenients:
 
@@ -57,9 +58,19 @@
 *Això permet que, encara que al principi ocupi pocs MB, quan es vulgui instal·lar el sistema operatiu, el disc s’anirà augmentant l’espai necessari per poder instal·lar-lo.*
 
 **Avantatges:**  
-- Estalvi d’espai en disc, ja que no ocuparà els 50GB de cop, sinó que començarà ocupant molt poc i s’anirà augmentant.  
-- Flexibilitat: el sistema operatiu només necessita 10GB per instal·lar-se i l’arxiu només ocuparà això, s’anirà augmentant i només ocuparà el que necessites.
+- **Estalvi d’espai en disc:** *ja que no ocuparà els 50GB de cop, sinó que començarà ocupant molt poc i s’anirà augmentant.* 
+- **Flexibilitat:** *El sistema operatiu només necessita 10GB per instal·lar-se i l’arxiu només ocuparà això, s’anirà augmentant i només ocuparà el que necessites.*
 
 **Desavantatges:**  
-- Rendiment: cada cop que el disc creix hi pot haver una petita baixada de rendiment.  
-- Ocupació del disc real: si el disc de la màquina virtual està creat per ocupar 50GB, però al host només tens 30GB lliures, quan la màquina virtual creixi fins a superar els 30GB ja no podrà créixer més.
+- **Rendiment:** *Cada cop que el disc creix hi pot haver una petita baixada de rendiment.*  
+- **Ocupació del disc real:** *Si el disc de la màquina virtual està creat per ocupar 50GB, però al host només tens 30GB lliures, quan la màquina virtual creixi fins a superar els 30GB ja no podrà créixer més.*
+
+---
+## 🖥️ Exercici 2: VirtualBox - Part pràctica: Instal·lació i recursos:
+
+### 4. Cerqueu la ISO d’una versió de Windows i fes-ne la instal·lació. Per exemple, Windows 11.  
+### 5. Un cop estigui instal·lat, realitzeu una taula comparativa del rendiment dels principals recursos (disc dur i memòria) amb la MV apagada i engegada:
+1. **Captura del rendiment amb la màquina apagada:**
+![Processos-1](./Captures/Processos-1.png) 
+
+2. 
