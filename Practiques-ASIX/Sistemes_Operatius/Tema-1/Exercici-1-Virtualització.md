@@ -115,7 +115,7 @@
 
 4. **Quart pas:**
    
-   ![Disc-4](./Captures/Dsico-4.png)
+   ![Disc-4](./Captures/Disco-4.png)
 
 5. **Cinque pas: Comprovació:**
    
