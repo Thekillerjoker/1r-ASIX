@@ -47,13 +47,14 @@
 
 *Sí, en el menú de **Archivo** i **Administrador de medis virtual** o fent **Ctrl+D**, i seleccionant el disc de la màquina virtual fent dos clics i en l’apartat de **Tamany** el podem augmentar.*  
 
-⚠️ *Amb cura: una vegada augmentat **no es pot tornar a reduir**.*
+⚠️ Amb cura: una vegada augmentat **no es pot tornar a reduir**.
 ---
 ### 3. Fixa’t quan ocupa el disc dur un cop creada la màquina virtual (ves a la carpeta on es creen els fitxers de la màquina virtual). Ens hi cabrà un sistema operatiu? Explica’n el motiu i comenta avantatges i inconvenients:
 
 *Sí, es pot instal·lar un sistema operatiu, ja que VirtualBox per defecte crea un **disc dinàmic**.* 
 
-*El disc dinàmic vol dir que si crees un disc de 50GB, aquest disc **no ocuparà els 50GB des del principi**, sinó que ocuparà molt menys MB, i s’anirà augmentant quan sigui necessari fins arribar al màxim dels 50GB.Això permet que, encara que al principi ocupi pocs MB, quan es vulgui instal·lar el sistema operatiu, el disc s’anirà augmentant l’espai necessari per poder instal·lar-lo.*
+*El disc dinàmic vol dir que si crees un disc de 50GB, aquest disc **no ocuparà els 50GB des del principi**, sinó que ocuparà molt menys MB, i s’anirà augmentant quan sigui necessari fins arribar al màxim dels 50GB.*
+*Això permet que, encara que al principi ocupi pocs MB, quan es vulgui instal·lar el sistema operatiu, el disc s’anirà augmentant l’espai necessari per poder instal·lar-lo.*
 
 **Avantatges:**  
 - Estalvi d’espai en disc, ja que no ocuparà els 50GB de cop, sinó que començarà ocupant molt poc i s’anirà augmentant.  
