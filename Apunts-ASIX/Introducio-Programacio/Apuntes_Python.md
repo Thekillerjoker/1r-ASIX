@@ -337,7 +337,20 @@ if nombre:
     print("el nombre no esta vacio")
 # Ya que si hay algo escrito lo detecta como True entonces se cumple la condición, si no hay nada escrito pero hay un espacio " " también lo detecta como True. ahora si no hay nada "" lo detecta como False entonces la condición no se cumple.
 ```
-*Separar si es una condición o si es una comparación.*
+*Separar si es una condición o si es una comparación.*# Para Hacer comandos de shel a python se usa el modulo import os.
+*Esto sirve para que tu al ejecutar el codigo en un sistema operativo te cargue solo el codigo que este dentro de la libreria de import os, y asi no tenga que cargar todo el codigo*
+```python
+import os
+os.system('ls -l')
+
+```
+## Para hacerlo con guardando a salida:
+```python
+import os
+stream = os.popen('ls -l')
+sortida = stream.read()
+print("sortida", sortida)
+```
 ```bash
 numero = 5 #Condición se aplican las normas .
 numero == 3 #Comparación.
@@ -370,3 +383,10 @@ stream = os.popen('ls -l')
 sortida = stream.read()
 print("sortida", sortida)
 ```
+# Progama python
+*ping -c 2 8.8.8.8 | grep recived*
+*(esto es para qe te debuelva solo la lina de recibed.)*
+```python 
+import os
+os.system('ping -c 2 8.8.8.8 | ')
+
