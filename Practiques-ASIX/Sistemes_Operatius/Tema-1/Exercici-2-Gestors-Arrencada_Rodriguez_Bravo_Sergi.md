@@ -93,3 +93,20 @@
 ```powershell
  powercfg /h off
  ```
+-------
+### 2. Instalació d'Ubuntu 18.04:
+1. **Comprovacions abans d'arrencar:**
+   - Comprovem que EFI estigui desactivat.
+   - Treurem l'ISO de Windows i afegirem la d'Ubuntu.
+  ![ISO](./Captures/pt-2/Ejemplo-2/Iso-Ubuntu.png)
+2. **Seleccionem Instalar Ubuntu:**
+   ![Instalacio-Ubuntu](./Captures/pt-2/Ejemplo-2/sELECIONAR-INSTALAR-UBUNTU.png)
+>[!TIP] -Impotant
+>he comprobat que ha varis companys
+>els i fallaba el dualboot a l'hora
+>d'actualitzar.
+>per aixo es millor desactivar l'opcio
+>d¡instalar les actualitzacions.
+>
+
+
