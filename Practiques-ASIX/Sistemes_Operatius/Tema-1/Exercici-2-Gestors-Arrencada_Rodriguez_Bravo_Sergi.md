@@ -68,7 +68,7 @@
     3. **Sistema:** *En l'ordre d'arrancada posem la iso per debant del disc.*
   > **⚠️ Important:** Desactivar el Sistema EFI
   > 
-  > Encara que amb el sistema EFI és mes recomenable que el sitema bios ja que l'EFI permet mes particions que EFI,pero el sistema EFI dona problemes amb el dualBoot a virtualbox , axi que per que no doni problemes es important desactivaro.
+  > *Encara que amb el sistema EFI és mes recomenable que el sitema bios ja que l'EFI permet mes particions que EFI,pero el sistema EFI dona problemes amb el dualBoot a virtualbox , axi que per que no doni problemes es important desactivaro.*
    >
    ![Sistema](./Captures/pt-2/Ejemplo-2/Configuración.png)
    4. **CPU:Configuració→Sistema →Processador:** *Seleccionar dos CPU.*
