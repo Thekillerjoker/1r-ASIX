@@ -74,4 +74,13 @@
    ![CPU](./Captures/pt-2/Ejemplo-2/Processador.png)
 
 2. **Instalacio Windows 10:**
+   1.**Tipus d'instalació:** *Seleccionar personalizada: instalar solo windows 10 (avanzado).*
+   2.**Creacio de les particions:** 
+   *Per defecte auria de sortir així:*
+   ![Discos-1](./Captures/pt-2/Ejemplo-2/Disco-1.png)
+   
+   **En aquest cas ens demana crear les particions ESP, una particio per el sistema i deixar espai lliure per l'ubuntu.** 
+   *El primer pas es afegir una nova partició i en el tamany seleccionar 61440MB (60GB), i Windows ja ens creara automaticament la particio ESP.*
+
+   ![Discos-2](./Captures/pt-2/Ejemplo-2/Discos-2.png)
    
