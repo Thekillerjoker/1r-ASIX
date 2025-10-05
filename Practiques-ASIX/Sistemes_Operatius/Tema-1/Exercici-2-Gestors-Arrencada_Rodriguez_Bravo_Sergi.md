@@ -66,7 +66,7 @@
    2. **Disc:** *Seleccionem crear un disc dinàmic en format vdi i en aquest cas li donem un espai de **130GB**.*
    ![Disc](./Captures/pt-2/Ejemplo-2/Disco.png)
     3. **Sistema:** *En l'ordre d'arrancada posem la iso per debant del disc.*
-  >[!IMPORTANT] - Desactivar el Sistema EFI:
+  > **⚠️ Important:** Desactivar el Sistema EFI 
    >Encara que amb el sistema EFI és mes recomenable que el sitema bios ja que l'EFI permet mes particions que EFI,pero el sistema EFI dona problemes amb el dualBoot a virtualbox , axi que per que no doni problemes es important desactivaro.
    >
    ![Sistema](./Captures/pt-2/Ejemplo-2/Configuración.png)
