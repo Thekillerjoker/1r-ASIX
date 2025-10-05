@@ -83,4 +83,13 @@
    *El primer pas es afegir una nova partició i en el tamany seleccionar 61440MB (60GB), i Windows ja ens creara automaticament la particio ESP.*
 
    ![Discos-2](./Captures/pt-2/Ejemplo-2/Discos-2.png)
-   
+   3. **Comprobacio:** *Comprobarem que les particions del disc son les correctes una vegada instalat windows.*
+   ![Discos-3](./Captures/pt-2/Ejemplo-2/Discos-3.png)
+----
+3. **Preparacio de windows per dual abans de instalar ubuntu.**
+  
+  *Desactivarem **Fast Startup** obrint el cmd com administrador i executarem:*
+  
+```powershell
+ powercfg /h off
+ ```
