@@ -61,3 +61,17 @@
 
 ### 1. Instal·lació i configuració de windows 10 i crecacio de particions :
 1. **Pasos preinstalació:**
+   1. **RAM:***En aquest cas sel·leciono (4096MB) 4GB, que es la meitat de la meva RAM.*
+   ![RAM](./Captures/pt-2/Ejemplo-2/Ram.png)
+   2. **Disc:** *Seleccionem crear un disc dinàmic en format vdi i en aquest cas li donem un espai de **130GB**.*
+   ![Disc](./Captures/pt-2/Ejemplo-2/Disco.png)
+    3. **Sistema:** *En l'ordre d'arrancada posem la iso per debant del disc.*
+  >[!IMPORTANT] - Desactivar el Sistema EFI:
+   >Encara que amb el sistema EFI és mes recomenable que el sitema bios ja que l'EFI permet mes particions que EFI,pero el sistema EFI dona problemes amb el dualBoot a virtualbox , axi que per que no doni problemes es important desactivaro.
+   >
+   ![Sistema](./Captures/pt-2/Ejemplo-2/Configuración.png)
+   4. **CPU:Configuració→Sistema →Processador:** *Seleccionar dos CPU.*
+   ![CPU](./Captures/pt-2/Ejemplo-2/Processador.png)
+
+2. **Instalacio Windows 10:**
+   
