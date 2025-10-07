@@ -172,6 +172,8 @@
 
    ![Seleccio-Windows](./Captures/pt-2/Ejemplo-2/Seleccio-Windows.png)
 
+**Video de demostracio del inici en Windows 10:**
+
   [![Demostracio-Inici-Windows](https://img.youtube.com/vi/Pl6WxC_AFQY/maxresdefault.jpg)](https://youtu.be/Pl6WxC_AFQY)
 
 
@@ -294,8 +296,9 @@ sudo reboot
 
 ![Recuperacio-9](./Captures/pt-2/Ejemplo-2/Recuperacio-10.png)
 
+## Video de la demostracio de la recuperació del GRUB:
 
-
+[![Demostració Linux](https://img.youtube.com/vi/3bHVV8xOz7g/maxresdefault.jpg)](https://youtu.be/3bHVV8xOz7g)
 
 
 
