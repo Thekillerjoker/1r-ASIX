@@ -112,6 +112,10 @@
 3. **Seleccionar Instalacio i crear particions:**
    1. **Sel·lecio manual:** *En cas de haber fet tots els pasos correctament l'ubuntu ja auria de detectar el windows 10 com a l'altre sistema operatiu i podriem fer la instalaciò automatica pero la farem manual.*
    ![Instalacio-Ubuntu-2](./Captures/pt-2/Ejemplo-2/Instalacuin-Ubuntu.png)
-   2. **
+   2. **Sel·lecionar l'espai lliure:** *Per començar comprobem que l'ubuntu detecti les particions de Windows, i que hi ha l'espai lliure i que el podem seleccionar-la per poder crear particions.*
+   ![ Seleccio-Espai](./Captures/pt-2/Ejemplo-2/Seleccion-Disco-Libre.png)
+   3. **Crear la partició per l'arrel:**
+   ![Particio-arrel](./Captures/pt-2/Ejemplo-2/Particion-raiz.png)
+   
 
 
