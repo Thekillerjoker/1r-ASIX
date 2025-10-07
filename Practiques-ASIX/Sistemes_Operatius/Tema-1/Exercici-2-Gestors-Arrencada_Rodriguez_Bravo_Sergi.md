@@ -172,7 +172,46 @@
 
    ![Seleccio-Windows](./Captures/pt-2/Ejemplo-2/Seleccio-Windows.png)
 
-   ![Inici-Windows][def]
+   ![Inici-Windows](./)
+
+2. **Actualitzar el Grub:**
+   *Per actualitzar el grub, en ubuntu cal obrir un terminal i executar:*
+   ```bash
+   sudo upadte-grub
+   ```
+   *Al executaro hauria de sortir el següent:*
+   ```bash
+   sudo update-grub
+   Obteniendo el archivo /etc/default/grub
+   Generando un fichero de configuración de grub.
+   Encontrada imagen de linux: /boo/vmlinuz #Important vold dir que ha trobat l'ubuntu.
+   Encontrada imagen de memoria inicial: /boot/initrd.img
+   found memtest86+ image: /boot/memtest86+.elf
+   found memtest86+ iamge: /boot/memtest86+.bin
+   Encontrado Windows 10 en /dev/sda # La més important perque vol dir que ha detectat Windows a /dev/sda en cas de no detectar-ho mai iniciara windows.
+   ```
+*Demostració:*
+
+![Update-grub](./Captures/pt-2/Ejemplo-2/Update-grub.png)
 
 
-[def]: ./Captures/pt-2/Ejemplo-2/InicioDeWindows.mp4
+**Que fer si  no hi apareix Encontrado Windows o Found Windows si es en angles?:**
+
+*Instalar os-prober si no esta instalat.*
+```bash
+sudo apt update
+sudo apt install os-prober -y
+```
+*Mirar la configuracio a /etc/default/grub:*
+*Si GRUB_DISABLE_OS_PROBER=true cambiar-ho a false*
+*Desprès executa:*
+```bash
+sudo update-grub
+```
+3. **Cambiar l'orde amb Grub-customizer:**
+*Grub-Customizer no es pot fer servir quan cmabies l'rodre i acutalitzes el cambis el windows desapareix.*
+*I he intentat cambiar l'ordre d'arrnacada desde el fitxer /etc/default/grub però no funciona.*
+
+-----
+
+
