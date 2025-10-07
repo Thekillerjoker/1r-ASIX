@@ -213,5 +213,35 @@ sudo update-grub
 *I he intentat cambiar l'ordre d'arrnacada desde el fitxer /etc/default/grub però no funciona.*
 
 -----
+### 4. Reparació del grub:
+**Arrenca desde Windows i sobresciru el GRUB, i desprès restaura el GRUB desde un Live USB de Ubuntu.**
+1. **Sobrescirure GRUB desde Windows.**
+   1. *Insertar l'ISO de Windows 10 i arrencar.*
+   2. *Seleccionar idioma → **Reparar el equipo**→ **Solucionar problemas**→ **Símbolo del sistema**:*
+   
+   ![Simbolo-Sistema](./Captures/pt-2/Ejemplo-2/recuperacio.png)
+
+   3. *En el CMD escriure les seguents comandes:*
+   ```powershell
+   bootrec.exe /fixmbr
+   bootrec.exe /scanos
+   bootrec.exe /rebuildbcd
+   # Encara que he posat bootrec.exe pot ser bootrec hi funciona igual.
+   ```
+   - **Bootrec /fixmbr:** *Sobrescriu el MBR(treu el GRUB).*
+
+   ![Bootrec-fixmbr](./Captures/pt-2/Ejemplo-2/Recuperacio-2.png)
+
+   - **Bootrec /scanos:** *Examina tots els discos en busca d'una instalació de Windows.*
+  
+  ![Bootrec-scanos](./Captures/pt-2/Ejemplo-2/Recuperacoon-3.png)
+
+  - **Bootrec /rebuildbcd:** *Reconstrueix la BCD.*
+  
+  ![Botrec-rebuildbcd](./Captures/pt-2/Ejemplo-2/Reuperacio-4.png)
+  4. *Reinicar la VM i treura la iso i la mv nomès iniciara en windows 10.*
+2. **Restaurar GRUB desde un USB/ISO de Ubuntu:**
+   
+
 
 
