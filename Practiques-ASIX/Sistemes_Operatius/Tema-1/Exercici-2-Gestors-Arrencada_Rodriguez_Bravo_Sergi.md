@@ -116,16 +116,16 @@
    ![ Seleccio-Espai](./Captures/pt-2/Ejemplo-2/Seleccion-Disco-Libre.png)
    
    3. **🔹Opciones a usar para tu dual boot**
-      1. *Selecciona el espacio libre.*
-      2. *fes clcik a afegir i indica aquestes opcions*
-         a) **Partición raiz /**
+   **Seleccionar l'espai lliure fer click a afegir i seguir les indicacions:**
+    a) **Partición raiz /**
          - **Tamaño:** *30720Mb (**30GB**)*
          - **Tip de la nueva particion:** *Logica*
          - **Ubicacnion de la nueva partición:** *Al principio o al final da igual*
          - **Utilzar como:** *Sistema de ficheros EXT4 transaccional de l'angles (**EXT4 journaling file system**)*
          - **Punto de montaje:** *Raiz /*
          - ✅ ok
-         ![Particio-arrel](./Captures/pt-2/Ejemplo-2/Particion-raiz.png)
+
+      ![Particio-arrel](./Captures/pt-2/Ejemplo-2/Particion-raiz.png)
 
 Utilizar como: Sistema de ficheros Ext4 transaccional
 
