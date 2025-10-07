@@ -116,7 +116,7 @@
    ![ Seleccio-Espai](./Captures/pt-2/Ejemplo-2/Seleccion-Disco-Libre.png)
    
    3. **🔹Opciones a usar para tu dual boot**
-    a) **Partición raiz /**
+      1. **Partición raiz /**
          - **Tamaño:** *30720Mb (**30GB**)*
          - **Tip de la nueva particion:** *Logica*
          - **Ubicacnion de la nueva partición:** *Al principio o al final da igual*
