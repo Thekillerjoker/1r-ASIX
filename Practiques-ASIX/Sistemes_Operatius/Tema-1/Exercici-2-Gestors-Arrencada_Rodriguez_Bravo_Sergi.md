@@ -171,4 +171,5 @@
       - **Windows:**
 
    ![Seleccio-Windows](./Captures/pt-2/Ejemplo-2/Seleccio-Windows.png)
-   
+
+   ![Inici-Windows](./Captures/pt-2/Ejemplo-2/InicioDeWindows.mp4)
