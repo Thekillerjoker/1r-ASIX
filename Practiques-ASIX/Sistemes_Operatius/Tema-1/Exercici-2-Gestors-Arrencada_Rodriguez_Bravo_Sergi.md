@@ -112,10 +112,46 @@
 3. **Seleccionar Instalacio i crear particions:**
    1. **Sel·lecio manual:** *En cas de haber fet tots els pasos correctament l'ubuntu ja auria de detectar el windows 10 com a l'altre sistema operatiu i podriem fer la instalaciò automatica pero la farem manual.*
    ![Instalacio-Ubuntu-2](./Captures/pt-2/Ejemplo-2/Instalacuin-Ubuntu.png)
-   2. **Sel·lecionar l'espai lliure:** *Per començar comprobem que l'ubuntu detecti les particions de Windows, i que hi ha l'espai lliure i que el podem seleccionar-la per poder crear particions.*
+   2. **Sel·lecionar l'espai lliure:** *Per començar comprobem que l'ubuntu detecti les particions de Windows, i que hi ha l'espai lliure i que el podem seleccionar-la*
    ![ Seleccio-Espai](./Captures/pt-2/Ejemplo-2/Seleccion-Disco-Libre.png)
-   3. **Crear la partició per l'arrel:**
-   ![Particio-arrel](./Captures/pt-2/Ejemplo-2/Particion-raiz.png)
+   
+   3. **🔹Opciones a usar para tu dual boot**
+      1. *Selecciona el espacio libre.*
+      2. *fes clcik a afegir i indica aquestes opcions*
+         a) **Partición raiz /**
+         - **Tamaño:** *30720Mb (**30GB**)*
+         - **Tip de la nueva particion:** *Logica*
+         - **Ubicacnion de la nueva partición:** *Al principio o al final da igual*
+         - **Utilzar como:** *Sistema de ficheros EXT4 transaccional de l'angles (**EXT4 journaling file system**)*
+         - **Punto de montaje:** *Raiz /*
+         - ✅ ok
+         ![Particio-arrel](./Captures/pt-2/Ejemplo-2/Particion-raiz.png)
+
+Utilizar como: Sistema de ficheros Ext4 transaccional
+
+✅ Ext4 es el sistema más estándar para Ubuntu, estable y rápido.
+
+Punto de montaje: /
+
+Tamaño: 30 GB
+
+Partición swap (opcional)
+
+Utilizar como: Área de intercambio
+
+Tamaño: 4 GB (igual o menor que tu RAM, no más de 4–6 GB está bien)
+
+Partición /home
+
+Utilizar como: Sistema de ficheros Ext4 transaccional
+
+Punto de montaje: /home
+
+Tamaño: todo el resto del espacio libre
+
+   1. **Crear la partició per l'arrel:**
+   -
+   
    
 
 
