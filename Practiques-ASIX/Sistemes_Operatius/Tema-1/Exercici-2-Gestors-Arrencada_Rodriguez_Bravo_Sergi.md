@@ -116,7 +116,6 @@
    ![ Seleccio-Espai](./Captures/pt-2/Ejemplo-2/Seleccion-Disco-Libre.png)
    
    3. **🔹Opciones a usar para tu dual boot**
-   **Seleccionar l'espai lliure fer click a afegir i seguir les indicacions:**
     a) **Partición raiz /**
          - **Tamaño:** *30720Mb (**30GB**)*
          - **Tip de la nueva particion:** *Logica*
