@@ -241,7 +241,60 @@ sudo update-grub
   ![Botrec-rebuildbcd](./Captures/pt-2/Ejemplo-2/Reuperacio-4.png)
   4. *Reinicar la VM i treura la iso i la mv nomès iniciara en windows 10.*
 2. **Restaurar GRUB desde un USB/ISO de Ubuntu:**
-   
+   1. *inserir una iso Ubuntu i arrnacar la MV*
+   2. *Seleccionar probar ubuntu.*
+   3. *Obrir un terminal*
+   4. *En el terminal executar les seguents comandes:*
+ ```bash
+ # 1️⃣ Muntar l'arrel d'ubuntu:
+ sudo mount /dev/sda5 /mnt
+ # 2️⃣ Muntar /home 
+ sudo mount /dev/sda7 /mnt/home
+ #  3️⃣ Muntar pseudo-filesystems:
+ sudo mount --bind /dev /mnt/dev
+ sudo mount --bind /proc /mnt/proc
+ sudo mount --bind /sys /mnt/sys
+ sudo cp /etc/resolv.conf /mnt/etc/ # Para el DNS dins del chroot.
+```
+
+![Recuperacio-6](./Captures/pt-2/Ejemplo-2/Recuperacion-6.png)
+
+   4. *Ara executem aquestes  comadnes:*
+```bash
+# 4️⃣ Entrar en chroot:
+sudo chroot /mnt
+# 5️⃣ Reinstalar GRUB en el MBR del disc:
+grub-install /dev/sda
+```
+
+![Recuperacio-7](./Captures/pt-2/Ejemplo-2/Recupercion-8.png)
+
+   5. *Ara les següents comandes:*
+```bash
+# Actualitzar el GRUB.
+update-grub
+```
+
+![Recuperacio-8](./Captures/pt-2/Ejemplo-2/Recuperacio-9.png)
+
+   6. *Comandes per desmuntar les particions*
+```bash
+# 6️⃣ Per sorti del chroot.
+exit
+# 7️⃣ Desmontar tot:
+sudo ummount /mnt/dev
+sudo ummount /mnt/proc
+sudo ummount /mnt/sys
+sudo ummount /mnt/home
+sudo ummount /mnt
+# 8️⃣ Reinciar:
+sudo reboot
+```
+
+![Recuperacio-9](./Captures/pt-2/Ejemplo-2/Recuperacio-10.png)
+
+
+
 
 
 
