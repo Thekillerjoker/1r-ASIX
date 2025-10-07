@@ -123,16 +123,25 @@
          - **Utilzar como:** *Sistema de ficheros EXT4 transaccional de l'angles (**EXT4 journaling file system**)*
          - **Punto de montaje:** *Raiz /*
          - ✅ ok
-
+  
       ![Particio-arrel](./Captures/pt-2/Ejemplo-2/Particion-raiz.png)
+      2. **Particion swap**
+         - **Tamaño:** *4096Mb (**4GB** igaul o menor que tu RAM).*
+         - **Tipo de la nueva particion:** *Logica*
+         - **Ubicacion:** *Per defecte no cal tocar-ho*
+         - **Utilizar como:** *Área de intercambio(**SWAP**).*
+         - ✅ ok
 
-Utilizar como: Sistema de ficheros Ext4 transaccional
+      ![Particio-swap](./Captures/pt-2/Ejemplo-2/Creacion-swap.png)
 
-✅ Ext4 es el sistema más estándar para Ubuntu, estable y rápido.
+      3. **Particion Home**
+        - **Tamaño:** *El resto del espacio libre (**40346MB** o **40,346GB**).*
+        - **Tipo de la nueva partición:** *Logica*
+        - **Utiliozar como:** */Home*
+        -  ✅ ok
 
-Punto de montaje: /
+      ![Particio-home](./Captures/pt-2/Ejemplo-2/Particion-home.png)
 
-Tamaño: 30 GB
 
 Partición swap (opcional)
 
