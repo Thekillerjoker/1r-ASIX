@@ -159,6 +159,9 @@
 2. *Reiniciar la maquina*
 3. *En el menu de grub seleccionar ubuntu*
 
+![Seleccio-Ubuntu](./Captures/pt-2/Ejemplo-2/Seleccionar-Ubuntu.png)
+
+
 ![Demostracio-Ubuntu](./Captures/pt-2/Ejemplo-2/Inicio-Ubuntu.png)
 -----
 
