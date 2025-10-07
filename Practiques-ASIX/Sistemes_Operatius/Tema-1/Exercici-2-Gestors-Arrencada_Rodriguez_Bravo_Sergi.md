@@ -154,16 +154,19 @@
 
 ![Creacio-Perfil](./Captures/pt-2/Ejemplo-2/Usuario.png)
 
-### Finalitzar la instalació i arrancar.
+### Finalitzar la instalació 
 1. ¿*Terminar la instalació, i treura la iso d'ubuntu*
 2. *Reiniciar la maquina*
-3. *En el menu de grub seleccionar ubuntu*
 
-![Seleccio-Ubuntu](./Captures/pt-2/Ejemplo-2/Seleccionar-Ubuntu.png)
-
-
-![Demostracio-Ubuntu](./Captures/pt-2/Ejemplo-2/Inicio-Ubuntu.png)
 -----
+### 3 Comprovació i pràctiques 
+1. **Arrancar en cada sistema:**
+   1. *En el Menu GRUB que apareix al arrencar , selecciona:*
+      - **Ubuntu:**
+   
+   ![Seleccio-Ubuntu](./Captures/pt-2/Ejemplo-2/Seleccionar-Ubuntu.png)
 
+   ![Inici-Ubuntu](./Captures/pt-2/Ejemplo-2/Inicio-Ubuntu.png)
 
+      - **Windows:**
 
