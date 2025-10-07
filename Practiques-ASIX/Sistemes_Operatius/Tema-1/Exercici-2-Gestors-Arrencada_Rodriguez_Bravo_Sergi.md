@@ -170,3 +170,5 @@
 
       - **Windows:**
 
+   ![Seleccio-Windows](./Captures/pt-2/Ejemplo-2/Seleccio-Windows.png)
+   
