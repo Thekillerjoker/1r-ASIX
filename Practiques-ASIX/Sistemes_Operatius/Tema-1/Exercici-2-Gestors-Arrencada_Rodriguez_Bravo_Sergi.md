@@ -176,6 +176,8 @@
 
   [![Demostracio-Inici-Windows](https://img.youtube.com/vi/Pl6WxC_AFQY/maxresdefault.jpg)](https://youtu.be/Pl6WxC_AFQY)
 
+-------
+
 
 2. **Actualitzar el Grub:**
    *Per actualitzar el grub, en ubuntu cal obrir un terminal i executar:*
