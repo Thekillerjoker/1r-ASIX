@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici-3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            
+        }
+        header{
+            grid-area: header;
+            background-color: rgb(4, 206, 233);
+            
+        }
+        nav{
+            grid-area: nav;
+            background-color: rgb(4, 206, 233)
+        }
+        aside{
+            grid-area: aside;
+            background-color: rgb(4, 206, 233)
+        }
+        main{
+            grid-area: main;
+            background-color: rgb(4, 206, 233)
+        }
+        article{
+            grid-area: article;
+            background-color: rgb(4, 206, 233)
+        }
+        footer{
+            grid-area: footer;
+            background-color: rgb(4, 206, 233)
+        }
+        
+        
+        .container {
+            display: grid;
+            background-color: rgb(0, 81, 255);
+            gap: 10px;
+            padding: 10px;
+            height: 100vh;
+            grid-template-areas: 
+            "header header header"
+            "nav nav aside"
+            "main article aside "
+            "footer footer  aside";
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <nav>Navigation</nav>
+        <aside>Aside</aside>
+        <main>Main</main>
+        <article>Article</article>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
