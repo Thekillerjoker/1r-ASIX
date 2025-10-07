@@ -143,6 +143,24 @@
 
       ![Particio-home](./Captures/pt-2/Ejemplo-2/Particion-home.png)
 
+---
+### On instal·lar el carregador d'arrancament (GRUB)?
+*En la casella **"Dispositivo para la instalación del cargador de arranque"** Selecciona /dev/sda*
+
+![Cargador-arranque](./Captures/pt-2/Ejemplo-2/Comprocbacion-instalar.png)
+
+---
+### Creacio del perfil
+
+![Creacio-Perfil](./Captures/pt-2/Ejemplo-2/Usuario.png)
+
+### Finalitzar la instalació i arrancar.
+1. ¿*Terminar la instalació, i treura la iso d'ubuntu*
+2. *Reiniciar la maquina*
+3. *En el menu de grub seleccionar ubuntu*
+
+![Demostracio-Ubuntu](./Captures/pt-2/Ejemplo-2/Inicio-Ubuntu.png)
+-----
 
 
 
