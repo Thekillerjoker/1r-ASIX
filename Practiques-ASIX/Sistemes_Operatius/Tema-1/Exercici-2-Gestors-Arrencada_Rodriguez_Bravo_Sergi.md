@@ -125,6 +125,7 @@
          - ✅ ok
   
       ![Particio-arrel](./Captures/pt-2/Ejemplo-2/Particion-raiz.png)
+
       2. **Particion swap**
          - **Tamaño:** *4096Mb (**4GB** igaul o menor que tu RAM).*
          - **Tipo de la nueva particion:** *Logica*
@@ -143,23 +144,5 @@
       ![Particio-home](./Captures/pt-2/Ejemplo-2/Particion-home.png)
 
 
-Partición swap (opcional)
-
-Utilizar como: Área de intercambio
-
-Tamaño: 4 GB (igual o menor que tu RAM, no más de 4–6 GB está bien)
-
-Partición /home
-
-Utilizar como: Sistema de ficheros Ext4 transaccional
-
-Punto de montaje: /home
-
-Tamaño: todo el resto del espacio libre
-
-   1. **Crear la partició per l'arrel:**
-   -
-   
-   
 
 
