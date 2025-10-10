@@ -9,17 +9,60 @@
 <body>
     <header class="flex-bar">
         <div class="menu-icon">
-            <a href="#" class="icon" id="boton-menu"><i class="fas fa-bars"></i></a>
+            <a href="#" class="icon" id="boton-menu">☰</a>
         </div>
         <nav class="menu-nav" id="nav-menu">
             <ul class="menu-ul">
-                <li class="menu-item"><a href="">Inicio<i class="fas fa-home"></i></i></a></li>
-                <li class="menu-item"><a href="">Historia<i class="fas fa-info-circle"></i></a></li>
-                <li class="menu-item"><a href="">Pilotos y equipos<i class="fab fa-Pilotos-Equipos"></i></a></li>
-                <li class="menu-item"><a href=""> Calendario y resultados<i class="far fa-calendario"></i></a></li>
-                <li class="menu-item"><a href=""> Clasificacion<i class="far fa-calendario"></i></a></li>
+                <li class="menu-item"><a href="#inicio" class="active">Inicio</a></li>
+                <li class="menu-item"><a href="#historia">Historia</a></li>
+                <li class="menu-item"><a href="#pilotos">Pilotos y Equipos</a></li>
+                <li class="menu-item"><a href="#calendario">Calendario y Resultados</a></li>
+                <li class="menu-item"><a href="#galeria">Galería Multimedia</a></li>
+                <li class="menu-item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
+    <script>
+        const btnMenu = document.getElementById('boton-menu');
+            const nav = document.getElementById('nav-menu');
+
+            btnMenu.addEventListener('click', mostrar);
+
+            function mostrar() {
+                if (nav.classList.contains('menu-nav')) {
+                    nav.classList.remove('menu-nav');
+                    nav.classList.add('animate');
+                } else {
+                    nav.classList.remove('animate');
+                    nav.classList.add('menu-nav');
+                }
+            }
+    </script>
+    <section id="inicio" class="seccion">
+        <p>hols</p>
+    </section>
+    <section id="Historia" class="section">
+        <h2>Historia</h2>
+        <p>Hola buenos dias</p>
+    </section>
+    <section id="pilotos" class="seccion">
+        <h2>Pilotos y Equipos</h2>
+        <p>Información de los equipos y los pilotos de la temporada actual.</p>
+    </section>
+    
+    <section id="calendario" class="seccion">
+        <h2>Calendario y Resultados</h2>
+        <p>Tabla de grandes premios, circuitos, resultados de entrenamientos, clasificación y carrera.</p>
+    </section>
+    
+    <section id="galeria" class="seccion">
+        <h2>Galería Multimedia</h2>
+        <p>Fotos, videos y momentos destacados de la historia y la temporada actual.</p>
+    </section>
+    
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <p>Formulario o información de contacto.</p>
+    </section>
 </body>
 </html>
