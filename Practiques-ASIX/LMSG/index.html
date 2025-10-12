@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula One</title>
-    <link a="stylesheet" href="estils.css">
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="estils.css">
 </head>
 <body>
     <header class="flex-bar">
@@ -13,31 +14,17 @@
         </div>
         <nav class="menu-nav" id="nav-menu">
             <ul class="menu-ul">
-                <li class="menu-item"><a href="#inicio" class="active">Inicio</a></li>
-                <li class="menu-item"><a href="#historia">Historia</a></li>
-                <li class="menu-item"><a href="#pilotos">Pilotos y Equipos</a></li>
-                <li class="menu-item"><a href="#calendario">Calendario y Resultados</a></li>
-                <li class="menu-item"><a href="#galeria">Galería Multimedia</a></li>
-                <li class="menu-item"><a href="#contacto">Contacto</a></li>
+                <li class="menu-item"><a href="#Inicio">Inicio<i class="fas fa-home"></i></i></a></li>
+                <li class="menu-item"><a href="#Historia">Historia<i class="fas fa-info-circle"></i></a></li>
+                <li class="menu-item"><a href="#pilotos">Pilotos y equipos<i class="fab fa-helmet-seafty "></i></a></li>
+                <li class="menu-item"><a href="#calendario"> Calendario y resultados<i class="fa-solid fa-calendar-days"></i></a></li>
+                <li class="menu-item"><a href="#galeria"> Galeria y multimedia<i class="far fa-solid fa-camera"></i></a></li>
+                <li class="menu-item"><a href="#contacto"> Contacto<i class="far fa-solid fa-phone"></i></a></li>
+
             </ul>
         </nav>
     </header>
-    <script>
-        const btnMenu = document.getElementById('boton-menu');
-            const nav = document.getElementById('nav-menu');
-
-            btnMenu.addEventListener('click', mostrar);
-
-            function mostrar() {
-                if (nav.classList.contains('menu-nav')) {
-                    nav.classList.remove('menu-nav');
-                    nav.classList.add('animate');
-                } else {
-                    nav.classList.remove('animate');
-                    nav.classList.add('menu-nav');
-                }
-            }
-    </script>
+  
     <section id="inicio" class="seccion">
         <p>hols</p>
     </section>
@@ -64,5 +51,21 @@
         <h2>Contacto</h2>
         <p>Formulario o información de contacto.</p>
     </section>
+    <script>
+        const btnMenu = document.getElementById('boton-menu');
+        const nav = document.getElementById('nav-menu');
+
+        btnMenu.addEventListener('click', mostrar);
+
+        function mostrar() {
+            if (nav.classList.contains('menu-nav')) {
+                nav.classList.remove('menu-nav');
+                nav.classList.add('animate');
+            } else {
+                nav.classList.remove('animate');
+                nav.classList.add('menu-nav');
+            }
+        }
+    </script>
 </body>
 </html>

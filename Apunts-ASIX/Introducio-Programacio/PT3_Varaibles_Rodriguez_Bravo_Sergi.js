@@ -1,0 +1,25 @@
+const pokemon = 'Bulbasur';
+const tipus = 'Planta/Veri';
+const genere = 'M';
+const nivell = 5;
+const hp = 45;
+const pes = 6.9;
+console.log('Nom del Pokémon:', pokemon);
+console.log('Tipus de Pokémon:', tipus);
+console.log('Genere:', genere);
+console.log('nivell inicial:', nivell);
+console.log('HP:', hp);
+console.log('Pes:', pes, 'kg');
+
+const pokemonnom = 'Snorlax';
+const tipuspokemon = 'Normal';
+const generepokemon = 'M';
+const nivellpokemon = 25;
+const hppokemon = 272;
+const pespokemon = 460;
+console.log('Nom del Pokémon:', pokemonnom);
+console.log('Tipus de Pokémon:', tipuspokemon);
+console.log('Genere:', generepokemon);
+console.log('nivell inicial:', nivellpokemon);
+console.log('HP:', hppokemon);
+console.log('Pes:', pespokemon, 'kg');

@@ -1,0 +1,17 @@
+#  Exercici Pokemon
+nom = input("Nom del Pokemon:")
+tipus = input("Tipus del Pokemon:")
+genere = input("Sexe del Pokemon:")
+nivell = int(input("Nivell del Pokemon:"))
+hp = int(input("Hp del pokemon:"))
+pes = float(input("introdueix el pes en kg): "))
+print("Nom del Pokémon:",nom)
+print("Tipus:",tipus)
+print("Gènere (M=masclee,F=Femella):",genere)
+print("Nivell inicial:",nivell)
+print("Punts de salut base:",hp)
+print("Pes:",pes,"kg")
+# Programa jo-el:
+primera_paraula = input()
+segona_paraula = input()
+print(primera_paraula + "amb" + segona_paraula)
