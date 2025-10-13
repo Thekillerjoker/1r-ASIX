@@ -46,5 +46,11 @@ sudo apt-get install john
 ```bash
 mkdir ~/rockyou
 cd ~/rockyou
-git clone https://github.com/IrishMaestro/rockyou
-gzip -d rockyou.txt.gz
+wget  https://github.com/zacheller/rockyou/blob/master/rockyou.txt.tar.gz
+tar -xzvf rockyou.txt.tar.gz
+```
+
+3. *Executar l'atac de diccionari:*
+
+```bash
+john --wordlist=~/rockyou/rockyou.txt /
