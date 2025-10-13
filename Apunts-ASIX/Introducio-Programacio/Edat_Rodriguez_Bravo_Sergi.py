@@ -1,5 +1,5 @@
 edat = int(input())
 if edat < 32 :
-    print("Si")
+    print("SI")
 else :
-    print("No")
+    print("NO")
