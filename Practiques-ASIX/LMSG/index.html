@@ -8,24 +8,75 @@
     <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="estils.css">
     <style>
-        *{
-            box-sizing: border-box;
+        body {
             margin: 0;
-            
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: #ffffff;
         }
-        .Equip {
-            grid-area: Equip;
-        }
-        .Alineacio {
-            display: grid;
-            background-color: rgb(0, 81, 255);
-            gap: 10px;
-            padding: 10px;
-            height: 100vh;
-            grid-template-areas: 
-            
-            ;
-        }
+        #Alineacio {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "eq1l eq1l eq1l . . eq1r eq1r eq1r";
+  gap: 2vw;
+  padding: 4vw;
+  background-color: #001f3f;
+}
+
+/* Áreas de equipos */
+.eq1l { grid-area: eq1l; }
+.eq1r { grid-area: eq1r; }
+
+/* Cada bloque de equipo */
+.Equips {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    align-items: center;
+    background-color: #0d1b2a;
+    padding: 2vw;
+    border-radius: 1vw;
+    box-shadow: 00 1vw rgba(0, 0, 0,0.4);
+    gap: 1.5vw;
+    transition: transform 0.3s ease;
+}
+
+.Equip:hover {
+    transform: scale(1.02);
+}
+/* Pilotos */
+.Pilots {
+    text-align: center;
+    color: #ffffff;
+}
+.Pilots p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.Pilots img {
+    width: 6vw;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 0.5vw;
+    border: 0.2vw solid #ffffff;
+}
+
+/* Logo */
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo img {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 0 3px #ffffff);
+
+}
     </style>
 </head>
 
@@ -63,50 +114,128 @@
               article,section,figure,table,ul,li,a ,img-->
         </div>
         <div id="pilotos">
-            
             <section id="Alineacio">
-                <div class="Equip">
-                    <img src="" alt="">
-                    <p>Max verstapen</p>
-                    <p>Lawson</p>
+                <!-- Equipo izquierda -->
+                <div class="Equips eq1l">
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/VerstappenPNG.png" alt="">
+                        <p>Verstappen</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/redbull-logo.png" alt="Red Bull">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/yuktsu01.png" alt="">
+                        <p>Tsunoda</p>
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/LeClarc-Ferrari.png" alt="">
+                        <p>Lecrerc</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Ferrari-logo.png" alt="Red Bull">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Hamilton-PNG-Ferrari-Render-F1-Sport-Renders.png" alt="">
+                        <p>Hamilton</p>
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/feralo01.png" alt="">
+                        <p>Alonso</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Aston-martin-logo.png" alt="Red Bull">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/StrollPNG.png" alt="">
+                        <p>Stroll</p>
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/carsai01.png" alt="">
+                        <p>Sainz</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Williams-logo.png" alt="Red Bull">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/alealb01.png" alt="">
+                        <p>Albon</p>
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/nichul01.png" alt="">
+                        <p>Hulkenberg</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Kick-logo.png" alt="Red Bull">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/gabbor01.png" alt="">
+                        <p>Bortoleto</p>
+                    </div>
                 </div>
-                <div class="Equip">
-                    <p>Lecrerc</p>
-                    <p>Hamilton</p>
-                </div>
-                <div class="Equip">
-                    <p>Alonso</p>
-                    <p>Stroll</p>
-                </div>
-                <div class="Equip">
-                    <p>Sainz</p>
-                    <p>Albon</p>
-                </div>
-                <div class="Equip">
-                    <p>Hulkenberg</p>
-                    <p>Bortoleto</p>
-                </div>
-                <div class="Equip">
-                    <p>Russell</p>
-                    <p>Antoneli</p>
-                </div>
-                <div class="Equip">
-                    <p>Norris</p>
-                    <p>Piastri</p>
-                </div>
-                <div class="Equip">
-                    <p>Gasly</p>
-                    <p>Doohan</p>
-                </div>
-                <div class="Equip">
-                    <p>Tsunoda</p>
-                    <p>Hadjar</p>
-                </div>
-                <div class="Equip">
-                    <p>beerman</p>
-                    <p>Ocon</p>
+            
+                <!-- Equipo derecha -->
+                <div class="Equips eq1r">
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/RusselPNG.png" alt="">
+                        <p>Russell</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Mercedes-logo.png" alt="Mercedes">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/andant01.png" alt="">
+                        <p>Antonelli</p>
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/NorrisPNG.png" alt="">
+                        <p>Norris</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Mclaren-logo.png" alt="Mercedes">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/oscpia01.png" alt="">
+                        <p>Piastri</p>
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/piegas01.png" alt="">
+                        <p>Gasly</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Alpine.png" alt="Mercedes">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/fracol01.png" alt="">
+                        <p>Colapinto</p>
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/lialaw01.png" alt="">
+                        <p>Lawson</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/RacingBulls-logo.png" alt="Mercedes">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/isahad01.png" alt="">
+                        <p>Hadjar</p>
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/olibea01.png" alt="">
+                        <p>Berman</p>
+                    </div>
+                    <div class="Logo">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Has-logo.png" alt="Mercedes">
+                    </div>
+                    <div class="Pilots">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/estoco01.png" alt="">
+                        <p>Ocon</p>
+                    </div>
                 </div>
             </section>
+
+        </div>
+           
             <h2>Pilotos y Equipos</h2>
             <p>Información de los equipos y los pilotos de la temporada actual.</p>
             <!-- Presentar los equipos y sus pilotos de la temporada.
