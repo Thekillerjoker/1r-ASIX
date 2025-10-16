@@ -12,16 +12,7 @@ body {
     background: #fff; color: #000; 
     text-align: center; 
 } 
-.F1-title { 
-    font-size: 2.5rem; /* tamaño grande como en la foto */ 
-    font-weight: 800; /* negrita */ 
-    text-transform: uppercase; /* mayúsculas */ 
-    letter-spacing: 3px; /* separación entre letras */ 
-    color: #1e41ff; /* color azul F1 (puedes cambiarlo) */ 
-    text-align: center; /* centra el texto horizontalmente */ 
-    margin: 2rem 0; /* espacio arriba y abajo */ 
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra estilo foto */ 
-} 
+
 .f1-grid { 
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
@@ -30,13 +21,15 @@ body {
     justify-items: center; padding: 0 2rem 4rem; 
 } 
 
+
 .equipo { 
     display: flex; 
     justify-content: center; 
     align-items: flex-start; 
     position: relative; 
     margin: 40px 0; 
-} .piloto { 
+} 
+.piloto { 
     width: 150px; 
     margin: 0 10px; 
     text-align: center; 
@@ -103,11 +96,23 @@ body {
             width: 60px; top: -15px; 
         } 
     }
+    
+    .F1-title { 
+    font-size: 2.5rem; /* tamaño grande como en la foto */ 
+    font-weight: 800; /* negrita */ 
+    text-transform: uppercase; /* mayúsculas */ 
+    letter-spacing: 3px; /* separación entre letras */ 
+    color: #1e41ff; /* color azul F1 (puedes cambiarlo) */ 
+    text-align: center; /* centra el texto horizontalmente */ 
+    margin: 2rem 0; /* espacio arriba y abajo */ 
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra estilo foto */ 
+} 
     </style>
 </head>
 <body>
-    <h1 class="F1-title">2025 F1 DRIVER LINE-UP</h1>
+    
     <section class="f1-grid"> 
+       
         <!-- Columna izquerda--> 
         <!-- Red Bull -->
         <div class="equipo redbull">
@@ -266,7 +271,7 @@ body {
             </div> 
             <img class="logo" src="/Practiques-ASIX/LMSG/Imatges/Has-logo.png" alt="Haas">
         </div>
-    </section
+    </section>
 
 </body>
 </html>
