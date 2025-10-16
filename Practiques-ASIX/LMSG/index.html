@@ -15,19 +15,19 @@
             color: #ffffff;
         }
 #Alineacio {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "eq1l eq1l eq1l . . eq1r eq1r eq1r"
-    "eq2l eq2l eq2l . . eq2r eq2r eq2r"
-    "eq3l eq3l eq3l . . eq3r eq3r eq3r"
-    "eq4l eq4l eq4l . . eq4r eq4r eq4r"
-    "eq5l eq5l eq5l . . eq5r eq5r eq5r";
-  gap: 2vw;
-  padding: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-areas: 
+    "eq1l . eq1r"
+    "eq2l . eq2r"
+    "eq3l . eq3r"
+    "eq4l . eq4r"
+    "eq5l . eq5r";
+    gap: 2vw;
+    padding: 4vw;
 }
 
-/* Áreas */
+/* ÁREAS DE GRID */
 .eq1l { grid-area: eq1l; }
 .eq2l { grid-area: eq2l; }
 .eq3l { grid-area: eq3l; }
@@ -40,69 +40,102 @@
 .eq4r { grid-area: eq4r; }
 .eq5r { grid-area: eq5r; }
 
-/* Equipos */
+
+/* Contenedor de equipo */
 .Equips {
   display: grid;
   grid-template-columns: 1fr 80px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+  "piloto1 logo piloto2"
+  "piloto1 . piloto2";
   align-items: center;
+  position: relative;
   padding: 2vw;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw rgba(0,0,0,0.4);
-  gap: 1.5vw;
-  transition: transform 0.3s ease;
 }
-
 .Equips:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
-/* Pilotos */
+/* PILOTOS IZQUIERDO Y DERECHO */
+.piloto-izq {
+  grid-area: piloto1;
+  justify-self: center;
+}
+
+.piloto-der {
+  grid-area: piloto2;
+  justify-self: center;
+  margin-top: 1vw;
+}
+
+
+/* LOGO CENTRADO Y ELEVADO */
+.logo-centro {
+  grid-area: logo;
+  justify-self: center;
+  align-self: start;
+  margin-top: -1vw;
+}
+
+/* CONTENEDOR DE PILOTO */
 .Pilots {
-  text-align: center;
-  color: #ffffff;
-}
-
-.Pilots p {
-  margin-top: 0.5vw;
-  font-size: 1.1vw;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.Pilots img {
+  position: relative;
   width: 6vw;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 0.5vw;
-  border: 0.2vw solid #ffffff;
 }
 
-/* Logo */
-.Logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+/* IMAGEN DEL PILOTO */
+.Pilots img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  border: none;
 }
 
+
+/* NOMBRE CON FONDO INCLINADO */
+.nombre-banner {
+  position: absolute;
+  bottom: -1.2vw;
+  left: 50%;
+  transform: translateX(-50%) skew(-20deg);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5vw 1.5vw;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 1vw;
+}
+
+/* LOGO DEL EQUIPO */
 .Logo img {
-  width: 4.5vw;
+  width: 5vw;
   height: auto;
-  filter: drop-shadow(0 0 0.3vw #ffffff);
 }
 
-/* Colores por escudería */
-.redbull     { background-color: #1e1e2f; border: 2px solid #3671c6; }
-.ferrari     { background-color: #2b0000; border: 2px solid #ff2800; }
-.astonmartin { background-color: #002f2f; border: 2px solid #00665e; }
-.williams    { background-color: #0e1a40; border: 2px solid #00a2e0; }
-.sauber      { background-color: #1a1a1a; border: 2px solid #52e3c2; }
+/* Logo entre pilotos */
+.Logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
 
-.mercedes    { background-color: #001f1f; border: 2px solid #00d2be; }
-.mclaren     { background-color: #1c1c1c; border: 2px solid #ff8700; }
-.alpine      { background-color: #0a0a2a; border: 2px solid #0090ff; }
-.rb          { background-color: #1a1a1a; border: 2px solid #5c00ff; }
-.haas        { background-color: #1a1a1a; border: 2px solid #ffffff; }
+/* Colores por equipo */
+.redbull .nombre-banner     { background: #1e41ff; }
+.ferrari .nombre-banner     { background: #dc0000; }
+.astonmartin .nombre-banner { background: #006f62; }
+.williams .nombre-banner    { background: #005aff; }
+.kick .nombre-banner        { background: #ff0000; }
 
+.mercedes .nombre-banner    { background: #00d2be; }
+.mclaren .nombre-banner     { background: #ff8700; }
+.alpine .nombre-banner      { background: #2293d1; }
+.racingbulls .nombre-banner { background: #2b4562; }
+.haas .nombre-banner        { background: #ffffff; color: #000; }
     </style>
 </head>
 
@@ -141,141 +174,157 @@
         </div>
         <div id="pilotos">
             <section id="Alineacio">
-                  
-                <!-- Equipo izquierda -->
+                <!-- Red Bull -->
                 <div class="Equips eq1l redbull">
-                    <div class="Pilots">
+                    <div class="Pilots piloto-izq">
                         <img src="/Practiques-ASIX/LMSG/Imatges/VerstappenPNG.png" alt="">
-                        <p>Verstappen</p>
+                        <div class="nombre-banner">VERSTAPPEN</div>
                     </div>
-                    <div class="Logo">
+
+                    <div class="Logo logo-centro">
                         <img src="/Practiques-ASIX/LMSG/Imatges/redbull-logo.png" alt="Red Bull">
                     </div>
-                    <div class="Pilots">
+
+                    <div class="Pilots piloto-der">
                         <img src="/Practiques-ASIX/LMSG/Imatges/yuktsu01.png" alt="">
-                        <p>Tsunoda</p>
+                        <div class="nombre-banner">TSUNODA</div>
                     </div>
+                </div>
+    
+                <!-- Ferrari -->
+                <div class="Equips eq2l ferrari">
+                    <div class="Pilots piloto-izq">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/LeClarc-Ferrari.png" alt="">
+                        <div class="nombre-banner">LECLERC</div>
                     </div>
-                    <div class="Equips eq2l ferrari">
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/LeClarc-Ferrari.png" alt="">
-                            <p>Lecrerc</p>
-                        </div>
-                        <div class="Logo">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/Ferrari-logo.png" alt="Red Bull">
-                        </div>
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/Hamilton-PNG-Ferrari-Render-F1-Sport-Renders.png" alt="">
-                            <p>Hamilton</p>
-                        </div>
+                    <div class="Logo logo-centro">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Ferrari-logo.png" alt="Ferrari">
                     </div>
-                    <div class="Equips eq3l astonmartin">
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/feralo01.png" alt="">
-                            <p>Alonso</p>
-                        </div>
-                        <div class="Logo">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/Aston-martin-logo.png" alt="Red Bull">
-                        </div>
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/StrollPNG.png" alt="">
-                            <p>Stroll</p>
-                        </div>
+                    <div class="Pilots piloto-der">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Hamilton-PNG-Ferrari-Render-F1-Sport-Renders.png" alt="">
+                        <div class="nombre-banner">HAMILTON</div>
                     </div>
-                    <div class="Equips eq4l williams">
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/carsai01.png" alt="">
-                            <p>Sainz</p>
-                        </div>
-                        <div class="Logo">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/Williams-logo.png" alt="Red Bull">
-                        </div>
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/alealb01.png" alt="">
-                            <p>Albon</p>
-                        </div>
+                </div>
+    
+                <!-- Aston Martin -->
+                <div class="Equips eq3l astonmartin">
+                    <div class="Pilots piloto-izq">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/feralo01.png" alt="">
+                        <div class="nombre-banner">ALONSO</div>
                     </div>
-                    <div class="Equips eq5l kick">
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/nichul01.png" alt="">
-                            <p>Hulkenberg</p>
-                        </div>
-                        <div class="Logo">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/Kick-logo.png" alt="Red Bull">
-                        </div>
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/gabbor01.png" alt="">
-                            <p>Bortoleto</p>
-                        </div>
-                        </div>
-                    
-                <!-- Equipo derecha -->
+                    <div class="Logo logo-centro">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Aston-martin-logo.png" alt="Aston Martin">
+                    </div>
+                    <div class="Pilots piloto-der">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/StrollPNG.png" alt="">
+                        <div class="nombre-banner">STROLL</div>
+                    </div>
+                </div>
+    
+                <!-- Williams -->
+                <div class="Equips eq4l williams">
+                    <div class="Pilots piloto-izq">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/carsai01.png" alt="">
+                        <div class="nombre-banner">SAINZ</div>
+                    </div>
+                    <div class="Logo logo-centro">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Williams-logo.png" alt="Williams">
+                    </div>
+                    <div class="Pilots piloto-der">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/alealb01.png" alt="">
+                        <div class="nombre-banner">ALBON</div>
+                    </div>
+                </div>
+    
+                <!-- Kick -->
+                <div class="Equips eq5l kick">
+                    <div class="Pilots piloto-izq">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/nichul01.png" alt="">
+                        <div class="nombre-banner">HULKENBERG</div>
+                    </div>
+                    <div class="Logo logo-centro">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Kick-logo.png" alt="Kick">
+                    </div>
+                    <div class="Pilots piloto-der">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/gabbor01.png" alt="">
+                        <div class="nombre-banner">BORTOLETO</div>
+                    </div>
+                </div>
+                <!-- Mercedes -->
                 <div class="Equips eq1r mercedes">
-                    <div class="Pilots">
+                    <div class="Pilots piloto-izq">
                         <img src="/Practiques-ASIX/LMSG/Imatges/RusselPNG.png" alt="">
-                        <p>Russell</p>
+                        <div class="nombre-banner">RUSSELL</div>
                     </div>
-                    <div class="Logo">
+                    <div class="Logo logo-centro">
                         <img src="/Practiques-ASIX/LMSG/Imatges/Mercedes-logo.png" alt="Mercedes">
                     </div>
-                    <div class="Pilots">
+                    <div class="Pilots piloto-der">
                         <img src="/Practiques-ASIX/LMSG/Imatges/andant01.png" alt="">
-                        <p>Antonelli</p>
+                        <div class="nombre-banner">ANTONELLI</div>
                     </div>
                 </div>
+    
+                <!-- McLaren -->
                 <div class="Equips eq2r mclaren">
-                    <div class="Pilots">
+                    <div class="Pilots piloto-izq">
                         <img src="/Practiques-ASIX/LMSG/Imatges/NorrisPNG.png" alt="">
-                        <p>Norris</p>
+                        <div class="nombre-banner">NORRIS</div>
                     </div>
-                    <div class="Logo">
-                        <img src="/Practiques-ASIX/LMSG/Imatges/Mclaren-logo.png" alt="Mercedes">
+                    <div class="Logo logo-centro">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Mclaren-logo.png" alt="McLaren">
                     </div>
-                    <div class="Pilots">
+                    <div class="Pilots piloto-der">
                         <img src="/Practiques-ASIX/LMSG/Imatges/oscpia01.png" alt="">
-                        <p>Piastri</p>
-                    </div>    
+                        <div class="nombre-banner">PIASTRI</div>
+                    </div>
                 </div>
+    
+                <!-- Alpine -->
                 <div class="Equips eq3r alpine">
-                    <div class="Pilots">
+                    <div class="Pilots piloto-izq">
                         <img src="/Practiques-ASIX/LMSG/Imatges/piegas01.png" alt="">
-                        <p>Gasly</p>
+                        <div class="nombre-banner">GASLY</div>
                     </div>
-                    <div class="Logo">
-                        <img src="/Practiques-ASIX/LMSG/Imatges/Alpine.png" alt="Mercedes">
+                    <div class="Logo logo-centro">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Alpine.png" alt="Alpine">
                     </div>
-                    <div class="Pilots">
+                    <div class="Pilots piloto-der">
                         <img src="/Practiques-ASIX/LMSG/Imatges/fracol01.png" alt="">
-                        <p>Colapinto</p>
+                        <div class="nombre-banner">COLAPINTO</div>
                     </div>
                 </div>
+    
+                <!-- Racing Bulls -->
                 <div class="Equips eq4r racingbulls">
-                    <div class="Pilots">
+                    <div class="Pilots piloto-izq">
                         <img src="/Practiques-ASIX/LMSG/Imatges/lialaw01.png" alt="">
-                        <p>Lawson</p>
+                        <div class="nombre-banner">LAWSON</div>
                     </div>
-                    <div class="Logo">
-                        <img src="/Practiques-ASIX/LMSG/Imatges/RacingBulls-logo.png" alt="Mercedes">
+                    <div class="Logo logo-centro">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/RacingBulls-logo.png" alt="Racing Bulls">
                     </div>
-                    <div class="Pilots">
+                    <div class="Pilots piloto-der">
                         <img src="/Practiques-ASIX/LMSG/Imatges/isahad01.png" alt="">
-                        <p>Hadjar</p>
+                        <div class="nombre-banner">HADJAR</div>
                     </div>
                 </div>
-                    <div class="Equips eq5r haas">
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/olibea01.png" alt="">
-                            <p>Berman</p>
-                        </div>
-                        <div class="Logo">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/Has-logo.png" alt="Mercedes">
-                        </div>
-                        <div class="Pilots">
-                            <img src="/Practiques-ASIX/LMSG/Imatges/estoco01.png" alt="">
-                            <p>Ocon</p>
-                        </div>
+    
+                <!-- Haas -->
+                <div class="Equips eq5r haas">
+                    <div class="Pilots piloto-izq">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/olibea01.png" alt="">
+                        <div class="nombre-banner">BERMAN</div>
                     </div>
-            </section>
+                    <div class="Logo logo-centro">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/Has-logo.png" alt="Haas">
+                    </div>
+                    <div class="Pilots piloto-der">
+                        <img src="/Practiques-ASIX/LMSG/Imatges/estoco01.png" alt="">
+                        <div class="nombre-banner">OCON</div>
+                    </div>
+                </div>
+            </section> 
         </div>
 
         </div>
