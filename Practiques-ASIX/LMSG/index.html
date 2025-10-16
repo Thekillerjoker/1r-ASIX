@@ -14,9 +14,9 @@
             background-color: #ffffff;
             color: #ffffff;
         }
-        #Alineacio {
+#Alineacio {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "eq1l eq1l eq1l . . eq1r eq1r eq1r"
     "eq2l eq2l eq2l . . eq2r eq2r eq2r"
@@ -25,10 +25,9 @@
     "eq5l eq5l eq5l . . eq5r eq5r eq5r";
   gap: 2vw;
   padding: 4vw;
-  background-color: #ffffff;
 }
 
-/* Áreas de equipos */
+/* Áreas */
 .eq1l { grid-area: eq1l; }
 .eq2l { grid-area: eq2l; }
 .eq3l { grid-area: eq3l; }
@@ -41,96 +40,68 @@
 .eq4r { grid-area: eq4r; }
 .eq5r { grid-area: eq5r; }
 
-
-/* Cada bloque de equipo */
+/* Equipos */
 .Equips {
-    display: grid;
-    grid-template-columns: 1fr 80px 1fr;
-    align-items: center;
-    padding: 2vw;
-    gap: 1.5vw;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  align-items: center;
+  padding: 2vw;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.4);
+  gap: 1.5vw;
+  transition: transform 0.3s ease;
 }
 
+.Equips:hover {
+  transform: scale(1.02);
+}
 
 /* Pilotos */
 .Pilots {
-    text-align: center;
-    color: #ffffff;
+  text-align: center;
+  color: #ffffff;
 }
+
 .Pilots p {
-    display: inline-block;
-    margin-top: 0;
-    padding: 0.5vw 1vw;
-    font-size: 1.1vw;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
-    background-color: #444;
-    color: #fff;
+  margin-top: 0.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .Pilots img {
-    width: 6vw;
-    height: auto;
-    margin-bottom: 0; /* elimina espacio entre imagen y texto */
-    display: block;
-
+  width: 6vw;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.5vw;
+  border: 0.2vw solid #ffffff;
 }
 
 /* Logo */
 .Logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Logo img {
-    width: 6.5vw;
-    height: auto;
-
+  width: 4.5vw;
+  height: auto;
+  filter: drop-shadow(0 0 0.3vw #ffffff);
 }
+
 /* Colores por escudería */
-.redbull .Pilots p { 
-    background-color: #18186c; 
-    border: 2px solid ; 
-}
-.ferrari .Pilots p{ 
-    background-color: #ff2800;
-    border: 2px solid ; 
-}
-.astonmartin .Pilots p { 
-    background-color: #00665e;
-    border: 2px solid ; 
-}
-.williams .Pilots p { 
-    background-color: #022a52; 
-    border: 2px solid ; 
-}
-.kick .Pilots p { 
-    background-color: #06d73e; 
-    border: 2px solid ; 
-}
+.redbull     { background-color: #1e1e2f; border: 2px solid #3671c6; }
+.ferrari     { background-color: #2b0000; border: 2px solid #ff2800; }
+.astonmartin { background-color: #002f2f; border: 2px solid #00665e; }
+.williams    { background-color: #0e1a40; border: 2px solid #00a2e0; }
+.sauber      { background-color: #1a1a1a; border: 2px solid #52e3c2; }
 
-.mercedes .Pilots p { 
-    background-color: #00d2be; 
-    border: 2px solid ; 
-}
-.mclaren .Pilots p { 
-    background-color: #ff8700; 
-    border: 2px solid ; 
-}
-.alpine .Pilots p { 
-    background-color: #0090ff; 
-    border: 2px solid ; 
-}
-.racingbulls .Pilots p { 
-    background-color: #00c7e6; 
-    border: 2px solid ; 
-}
-.haas .Pilots p{ 
-    background-color: #bf0e0e; 
-    border: 2px solid ; 
-}
+.mercedes    { background-color: #001f1f; border: 2px solid #00d2be; }
+.mclaren     { background-color: #1c1c1c; border: 2px solid #ff8700; }
+.alpine      { background-color: #0a0a2a; border: 2px solid #0090ff; }
+.rb          { background-color: #1a1a1a; border: 2px solid #5c00ff; }
+.haas        { background-color: #1a1a1a; border: 2px solid #ffffff; }
 
     </style>
 </head>
