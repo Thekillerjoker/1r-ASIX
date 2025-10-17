@@ -7,168 +7,7 @@
     <title>Formula One</title>
     <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="estils.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #ffffff;
-            color: #ffffff;
-        }
-#Alineacio {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-areas: 
-    "encabezado encabezado encabezado"
-    "eq1l titulo eq1r"
-    "eq2l titulo eq2r"
-    "eq3l titulo eq3r"
-    ". titulo ."
-    "eq4l titulo eq4r"
-    "eq5l titulo eq5r";
-    gap: 2vw;
-    padding: 4vw;
-}
-.titulo {
-    grid-area: titulo;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem; /* tamaño grande como en la foto */ 
-    font-weight: 800; /* negrita */ 
-    text-transform: uppercase; /* mayúsculas */ 
-    letter-spacing: 3px; /* separación entre letras */ 
-    color: #1e41ff; /* color azul F1 (puedes cambiarlo) */ 
-    text-align: center; /* centra el texto horizontalmente */ 
-    margin: 2rem 0; /* espacio arriba y abajo */ 
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra estilo foto */ 
-}
 
-.encabezado {
-    grid-area: encabezado;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw 0;
-}
-.linea-roja {
-    width: 100%;
-    height: 4px;
-    background-color: red;
-}
-
-
-
-/* ÁREAS DE GRID */
-.eq1l { grid-area: eq1l; }
-.eq2l { grid-area: eq2l; }
-.eq3l { grid-area: eq3l; }
-.eq4l { grid-area: eq4l; }
-.eq5l { grid-area: eq5l; }
-
-.eq1r { grid-area: eq1r; }
-.eq2r { grid-area: eq2r; }
-.eq3r { grid-area: eq3r; }
-.eq4r { grid-area: eq4r; }
-.eq5r { grid-area: eq5r; }
-
-
-/* Contenedor de equipo */
-.Equips {
-  display: grid;
-  grid-template-columns: 1fr 80px 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: 
-  "piloto1 logo piloto2"
-  "piloto1 . piloto2";
-  align-items: center;
-  position: relative;
-  padding: 2vw;
-}
-.Equips:hover {
-    transform: scale(1.02);
-}
-
-/* PILOTOS IZQUIERDO Y DERECHO */
-.piloto-izq {
-  grid-area: piloto1;
-  justify-self: center;
-}
-
-.piloto-der {
-  grid-area: piloto2;
-  justify-self: center;
-  margin-top: 1vw;
-}
-
-
-/* LOGO CENTRADO Y ELEVADO */
-.logo-centro {
-  grid-area: logo;
-  justify-self: center;
-  align-self: start;
-  margin-top: -1vw;
-}
-
-/* CONTENEDOR DE PILOTO */
-.Pilots {
-  position: relative;
-  width: 6vw;
-}
-
-
-
-/* IMAGEN DEL PILOTO */
-.Pilots img {
-  width: 100%;
-  border-radius: 12px;
-  display: block;
-  border: none;
-}
-
-
-/* NOMBRE CON FONDO INCLINADO */
-.nombre-banner {
-  position: absolute;
-  bottom: -1.2vw;
-  left: 50%;
-  transform: translateX(-50%) skew(-20deg);
-  color: #fff;
-  font-weight: 700;
-  padding: 0.5vw 1.5vw;
-  border-radius: 6px;
-  white-space: nowrap;
-  font-size: 1vw;
-}
-
-/* LOGO DEL EQUIPO */
-.Logo img {
-  width: 5vw;
-  height: auto;
-}
-
-/* Logo entre pilotos */
-.Logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-
-/* Colores por equipo */
-.redbull .nombre-banner     { background: #1e41ff; }
-.ferrari .nombre-banner     { background: #dc0000; }
-.astonmartin .nombre-banner { background: #006f62; }
-.williams .nombre-banner    { background: #005aff; }
-.kick .nombre-banner        { background: #ff0000; }
-
-.mercedes .nombre-banner    { background: #00d2be; }
-.mclaren .nombre-banner     { background: #ff8700; }
-.alpine .nombre-banner      { background: #2293d1; }
-.racingbulls .nombre-banner { background: #2b4562; }
-.haas .nombre-banner        { background: #ffffff; color: #000; }
-    </style>
 </head>
 
 <body>
@@ -180,7 +19,7 @@
             <ul class="menu-ul">
                 <li class="menu-item"><a href="#Inicio">Inicio<i class="fas fa-home"></i></i></a></li>
                 <li class="menu-item"><a href="#Historia">Historia<i class="fas fa-info-circle"></i></a></li>
-                <li class="menu-item"><a href="#pilotos">Pilotos y equipos<i class="fab fa-helmet-seafty "></i></a></li>
+                <li class="menu-item"><a href="#Pilotos">Pilotos y equipos<i class="fab fa-helmet-seafty "></i></a></li>
                 <li class="menu-item"><a href="#calendario"> Calendario y resultados<i
                             class="fa-solid fa-calendar-days"></i></a></li>
                 <li class="menu-item"><a href="#galeria"> Galeria y multimedia<i class="far fa-solid fa-camera"></i></a>
@@ -204,7 +43,7 @@
             <!-- Elementos:
               article,section,figure,table,ul,li,a ,img-->
         </div>
-        <div id="pilotos">
+        <div id="Pilotos">
         <section id="Alineacio">
             <div class="encabezado">
                 <div class="linea-roja"></div>
@@ -357,6 +196,25 @@
                 </div>
             </div>
         
+        </section>
+        <section id="Escuderies">
+            <div id="Redbull">
+                <img src="/Practiques-ASIX/LMSG/Imatges/redbull-logo.png" alt="">
+                <h1 id="Nom-Escuderia">Red Bull F1</h1>
+                <article id="Info-Escuderies">
+    
+                
+                </article>
+
+            </div>
+        </section>
+
+        <section id="pilots">
+            <div id="VERSTAPPEN">
+                <img src="/Practiques-ASIX/LMSG/Imatges/VerstappenPNG.png" alt="">
+                <h2>Max VERSTAPPEN</h2>
+                
+            </div>
         </section>
         </div>
 
