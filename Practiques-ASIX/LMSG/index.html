@@ -295,18 +295,18 @@
                         <div class="coche-actual">
                             <h4>Coche Temporada 2025</h4>
                             <div class="carrousel-container">
-                                <div class="carrousel fade">
+                                <div class="carrouselmclaren fade">
                                     <div class="numerofoto">1 /2</div>
                                     <img src="/Practiques-ASIX/LMSG/Imatges/mclaren-mcl60-1-lateral.png" alt="Coche Mclaren temporada 2025" style="width: 100%">
                                     <div class="descripcio-imatge">Lateral Cotxe Mclaren temporada 2025</div>
                                 </div>
-                                <div class="carrousel fade">
+                                <div class="carrouselmclaren fade">
                                 <div class="numerofoto">2 /2</div>
                                 <img src="/Practiques-ASIX/LMSG/Imatges/mclaren-mcl60-frontal.png" alt="Coche Mclaren temporada 2025" style="width: 100%" >
                                 <div class="descripcio-imatge">Frontal Cotxe Mclaren temporada 2025</div>
                                 </div>
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
                             </div>
                             <div style="text-align:center">
                                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -1697,22 +1697,25 @@
                 nav.classList.add('menu-nav');
             }
         }
-        let slideIndex = 1;
-            showSlides(slideIndex);
+        let slideIndex = [1, 1];
+            let slideId = ["carrouselmclaren", "carrouselredbull", "carrouselferrari", "carrouselmercedes", "carrouselaston", "carrouselwilliams", "carrouselalpine", "carrouselracingbulls", "carrouselkick", "carrouselhas"]
+            showSlides(1, 0);
+            showSlides(1, 1);
 
-            // Next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+            function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
             }
 
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
+            function showSlides(n, no) {
                 let i;
-                let slides = document.getElementsByClassName("carrousel");
+                let x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) { slideIndex[no] = 1 }
+                if (n < 1) { slideIndex[no] = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex[no] - 1].style.display = "block";
+                
                 let dots = document.getElementsByClassName("dot");
                 if (n > slides.length) { slideIndex = 1 }
                 if (n < 1) { slideIndex = slides.length }
