@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulari</title>
+    <link rel="stylesheet" href="formulari.css">
 </head>
 <body>
+    <div class="Formulari">
         <form>
             <label for="nom">Nom</label>
             <input type="text" id="nom" required>
@@ -15,26 +17,33 @@
             <input type="text" id="SegonCognom" required>
             <label for="DNI">DNI:</label>
             <input type="text" id="DNI" pattern="[0-9] {8} [A-Z] {1}" required>
-            <input type="email" name="email" placeholder="exemple@gmail.com">
+            <label for="correu">Email</label>
+            <input type="email" id="correu" placeholder="exemple@gmail.com">
             <label for="telefon">Número de telefon</label>
             <input type="text" id="telefon" pattern="[0-9] {9}" placeholder="606159679">
             <label for="Aniversari">Data de neixament</label>
             <input type="date" id="Aniversari">
-            <input type="submit" value="Enviar">
+        
             LLenguatjes que domines:
             <input type="checkbox" name="Pyhton" value="Pyhton" checked="checked">Pyhton
             <input type="checkbox" name="java" value="java" checked="checked">java
             <input type="checkbox" name="html" value="html" checked="checked">html
             <input type="checkbox" name="CSS" value="css" checked="checked">cssÇ
+            
             Sexe:
-            <input type="radio" name="genere" value="Femeni">Femeni
-            <input type="radio" name="genere" value="Masculi">Masculi
+            Femeni:<input type="radio" name="genere" value="Femeni">
+            Masculi: <input type="radio" name="genere" value="Masculi">
             Tematica:
-            <select  name="deplegable">
+            <select name="deplegable">
                 <option value="html">html</option>
                 <option value="css">css</option>
                 <option value="java">Java</option>
             </select>
+
+           Comentaris:<textarea id="comentaris" maxlength="100"></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="reset">
         </form>
+    </div> 
 </body>
 </html>
