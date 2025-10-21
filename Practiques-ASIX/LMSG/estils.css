@@ -302,11 +302,10 @@ a {
     position: relative;
     margin: auto;
 }
-
-/* Hide the images by default */
-.carrousel {
+.carrouselmclaren, .carrouselredbull, .carrouselferrari, .carrouselmercedes, .carrouselaston, .carrouselwilliams, .carrouselalpine, .carrouselracingbulls, .carrouselkick, .carrouselhas {
     display: none;
 }
+
 
 /* Next & previous buttons */
 .prev,.next {
