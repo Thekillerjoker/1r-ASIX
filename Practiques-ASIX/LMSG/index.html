@@ -309,8 +309,6 @@
                                 <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
                             </div>
                             <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
                             </div>
                             <table class="tabla-coche tabla-coche-mclaren">
                                 <tr>
@@ -456,22 +454,19 @@
                         <div class="coche-actual">
                             <h4>Coche Temporada 2025</h4>
                             <div class="carrousel-container">
-                                <div class="carrousel fade">
+                                <div class="carrouselredbull fade">
                                     <div class="numerofoto">1 /2</div>
                                     <img src="/Practiques-ASIX/LMSG/Imatges/RB21.png" alt="Coche RedBull temporada 2025" style="width: 100%">
                                     <div class="descripcio-imatge">Lateral Cotxe Redbull temporada 2025</div>
                                 </div>
-                                <div class="carrousel fade">
+                                <div class="carrouselredbull fade">
                                     <div class="numerofoto">2 /2</div>
                                     <img src="/Practiques-ASIX/LMSG/Imatges/RB21-frontal.png" alt="Coche RedBull temporada 2025" style="width: 100%">
                                     <div class="descripcio-imatge">Frontal Cotxe RedBull temporada 2025</div>
                                 </div>
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+                            </div> 
                             </div>
                             <table class="tabla-coche tabla-coche-redbull">
                                 <tr>
@@ -611,7 +606,22 @@
                     <div class="coches-container">
                         <div class="coche-actual">
                             <h4>Coche Temporada 2025</h4>
-                            <img src="" alt="sfc-25" class="imagen-coche imagen-coche-ferrari">
+                            <div class="carrousel-container">
+                                <div class="carrouselferrari fade">
+                                    <div class="numerofoto">1 /2</div>
+                                    <img src="/Practiques-ASIX/LMSG/Imatges/SF25.png" alt="Coche Ferrari temporada 2025" style="width: 100%">
+                                    <div class="descripcio-imatge">Cotxe Ferrari temporada 2025</div>
+                                </div>
+                                <div class="carrouselferrari fade">
+                                    <div class="numerofoto">2 /2</div>
+                                    <img src="/Practiques-ASIX/LMSG/Imatges/sfc25-lateral.png" alt="Coche Ferrari temporada 2025" style="width: 100%">
+                                    <div class="descripcio-imatge"> Lateral Cotxe Ferrari temporada 2025</div>
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+
+                            </div>
+                            
                             <table class="tabla-coche tabla-coche-ferrari">
                                 <tr>
                                     <th>Nombre del coche:</th>
@@ -1697,37 +1707,39 @@
                 nav.classList.add('menu-nav');
             }
         }
-        let slideIndex = [1, 1];
-            let slideId = ["carrouselmclaren", "carrouselredbull", "carrouselferrari", "carrouselmercedes", "carrouselaston", "carrouselwilliams", "carrouselalpine", "carrouselracingbulls", "carrouselkick", "carrouselhas"]
-            showSlides(1, 0);
-            showSlides(1, 1);
 
-            function plusSlides(n, no) {
-                showSlides(slideIndex[no] += n, no);
+        let slideId = [
+            "carrouselmclaren",
+            "carrouselredbull",
+            "carrouselferrari",
+            "carrouselmercedes",
+            "carrouselaston",
+            "carrouselwilliams",
+            "carrouselalpine",
+            "carrouselracingbulls",
+            "carrouselkick",
+            "carrouselhas"
+        ];
+        let slideIndex = [];
+        for (let i = 0; i < slideId.length; i++) {
+            slideIndex[i] = 1;
+            showSlides(1, i);
+        }
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
-
-            function showSlides(n, no) {
-                let i;
-                let x = document.getElementsByClassName(slideId[no]);
-                if (n > x.length) { slideIndex[no] = 1 }
-                if (n < 1) { slideIndex[no] = x.length }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                x[slideIndex[no] - 1].style.display = "block";
-                
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            } 
+            x[slideIndex[no]-1].style.display = "block";
+        }
     </script>
 </body>
 
