@@ -16,24 +16,29 @@
             <label for="SegonCognom">Segon Cognom</label>
             <input type="text" id="SegonCognom" required>
             <label for="DNI">DNI:</label>
-            <input type="text" id="DNI" pattern="[0-9] {8} [A-Z] {1}" required>
+            <input type="text" id="DNI" pattern="[0-9]{8}[A-Z]{1}" required>
             <label for="correu">Email</label>
             <input type="email" id="correu" placeholder="exemple@gmail.com">
             <label for="telefon">Número de telefon</label>
-            <input type="text" id="telefon" pattern="[0-9] {9}" placeholder="606159679">
+            <input type="text" id="telefon" pattern="[0-9]{9}" placeholder="606159679">
             <label for="Aniversari">Data de neixament</label>
             <input type="date" id="Aniversari">
         
-            LLenguatjes que domines:
-            <input type="checkbox" name="Pyhton" value="Pyhton" checked="checked">Pyhton
-            <input type="checkbox" name="java" value="java" checked="checked">java
-            <input type="checkbox" name="html" value="html" checked="checked">html
-            <input type="checkbox" name="CSS" value="css" checked="checked">cssÇ
+           <p>LLenguatjes que domines:</p> 
+            <label for="Python">Python</label>
+            <input type="checkbox" id="Python" value="Pyhton">
+            <label for="Java">Java</label>
+            <input type="checkbox" id="Java" value="java">
+            <label for="Html">Html</label>
+            <input type="checkbox" id="Html" value="html">
+            <label for="Css">Css</label>
+            <input type="checkbox" id="css" value="css">
             
-            Sexe:
-            Femeni:<input type="radio" name="genere" value="Femeni">
-            Masculi: <input type="radio" name="genere" value="Masculi">
-            Tematica:
+            <p>Sexe:</p>
+           Femeni:<input type="radio" name="genere" value="Femeni">           
+           Masculi:<input type="radio" name="genere" value="Masculi">
+
+           <p>Tematica:</p>
             <select name="deplegable">
                 <option value="html">html</option>
                 <option value="css">css</option>
