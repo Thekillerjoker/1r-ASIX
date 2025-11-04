@@ -36,6 +36,15 @@ body {
 .midground {
   background: url("imatges/midground_grass.png") 0 100% repeat-x;
   z-index: 3;
+  animation: paralax_herba2 linear 15s infinite both;
+}
+@keyframes paralax_herba2 {
+  0% {
+    background-position: -3000px 100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
 }
 
 /* ******************* */
@@ -109,6 +118,7 @@ body {
   border-radius: 50%;
   background: #fff;
   position: absolute;
+  
 }
 
 #moon .moon-2 {
@@ -116,6 +126,7 @@ body {
   position: absolute;
   top: -20px;
   left: 20px;
+  animation: cel 10s ease infinite;
 }
 
 /* ******************* */
@@ -124,8 +135,22 @@ body {
 .cel {
   z-index: 0;
   background-color: #525252;
+  animation: cel 10s ease infinite;
 }
-
+@keyframes cel {
+  0% {
+    background-color: #525252;
+  }
+  33% {
+    background-color: #6293e5;
+  }
+  66% {
+    background-color: #6293e5;
+  }
+  100% {
+    background-color: #525252;
+  }
+}
 /* ******************* */
 /*        PANTERA      */
 /* ******************* */
