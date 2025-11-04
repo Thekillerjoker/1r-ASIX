@@ -1,0 +1,152 @@
+body {
+  overflow: hidden;
+}
+
+.foreground,
+.midground,
+.background, .cel, .terra {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ******************* */
+/*   HERBA PRIMERA     */
+/* ******************* */
+.foreground {
+  animation: parallax_herba1 linear 15s infinite both;
+  background: url("imatges/foreground_grass.png") 0 100% repeat-x;
+  z-index: 4;
+}
+
+@keyframes parallax_herba1 {
+  0% {
+    background-position: -3584px 100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+/* ******************* */
+/*   HERBA SEGONA      */
+/* ******************* */
+.midground {
+  background: url("imatges/midground_grass.png") 0 100% repeat-x;
+  z-index: 3;
+}
+
+/* ******************* */
+/*     MUNTANYES       */
+/* ******************* */
+.background {
+  z-index: 2;
+  background-image: url(imatges/background_mountain5.png), url(imatges/background_mountain4.png), url(imatges/background_mountain3.png), url(imatges/background_mountain2.png), url(imatges/background_mountain1.png);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+}
+
+/* ******************* */
+/*       NUVOL         */
+/* ******************* */
+#cloud {
+  position: relative;
+  top: 90px;
+  left: 0px;
+  opacity: 1;
+  z-index: 2;
+}
+
+#cloud .cloud {
+  border-radius: 50%;
+  width: 160px;
+  height: 50px;
+  background: #fff;
+  position: absolute;
+  top: 10px;
+}
+
+#cloud .cloud-2 {
+  left: 50px;
+  top: 0;
+}
+
+#cloud .cloud-3 {
+  left: 110px;
+  top: 20px;
+}
+
+/* ******************* */
+/*        SOL          */
+/* ******************* */
+#sun {
+  background: #ffd630;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  top: 30px;
+  left: 160px;
+}
+
+/* ******************* */
+/*       LLUNA         */
+/* ******************* */
+#moon {
+  position: absolute;
+  opacity: 0.8;
+  top: 20px;
+  right: 150px;
+  z-index: 1;
+}
+
+#moon .moon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+}
+
+#moon .moon-2 {
+  background: #525252;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+}
+
+/* ******************* */
+/*        CEL          */
+/* ******************* */
+.cel {
+  z-index: 0;
+  background-color: #525252;
+}
+
+/* ******************* */
+/*        PANTERA      */
+/* ******************* */
+.tuna {
+  animation: walk-cycle 1s steps(12) infinite;
+  background: url(imatges/tuna_sprite.png) 0 0 no-repeat;
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  margin-left: -200px;
+  transform: translateZ(0);
+  /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/
+}
+
+@keyframes walk-cycle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2391px;
+  }
+}
