@@ -23,8 +23,6 @@ a {
     background: #e31b1b;
     width: 100%;
     position: relative;
-
-
 }
 
 
@@ -45,11 +43,11 @@ a {
 }
 
 .menu-item:hover {
-    background: rgba(163, 169, 224, 0.712);
+    background: rgba(248, 248, 248, 0.977);
 }
 
 .menu-nav {
-    background: #3b5998;
+    background: #e31b1b;
     width: 100%;
     position: absolute;
     left: -100%;
