@@ -55,6 +55,12 @@ body {
   background-image: url(imatges/background_mountain5.png), url(imatges/background_mountain4.png), url(imatges/background_mountain3.png), url(imatges/background_mountain2.png), url(imatges/background_mountain1.png);
   background-repeat: repeat-x;
   background-position: 0 100%;
+  animation: paralax_bg linear 40s infinite;
+}
+@keyframes paralax_bg {
+  100% {
+    background-position-x:2400px, 2000px, 1800px, 1600px, 1200px ;
+  }
 }
 
 /* ******************* */
@@ -99,7 +105,30 @@ body {
   z-index: 1;
   top: 30px;
   left: 160px;
+  animation: sol 20s linear infinite;
 }
+@keyframes sol {
+  0% {
+    top: 0%;
+    left: 100%;
+    opacity: 1;
+  }
+  66%{
+    top: 66%;
+    left: 100%;
+    opacity: 1;
+  }
+  67% {
+    opacity: 0%;
+  }
+  33% {
+    top: 33%;
+    left: 0%;
+    opacity: 0;
+  }
+
+}
+
 
 /* ******************* */
 /*       LLUNA         */
@@ -128,6 +157,7 @@ body {
   left: 20px;
   animation: cel 10s ease infinite;
 }
+
 
 /* ******************* */
 /*        CEL          */
