@@ -537,7 +537,7 @@ th {
     background-color: #fff5e6;
     border: 2px solid #1E2D6E;
 }
-.imagen-jefes-redbull {
+.imagen-jefes-redbull img {
     border: 3px solid #DA291C;
 }
 .coche-redbull {
@@ -557,5 +557,38 @@ th {
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid #DA291C;
+}
+.header-ferrari {
+    background-color: #DC0000;
+    color: #FFF200;
+}
+.info-ferrari {
+    background-color: #F5F5F5;
+    border: 2px solid #DC0000;
+}
+.directiva-ferrari {
+    background-color: #F5F5F5;
+    border: 2px solid #DC0000;
+}
 
+.imagen-jefes-ferrari img {
+    border: 3px solid #000000;
+}
+.coche-ferrari {
+    background-color: #F5F5F5;
+    border: 2px solid #DC0000;
+}
+.tabla-ferrari th, .jefes-ferrari th, .tabla-coche-ferrari th {
+    background-color: #dc0000;
+    color: #FFF200;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+}
+.tabla-ferrari td, .jefes-ferrari td, .tabla-coche-ferrari td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DC0000;
 }
