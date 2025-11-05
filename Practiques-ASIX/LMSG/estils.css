@@ -295,6 +295,17 @@ a {
     color: #ffffff;
 }
 
+#Escuderies {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+/* -- Seccion prinipal para cada escuderia -- */
+#Mclaren, #redbull, #Ferrari, #Aston-Martin, #Mercedes, #Williams, #Alpine, #TacingBulls, #Kick, #Has {
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Slideshow container */ 
 .carrousel-container {
     max-width: 90%;
