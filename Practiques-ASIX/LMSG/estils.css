@@ -468,4 +468,16 @@ th {
 /* Estilos Para Mclaren:*/
 .header-mclaren {
     background-color: #ff8700;
+    color: #fff;
+}
+.info-mclaren {
+    background-color: #fff5e6;
+    border: 2px solid #ff8700;
+}
+.tabla-mclaren th {
+    background-color: #ff8700;
+    color: white;
+}
+.tabla-mclaren td {
+    background-color: #fff;
 }
