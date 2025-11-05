@@ -481,3 +481,29 @@ th {
 .tabla-mclaren td {
     background-color: #fff;
 }
+.directiva-mclaren {
+    background-color: #fff5e6;
+    border: 2px solid #ff8700;
+}
+.jefes-mclaren th {
+    background-color: #ff8700;
+    color: white;
+}
+.jefes-mclaren td {
+    background-color: #fff;
+
+}
+.imagen-jefes-mclaren img {
+    border: 3px solid #ff8700;
+}
+.coche-mclaren {
+    background-color: #fff5e6;
+    border: 2px solid #ff8700;
+}
+.tabla-coche-mclaren th {
+    background-color: #ff8700;
+    color: #fff;
+}
+.tabla-coche-mclaren td {
+    background-color: #fff;
+}
