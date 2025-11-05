@@ -301,7 +301,7 @@ a {
     padding: 40px 0;
 }
 /* -- Seccion prinipal para cada escuderia -- */
-#Mclaren, #redbull, #Ferrari, #Aston-Martin, #Mercedes, #Williams, #Alpine, #TacingBulls, #Kick, #Has {
+#Mclaren, #redbull, #Ferrari, #Aston-Martin, #Mercedes, #Williams, #Alpine, #RacingBulls, #Kick, #Has {
     margin-bottom: 60px;
     font-family: 'Poppins', sans-serif;
 }
@@ -311,6 +311,7 @@ a {
     align-items: center;
     justify-content:left;
     padding: 20px;
+    position: relative;
 }
 .header-equipo h2 {
     font-size: 2em;
@@ -318,8 +319,13 @@ a {
     margin: 0;
 }
 .logo-escuderia {
-    height: 250px;
+    display: inline-block;
+    max-width: 180px;
+    height: auto;
     width: auto;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.55));
+    -webkit-filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.55));
+    z-index: 20;
 }
 /* --- Bloques de información general --- */
 .Info-general {
@@ -358,8 +364,10 @@ th {
     margin-top: 20px;
 }
 .Jefe-equipo img {
-    width: 1600px;
+    max-width: 100%;
+    width: auto;
     height: auto;
+    display: block;
     border-radius: 10px;
 }
 .Jefe-equipo p {
@@ -375,9 +383,14 @@ th {
 }
 .coches-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 30px;
+}
+.imagen-coche {
+    display: block;
+    max-width: 100%;
+    height: auto;
+   
 }
 .coche-actual, .coche-iconico {
     flex: 1 1 45%;
@@ -465,6 +478,7 @@ th {
         opacity: 1
     }
 }
+
 /* Estilos Para Mclaren:*/
 .header-mclaren {
     background-color: #ff8700;
