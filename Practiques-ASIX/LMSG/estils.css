@@ -647,9 +647,34 @@ th {
     padding: 10px;
     border: 1px solid #0D0D0D;
 }
-.tabla-mercedes td, .jefes-mercedes td, .tabla-cocche-mercedes td {
+.tabla-mercedes td, .jefes-mercedes td, .tabla-coche-mercedes td {
     background-color: #0D0D0D;
     color: #00a19c;
     padding: 10px;
     border: 1px solid white;
+}
+.header-williams {
+    background-color: #00205b;
+    color: #00aeef;
+}
+.info-williams, .directiva-williams, .coche-williams {
+    background-color: #f4f4f4;
+    border: 2px solid #00205b;
+}
+.imagen-jefes-williams img {
+    border: 3px solid #00aeef;
+}
+.tabla-williams th, .jefes-williams th, .tabla-coche-williams th {
+    background-color: #00205b;
+    color: #00aeef;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid white;
+}
+.tabla-williams td, .jefes-williams td, .tabla-coche-williams td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #00aeef;
 }
