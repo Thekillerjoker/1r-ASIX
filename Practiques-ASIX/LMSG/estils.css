@@ -465,3 +465,7 @@ th {
         opacity: 1
     }
 }
+/* Estilos Para Mclaren:*/
+.header-mclaren {
+    background-color: #ff8700;
+}
