@@ -592,3 +592,64 @@ th {
     border: 1px solid;
     border-bottom: 1px solid #DC0000;
 }
+.header-aston {
+    background-color: #00352f;
+    color: #00ff87;
+}
+.info-aston {
+    background-color: #fff5e6;
+    border: 2px solid #00352F;
+}
+.directiva-aston {
+    background-color: #fff5e6;
+    border: 2px solid #00352F;
+}
+.imagen-jefes-aston img {
+    border: 3px solid #00FF87;
+    /* Borde de acento brillante */
+    border-radius: 10px;
+}
+.coche-aston {
+    background-color: #fff5e6;
+    border: 2px solid #00352F;
+}
+.tabla-aston th, .jefes-aston th, .tabla-coche-aston th {
+    background-color: #00352F;
+    color: #00ff87;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+}
+.tabla-aston td, .jefes-aston td, .tabla-coche-aston td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom:1px solid white;
+}
+
+.header-mercedes {
+    background-color: #0D0D0D;
+    color: #00A19C;
+}
+.info-mercedes, .directiva-mercedes, .coche-mercedes {
+    background-color: #d9d9d9;
+    border: 2px solid #0D0D0D;
+}
+.imagen-jefes-mercedes img {
+    border: 3px solid #00A19C;
+    border-radius: 10px;
+}
+.tabla-mercedes th, .jefes-mercedes th, .tabla-coche-mercedes th {
+    background-color: #00A19C;
+    color: #d9d9d9;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #0D0D0D;
+}
+.tabla-mercedes td, .jefes-mercedes td, .tabla-cocche-mercedes td {
+    background-color: #0D0D0D;
+    color: #00a19c;
+    padding: 10px;
+    border: 1px solid white;
+}
