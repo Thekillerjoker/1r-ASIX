@@ -148,3 +148,150 @@ asd
 dd
 ---
 
+1. Preparació de l’entorn
+Cerca com actualitzar el sistema i instal·lar eines de recuperació.
+
+
+Quines comandes s’utilitzen per actualitzar i instal·lar paquets?
+
+
+Quines eines recomanaries per a còpies de seguretat o recuperació? (ex.: Timeshift, Rsync, GParted…)
+
+
+Investiga com crear un “snapshot” del sistema.
+
+
+Què és un snapshot?
+
+
+Com pots llistar els snapshots existents?
+
+
+Explora l’estructura bàsica del sistema.
+
+
+Quins directoris hi ha a /?
+
+
+On es guarden els logs principals?
+
+
+
+2. Logs i configuració del sistema
+Explora els fitxers de log al directori /var/log/.
+
+
+Quina informació hi contenen syslog, auth.log, kern.log i dpkg.log?
+
+
+Com pots llegir-los en temps real?
+
+
+Descobreix l’eina journalctl.
+
+
+Com pots filtrar logs per servei, per temps o per nivell de prioritat?
+
+
+Quina diferència hi ha entre journalctl i els fitxers del directori /var/log/?
+
+
+Examina fitxers de configuració importants.
+
+
+Què pots trobar a /etc/os-release, /etc/fstab, /etc/passwd o /etc/netplan/?
+
+
+Quina informació proporcionen /proc/cpuinfo i /proc/meminfo?
+
+
+
+3. Serveis i processos
+Investiga com es gestionen els serveis amb systemctl.
+
+
+Quines ordres permeten iniciar, aturar o habilitar serveis?
+
+
+Quins serveis essencials pots comprovar (ssh, NetworkManager, ufw...)?
+
+
+Analitza processos en execució.
+
+
+Com pots veure llistats de processos i consum de recursos?
+
+
+Quines diferències hi ha entre top, htop i ps?
+
+
+Què mostra la comanda pstree?
+
+
+
+4. Còpies de seguretat
+Cerca com utilitzar rsync per fer còpies incrementals.
+
+
+Quina és la seva sintaxi bàsica?
+
+
+Quins avantatges té sobre cp?
+
+
+Aprèn a crear i restaurar arxius comprimits amb tar.
+
+
+Com pots llistar, crear i extreure arxius .tar.gz?
+
+
+Opcional: Investiga com fer còpies a nivell de bloc amb dd.
+
+
+Quins riscos té?
+
+
+En quins casos s’utilitza?
+
+
+
+5. Mode de recuperació i Live USB
+Com pots accedir al mode de recuperació (GRUB Recovery Mode)?
+
+
+Quines opcions ofereix el menú?
+
+
+En quins casos utilitzaries fsck, dpkg o root shell?
+
+
+Simula un escenari de rescat des d’un Live USB.
+
+
+Quins passos cal seguir per muntar la partició del sistema i accedir-hi amb chroot?
+
+
+Quines tasques pots fer un cop dins (reparar GRUB, reinstal·lar paquets, restaurar còpies...)?
+
+
+
+6. Pràctiques finals
+Analitza els logs del sistema per detectar errors o intents d’intrusió.
+
+
+Troba intents de connexió fallits o errors del kernel recents.
+
+
+Documenta la informació obtinguda.
+
+
+Simula un error i restaura un fitxer essencial.
+
+
+Comprova que tot torna a funcionar.
+
+
+Explica com podries haver evitat el problema amb una còpia de seguretat.
+
+
+Crea (o documenta com es crearia) un Live USB personalitzat amb eines de rescat.
