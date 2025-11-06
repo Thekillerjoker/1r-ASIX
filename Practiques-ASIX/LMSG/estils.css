@@ -726,3 +726,80 @@ th {
     border: 1px solid #1e1e60;
     border-bottom: 1px solid #d4af37;
 }
+#Kick {
+    background: linear-gradient(180deg, #0a0a0a 0%, #003366 100%);
+    color: white;
+    padding: 50px 0;
+    border-top: 4px solid #00ff87;
+    border-bottom: 4px solid #00ff87;
+}
+.header-kick {
+    background-color: #0a0a0a;
+    color: #00ff87;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #00ff87;
+}
+.info-kick, .directiva-kick, .coche-kick {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #00FF87;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+}
+.tabla-kick, .jefes-kick, .tabla-coche-kick {
+    width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: #0f0f0f;
+        border: 2px solid #00FF87;
+        border-radius: 10px;
+        overflow: hidden;
+}
+.tabla-kick th, .jefes-kick th, .tabla-coche-kick th {
+    background-color: #003366;
+        color: #d50032;
+        padding: 12px;
+        text-align: center;
+}
+.tabla-kick td, .jefes-kick td, .tabla-coche-kick td {
+    border: 1px solid #00FF87;
+        padding: 10px;
+        text-align: center;
+        color: #ffffff;
+        border-bottom:1px solid #ffffff;
+}
+.tabla-kick tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+.jefes-kick tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+.tabla-coche-kick tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+/* Carrusel */
+.carrouselkick img {
+    border: 3px solid #00FF87;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
+}
+.imagen-jefes-kick img {
+    border: 3px solid #00ff87;
+
+}
+.carrouselkick .descripcio-imatge {
+    background-color: rgba(0, 51, 102, 0.7);
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+}
+/* Flechas del carrusel */
+.prev,
+.next {
+    color: #00FF87;
+}
+.prev:hover,
+.next:hover {
+    color: #d50032;
+}
