@@ -1,0 +1,73 @@
+# Exercici 3: Tècniques de rescat, recuperació del sistema i fitxers de registre 
+1. ## Part 1: Windows 11
+**Objectiu:**
+*Investigar, provar i documentar diferents tècniques natives de Windows per a la restauració, recuperació i diagnosi del sistema. Crea un document amb captures de pantalla i explica amb les teves paraules per a què serveix cada eina o comanda que utilitzis.*
+----
+1. ## Preparació de l’entorn:
+1. ### Cerca com es pot crear un punt de restauració del sistema:
+
+
+Quins passos cal seguir?
+
+
+Com pots comprovar que s’ha creat correctament?
+
+
+Explica amb les teves paraules per a què serveixen els punts de restauració.
+
+
+2. ### Explora el Registre d’esdeveniments de Windows.:
+
+
+On pots trobar-lo?
+
+
+Quines categories principals hi ha?
+
+
+Localitza i documenta tres errors recents del registre del Sistema.
+---
+2. ## Exploració del Registre de Windows :
+1. ### Investiga com accedir a l’Editor del Registre:
+
+
+Quins riscos comporta modificar-lo?
+
+
+Com pots exportar una còpia de seguretat?
+
+
+2. ### Explora diferents claus del registre.
+
+
+On pots trobar la informació sobre el directori dels programes instal·lats?
+
+
+On es guarden les preferències de l’usuari?
+
+
+Quina funció tenen les extensions de fitxers (com .txt) dins del registre?
+---
+
+3. ## Eines natives de recuperació:
+1. ### Cerca les opcions de recuperació de Windows.
+
+
+Quines opcions hi ha dins “Recuperació” a la Configuració?
+
+
+Quina diferència hi ha entre “Restablir aquest PC” i “Inici avançat”?
+
+
+2. ### Descobreix com accedir al menú de recuperació.
+
+
+Quines opcions s’hi ofereixen?
+
+
+Quina utilitat té l’opció “Símbol del sistema”?
+
+
+Investiga com s’utilitzen les comandes chkdsk, sfc i dism.
+---
+
