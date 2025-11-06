@@ -5,19 +5,56 @@
 ----
 1. ## Preparació de l’entorn:
 1. ### Cerca com es pot crear un punt de restauració del sistema:
+  *El primer pas es obrir el panell de control amb Windows + R i escriure control.* 
+  
+  *Alla ens anaem a Sistema i seguretat i desprès a sistema i en sistema fem clcik en l'apartat de proteccio del sistema.*
 
-**Quins passos cal seguir?**
+  *Una vegada estem a Protecció del sistema ens apreixara unba finestra com aquesta:*
 
-**Com pots comprovar que s’ha creat correctament?**
-
-
-**Explica amb les teves paraules per a què serveixen els punts de restauració.**
-
-
-2. ### Explora el Registre d’esdeveniments de Windows.:
+  ![Proteció-Sistema](./Captures/pt-3/Crear-punt-restauracio.png)
 
 
-**On pots trobar-lo?**
+- **Quins passos cal seguir?**
+*Com es pot veure en l'imatge anterior ens diu el següent comentari:Para crear un punto de restauración, habilite primero la protección; para ello, selecione  una unidad y haga click en Configurar.*
+
+*Aixo vol dir que per defecte Windos te deshabilitada la protecció del sitema que es la que ens permet desfer cambis no deseats revertint el sistema en un moment donat, per tant el primer pas es habilitar la protecció del equip.*
+
+- **Primer pas:** 
+  *Activar la protecció del sistema i seleccionar l'espai maxim en disc que s'utilitzara per a la protecció del sistema.*
+
+  *Per fero farem clcik en l'opcio de Configurar, una vegada agim activat la proteccio dels sistema i configurat el espai al aplicar els cambis i tornar a l'apartat anterior s'esn desbloquejara l'opico de Crear un punt de restauracio.*
+
+  ![Primer-pas-Punt-Restauracio](./Captures/pt-3/Punt-restauracio-3.png)
+
+- **Segon Pas:**
+  *Per crear el punt de restauració només haurem de fer clcik en crear punt de restauració, ens demanaran que li posem un nom al punt de resturació i després només hem de fer Crear i esperar a que finalitzi el proccés.*
+
+  ![Creacio-Punt-Restauracio](./Captures/pt-3/Punt-restauracio-4.png)
+
+  **En cas de tot haber anat correctament ens apareixara aquesta finestra:**
+
+  ![Confirmacio-Punt-Restaruacio-Creat-Correctament](./Captures/pt-3/Punt-restauracio-5.png)
+
+  
+- **Com pots comprovar que s’ha creat correctament?**
+*Per poder comporbar si el punt de restauració s'ha creat correctament, haurem de fer click en restaurar Sistema i ens apareixara una finestra informativa com aquesta:*
+
+![Finestra-Informtaiva](./Captures/pt-3/Punt-restauracio-6.png)
+
+*Haurem de fer click en següent i en la següent finestra si hem creat el punt correctament ens apaeixarar.*
+
+![Demostracio-Creat-correctament](./Captures/pt-3/Punt-restauracio-7.png)
+
+
+- **Explica amb les teves paraules per a què serveixen els punts de restauració.**
+*Un punt de restauració és com una imatge dun punt del teu sistema en aquell moment, i la que permet desfer cambis fets en el sistema tornant aquell moment*
+
+1. ### Explora el Registre d’esdeveniments de Windows.:
+
+- **On pots trobar-lo?**
+  *Una de les maneres es cercant en el buscador visor*
+
+  ![Visor-de-events](./Captures/pt-3/Visor-1.png)
 
 
 **Quines categories principals hi ha?**
@@ -25,8 +62,8 @@
 
 **Localitza i documenta tres errors recents del registre del Sistema.**
 ---
-2. ## Exploració del Registre de Windows :
-1. ### Investiga com accedir a l’Editor del Registre:
+1. ## Exploració del Registre de Windows :
+2. ### Investiga com accedir a l’Editor del Registre:
 
 
 **Quins riscos comporta modificar-lo?**
