@@ -678,3 +678,27 @@ th {
     border: 1px solid;
     border-bottom: 1px solid #00aeef;
 }
+.header-alpine {
+    background-color: #0050a0;
+    color: #ff66cc;
+}
+.info-alpine, .directiva-alpine, .coche-alpine {
+    background-color: #fff5e6;
+    border: 2px solid #ff66cc;
+}
+.imagen-jefes-alpine img {
+    border: 3px solid #0050a0;
+}
+.tabla-alpine th, .jefes-alpine th, .tabla-coche-alpine th {
+    background-color: #0050a0;
+    color: #ff66cc;
+    text-align: center;
+    padding: 10px;
+}
+.tabla-alpine td, .jefes-alpine td, .tabla-coche-alpine td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 2px solid #0050a0;
+    border-bottom: 2px solid #ff66cc;
+}
