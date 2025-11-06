@@ -6,44 +6,42 @@
 1. ## Preparació de l’entorn:
 1. ### Cerca com es pot crear un punt de restauració del sistema:
 
+**Quins passos cal seguir?**
 
-Quins passos cal seguir?
-
-
-Com pots comprovar que s’ha creat correctament?
+**Com pots comprovar que s’ha creat correctament?**
 
 
-Explica amb les teves paraules per a què serveixen els punts de restauració.
+**Explica amb les teves paraules per a què serveixen els punts de restauració.**
 
 
 2. ### Explora el Registre d’esdeveniments de Windows.:
 
 
-On pots trobar-lo?
+**On pots trobar-lo?**
 
 
-Quines categories principals hi ha?
+**Quines categories principals hi ha?**
 
 
-Localitza i documenta tres errors recents del registre del Sistema.
+**Localitza i documenta tres errors recents del registre del Sistema.**
 ---
 2. ## Exploració del Registre de Windows :
 1. ### Investiga com accedir a l’Editor del Registre:
 
 
-Quins riscos comporta modificar-lo?
+**Quins riscos comporta modificar-lo?**
 
 
-Com pots exportar una còpia de seguretat?
+**Com pots exportar una còpia de seguretat?**
 
 
 2. ### Explora diferents claus del registre.
 
 
-On pots trobar la informació sobre el directori dels programes instal·lats?
+**On pots trobar la informació sobre el directori dels programes instal·lats?**
 
 
-On es guarden les preferències de l’usuari?
+**On es guarden les preferències de l’usuari?**
 
 
 Quina funció tenen les extensions de fitxers (com .txt) dins del registre?
