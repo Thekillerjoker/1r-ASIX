@@ -71,3 +71,68 @@ Quina utilitat té l’opció “Símbol del sistema”?
 Investiga com s’utilitzen les comandes chkdsk, sfc i dism.
 ---
 
+4. ## Gestió de serveis i processos
+1. ### Troba com es poden consultar i gestionar els serveis de Windows.
+
+
+Què és exactament un servei?
+
+
+Quins serveis essencials pots trobar (com Windows Update o Firewall)?
+
+
+Com pots aturar o reiniciar un servei?
+
+
+2. ### Explora el Gestor de tasques.
+
+
+Quines pestanyes principals té?
+
+
+Quina informació pots obtenir de “Rendiment” i “Serveis”?
+
+
+Com pots controlar les aplicacions d’inici?
+---
+
+5. ## Creació d’eines de rescat
+1. ### Investiga com crear un disc o imatge de reparació del sistema.
+
+
+Quina diferència hi ha entre un disc de reparació i una imatge del sistema?
+
+
+On es configuren les opcions d’historial de fitxers?
+
+
+2. ### Documenta les teves troballes i captura els passos més importants.
+ad
+---
+6. ## Proves i simulacions
+1. ### Crea i modifica una clau de registre per fer proves.
+
+
+Com pots exportar i restaurar una clau modificada?
+
+
+Què passa si restaures un punt de restauració?
+
+
+2. ### Explica com actuaries si el sistema no arrenca.
+
+
+Quines opcions de rescat tens?
+
+
+Quin ús tindrien les eines com cmd o “Inici avançat”?
+---
+7. ## Qüestionari final
+1. Diferència entre punt de restauració i imatge del sistema.
+2. Quines són les claus principals del registre de Windows?
+3. Què fa exactament la comanda sfc /scannow?
+4. Com pots accedir al menú de recuperació si Windows no inicia?
+5. Quina informació pots obtenir del Registre d’esdeveniments?
+asd
+---
+---
