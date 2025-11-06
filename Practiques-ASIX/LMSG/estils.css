@@ -702,3 +702,27 @@ th {
     border: 2px solid #0050a0;
     border-bottom: 2px solid #ff66cc;
 }
+.header-racingbulls {
+    background-color: #1e1e60;
+    color: #e10600;
+}
+.info-racingbulls, .directiva-racingbulls, .coche-racingbulls {
+    background-color: #fff5e6;
+    border: 1px solid #e10600;
+}
+.imagen-jefes-racingbulls img {
+    border: 3px solid #d4af37;
+}
+.tabla-racingbulls th, .jefes-racingbulls th, .tabla-coche-racingbulls th {
+    background-color: #1e1e60;
+    color: #d4af37;
+    text-align: left;
+    padding: 10px;
+}
+.tabla-racingbulls td, .jefes-racingbulls td, .tabla-coche-racingbulls td {
+    background-color: #bfc2c6;
+    color: #1e1e60;
+    padding: 10px;
+    border: 1px solid #1e1e60;
+    border-bottom: 1px solid #d4af37;
+}
