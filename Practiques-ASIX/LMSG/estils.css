@@ -803,3 +803,32 @@ th {
 .next:hover {
     color: #d50032;
 }
+/*cOLRES HAS:
+🎨 Paleta: Negro: #1A1A1A 
+Rojo Haas: #E10600 
+Blanco: #FFFFFF
+*/
+.header-has {
+    background-color: #e10600;
+    color: white;
+}
+.info-has, .directiva-has, .coche-has {
+    background-color: #fff5e6;
+    border: 2px solid #e10600;
+    padding: 10px;
+}
+.imagen-jefes-has img {
+    border: 3px solid ;
+}
+.tabla-has th, .jefe-has th, .tabla-coche-has th {
+    background-color: #e10600;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+.tabla-has td, .jefes-has td, .tabla-coche-has td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #e10600;
+}
