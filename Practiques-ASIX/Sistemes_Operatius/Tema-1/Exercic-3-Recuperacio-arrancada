@@ -172,10 +172,11 @@ s
   ![Primer-Pas](./Captures/pt-3/Menu-recuperacio-1.png)
   3. *Una vegada hem entrat dins de solucionar problemas ens desplacem un espai i anem a Opciones Avanzadas:*
   ![Segon-Pas](./Captures/pt-3/Menu-recuperacio-2.png)
-  4. *Una vegada hem entrat en Opciones avanzadas ja ens apareix el menú de recuperació que es el que s'anomena Reparación de inicio.*
+  4. *Una vegada hem entrat en Opciones avanzadas ja estem el menú de recuperació*
    ![Tercer-Pas](./Captures/pt-3/Menu-recuperacio-3.png)
-   
-Quines opcions s’hi ofereixen?
+
+- **Quines opcions s’hi ofereixen?**
+  *Hi ha les següents opcións:Reparació dd'inici, Configuració d'inici, Símbol del sistema, Desinstalar les actualitzacións, entrar en la configuracio de la bios UEFI,i per últim Restaurar el Sistema.*
 
 
 Quina utilitat té l’opció “Símbol del sistema”?
