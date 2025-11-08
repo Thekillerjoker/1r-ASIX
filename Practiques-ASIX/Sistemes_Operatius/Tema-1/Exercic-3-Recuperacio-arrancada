@@ -49,7 +49,7 @@
 - **Explica amb les teves paraules per a què serveixen els punts de restauració.**
 *Un punt de restauració és com una imatge dun punt del teu sistema en aquell moment, i la que permet desfer cambis fets en el sistema tornant aquell moment*
 
-1. ### Explora el Registre d’esdeveniments de Windows.:
+2. ### Explora el Registre d’esdeveniments de Windows:
 
 - **On pots trobar-lo?**
   *Una de les maneres es cercant en el buscador visor*
@@ -57,8 +57,15 @@
   ![Visor-de-events](./Captures/pt-3/Visor-1.png)
 
 
-**Quines categories principals hi ha?**
+- **Quines categories principals hi ha?**
 
+![Categories-Visor-Events](./Captures/pt-3/Visor-categories.png)
+
+*Com es pot verue a l'imatge hi han les següents categories:*
+  1. **Vistas Personalitzades:** *Són vistes guardades que combinen filltres (nivell, origen, Id, periode, equips) aplicats a diferents registres.* *Serveixen per poder revisar nomes els esdevdiments relevants per un diagnostic concret, com per exemple veure només els errors d'una aplicaico concreta.*
+  2. **Registros de Windows:** *Es on es guarden tots els registres basic del propi sistema operatiu(Aplicació,Seguretat,Configuració,Sistema i els esdevediments renviats).* *Aquesta categoria es molt util ja que és on es trben la majoria de dels registres utils per diagnosticar errors del SO, i dels serveis del sistema.*
+  3. **Registros de aplicaciones y servicios:** *Es on es troben els regustres especifics creats per aplicacions o serveis de Windows per exemple Microsoft-Windows-PowerShell.* *Aquesta categoria ess útil ja que proporciona infomració detallada i centralitzada en components concrets; son la primera opció a mirar quan un servei o aplicació falla.*
+  4. **Suscripciones:** *És on está la configuració per rebre esdevediments de altres equips en la xarxa.(Renviament de esdevediments).* *Aquestes configuracións permeten centralitzar la monotorització de varis equips en un unic visor d'esdevediments.*
 
 **Localitza i documenta tres errors recents del registre del Sistema.**
 ---
