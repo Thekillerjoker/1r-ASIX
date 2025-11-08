@@ -148,14 +148,18 @@ s
 *Tenen la funció d'indicar el tipus d'un fitxer i aixi permeten a windows coneixer que accions ha de oferir al usuari (Obrir,editar,etc..), que aplicació utilitzar per defecte i quin icona mostrar en pantalla.*
 ---
 
-1. ## Eines natives de recuperació:
-2. ### Cerca les opcions de recuperació de Windows.
+3. ## Eines natives de recuperació:
+   1. ### Cerca les opcions de recuperació de Windows:
 
+  - **Quines opcions hi ha dins “Recuperació” a la Configuració?**
+  *Al apartat de Recuperació a la Configuració de windows hi ha quatre opcions:*ç
+    1. **Coregir problemes:** *Es la primera opció i és la que ens permet solucionar problemes del sistema sense haber de restablir l'equip i sense haver de tornar a una copia de següretat ja que alomillor no vols tornar a una versio anterior perque has fet canvis o apliacions noves o modificacions noves que vols mantenir i restaurar la copia de seguretat no te aquest canvis.*
+    2. **Corretgir problemes amb Windows Update:** *Reinstalas la versio actual de windows des de l'ultima actualització instalada i mantenint les aplicacions , archius i la configuració, aquesta es útil si l'error del problema pot ser una mala actualització d'un controlador o que aquest problema es solucioni reinstalant les actualitzacions sense tocar aplicacions instalades,arxius i les cunfiguracions.*
+    3. **Restablir l'equip:** *Et donara dues opcions a escollir, mantenir o eliminar els arxius personals,i després et reinstalara windows segons la teva opcio escollida, reinstalar mantenint els arxius o eliminant els arxius i reinstalntlo senser.*
+    4. **Inici avançat:** *Serveix per reiniciar el sistema i entrar en un menu avançat on et deixa modificar la configuracio d'inici , iniciar d'es d'un altre disc o USB, entrar a la bios, cambiar la contraseña, obrir una consola de comandes per exemple per repara un disc o formategar , netegar, escanegar o escanegar un gestor d'arrencada trencat com un linux, entre altres opcions.* 
 
-Quines opcions hi ha dins “Recuperació” a la Configuració?
-
-
-Quina diferència hi ha entre “Restablir aquest PC” i “Inici avançat”?
+- **Quina diferència hi ha entre “Restablir aquest PC” i “Inici avançat”?**
+  *La principal diferènica entre Restablir aquest PC i Inici avançat és que amb restablir aquest PC reinstalas windows en el equip sense la necessitat d'un usb o disc extern, en canvi amb l'Inici avançat el que fa es reiniciar l'equip i iniciar en el entorn de recuperació de Windows també anomenat (WinRE) amb les opcions anomenades anteriorment: Reoaracio d'inici, restaruacio del sistema,la linea de comandes,recuperació amb usb etc...*
 
 
 2. ### Descobreix com accedir al menú de recuperació.
