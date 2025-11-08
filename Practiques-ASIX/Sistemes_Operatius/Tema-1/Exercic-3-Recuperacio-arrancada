@@ -131,10 +131,18 @@ s
 
 
 **On pots trobar la informació sobre el directori dels programes instal·lats?**
+*La informació sobre el directori dels porgrames instal·lats esta en:Equipo\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall.*
 
+![Programes-Regedit](./Captures/pt-3/Programes-1.png)
+
+**Demostració que per exemple i ha informacio del programa de VirtualBox:**
+
+![Programes-Rgedit-2](./Captures/pt-3/Programes-2.png)
 
 **On es guarden les preferències de l’usuari?**
+*Les preferències de l'usuari es guarden a : Equipo\HKEY_CURRENT_USER.*
 
+![Regedit-Usuari](./Captures/pt-3/Configuracio-usuari.png)
 
 Quina funció tenen les extensions de fitxers (com .txt) dins del registre?
 ---
