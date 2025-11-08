@@ -104,15 +104,28 @@
   - **NotificationInterval=1440:** *Sugereix intents programats cada 1440 minuts (1 dia).*
 s
 ---
-1. ## Exploració del Registre de Windows :
-2. ### Investiga com accedir a l’Editor del Registre:
-
+2. ## Exploració del Registre de Windows :
+1. ### Investiga com accedir a l’Editor del Registre:
+**Per accedir al editor del registre de Windos es pot entrar de diferents maneres:**
+- *Cercant Editor del Registro al cercador de Windows i obrir-ho.*
+- *Windows+alt+R i escribint el següent: regedit*
 
 **Quins riscos comporta modificar-lo?**
+*Al modificar el Registre de Windows canvia directament la "base de dades" que windows i moltes aplicaicóns fan servir per emmagatzemar opcions i configuracións; i una entrada mal editada o suprimida pot fer que els serveis no s'inicïn deixin de funcionar o el sistema es torni inutilitzable.*
 
+**Riscos que et podries arribar a trobar:**
+- *Pèrdua d'arrencada o pantalla blava.*
+- *Aplicacions que deixen de funcionar, errors de permisos i perfils d'usuari.*
+- *Configuracions de xarxa,seguretat o actualitzacions malament aplicades que provoquen errors difícils de reinvertir.*
+- *I en el pitjor dels casos tenir que fer la reinstal·lació del sistema si no tens una copia de seguretat previa.*
 
 **Com pots exportar una còpia de seguretat?**
+*Per exportar una còpia de seguretat de l'editor de registre has d'anar al menu d'arxiu, on t'apareixara un despelgable amb varies opcions una d'elles Exportar.*
+![Exportar-Copia-Regedit](./Captures/pt-3/Regedit-exportar.png)
 
+*El segúent pas és escollir el nom i on guardar la còpia del registre de windows, és important revisar que és guardi amb extensio .reg*
+
+![Exoportat-Rgedit-2](./Captures/pt-3/Regedit-exportar-2.png)
 
 2. ### Explora diferents claus del registre.
 
