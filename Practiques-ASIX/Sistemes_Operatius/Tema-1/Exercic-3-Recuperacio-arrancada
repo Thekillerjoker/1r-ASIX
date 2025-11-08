@@ -91,6 +91,18 @@
 - **Categoria de tarea/ Palabras clave: Logon/Error de auditoria:** *Clasifica el esdevediment com relacionat amb l'inici de sesio i un error en l'auditoria.*
 - **Equipo : SrodriguezBravo:** *És l'equip on s'ha prodogut l'intent.*
 - **Fecha y hora:** *La data i la hora en que s'ha produgut l'error.*
+
+**Error 8198:**
+![Error-8198](./Captures/pt-3/Error-3.png)
+
+**Explicació del Error 8198:** *És un error d'activació de llicencia registrat pel servei de Protecció de Software de Microsoft (**Software Protection Platalform, SPP**) quan slui.exe no ha pogut completar la activació automatica.*
+**Explicació de la infomració del error:**
+- **Codi error 0x80040005:** *Aquest error sol ser un error generic de E_FAIL/ Acces fallit  o denegat en components de SPP, que indica que l'operacio d'activació no s'ha completat, per un error generic(Problemes de permisos,comunicacio, serveis o archiu bloquejats).*
+- **Argumentos en la linea de comandos:**
+  - **Ruleid=1;Action=AutoActivate;Trigger=UserLogon;Sessionid=1:** *Indica que l'activacio automatica s'ha intentat al iniciar sesio d'usuari "Activar en background al logon".*
+  - **AppId /SkuId:** *Identifiquen l'aplicació i l'edicio del producte que s'intentava activar, per exemple un SKU de Windows.*
+  - **NotificationInterval=1440:** *Sugereix intents programats cada 1440 minuts (1 dia).*
+s
 ---
 1. ## Exploració del Registre de Windows :
 2. ### Investiga com accedir a l’Editor del Registre:
