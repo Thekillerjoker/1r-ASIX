@@ -178,11 +178,25 @@ s
 - **Quines opcions s’hi ofereixen?**
   *Hi ha les següents opcións:Reparació dd'inici, Configuració d'inici, Símbol del sistema, Desinstalar les actualitzacións, entrar en la configuracio de la bios UEFI,i per últim Restaurar el Sistema.*
 
+- **Quina utilitat té l’opció “Símbol del sistema”?**
+  *Te l'utilitat de executar comandes per poder diagnosticar, reparar i executar accions que l'interficie grafica no pot fer cuan el sistema esta danyat o es inaccesible, i axi reparar el sistema.*
 
-Quina utilitat té l’opció “Símbol del sistema”?
+- **Investiga com s’utilitzen les comandes chkdsk, sfc i dism.**
+*La comanda chdisk es fa servir per comprovar l'estructura del disc( el sistema d'arxius, sectors del disk, entrades etc...) i pot reparar sectors defectuosos i errors lògics.*
 
-
-Investiga com s’utilitzen les comandes chkdsk, sfc i dism.
+*S'executa de la següent manera:*
+```powershell
+chkdsk C: /f /r
+#L'opció /f repara els errors del sistema d'arxius; /r localitza sectors defectuosos i recupera informació llegible;
+```
+*La comanda sfc serveix per analitzar tots els fitxers del sistema protegits i substitueix els que estiguin malmesos per versions correctes.*
+```powershell
+sfc /scannow
+# la comanda scannow es la que li diu al sistema que l'escanegi ahra per trobar i corregir els arxius.
+```
+*Amb la comanda dism repara la imagte de windows i descarrega o empara fitxers d'origen per restaurar components trencats.*
+```powershell
+dism /online
 ---
 
 1. ## Gestió de serveis i processos
