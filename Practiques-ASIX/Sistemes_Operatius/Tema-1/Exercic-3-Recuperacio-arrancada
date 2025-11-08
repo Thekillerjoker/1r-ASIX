@@ -160,11 +160,21 @@ s
 
 - **Quina diferència hi ha entre “Restablir aquest PC” i “Inici avançat”?**
   *La principal diferènica entre Restablir aquest PC i Inici avançat és que amb restablir aquest PC reinstalas windows en el equip sense la necessitat d'un usb o disc extern, en canvi amb l'Inici avançat el que fa es reiniciar l'equip i iniciar en el entorn de recuperació de Windows també anomenat (WinRE) amb les opcions anomenades anteriorment: Reoaracio d'inici, restaruacio del sistema,la linea de comandes,recuperació amb usb etc...*
-
+![Sistema-Recuperació](./Captures/pt-3/Sistema-recuperacio.png)
 
 2. ### Descobreix com accedir al menú de recuperació.
+**Per poder accedir al menu de recuperació s'han de seguir els següents pasos:**
+  1. *El primer pas és fer click en l'opcio de Reiniciar Ahora de l'opcio de Inicio Avanzado del sistema que és la manera més rapida d'inicar al inici avançat.*
+   
+ 
 
-
+  2. *El segon pas és una vegada hem entrat en inici avançat ens hem de desplaçar fins al menu anomenat Solucionar problemas.*
+  ![Primer-Pas](./Captures/pt-3/Menu-recuperacio-1.png)
+  3. *Una vegada hem entrat dins de solucionar problemas ens desplacem un espai i anem a Opciones Avanzadas:*
+  ![Segon-Pas](./Captures/pt-3/Menu-recuperacio-2.png)
+  4. *Una vegada hem entrat en Opciones avanzadas ja ens apareix el menú de recuperació que es el que s'anomena Reparación de inicio.*
+   ![Tercer-Pas](./Captures/pt-3/Menu-recuperacio-3.png)
+   
 Quines opcions s’hi ofereixen?
 
 
@@ -174,8 +184,8 @@ Quina utilitat té l’opció “Símbol del sistema”?
 Investiga com s’utilitzen les comandes chkdsk, sfc i dism.
 ---
 
-4. ## Gestió de serveis i processos
-1. ### Troba com es poden consultar i gestionar els serveis de Windows.
+1. ## Gestió de serveis i processos
+2. ### Troba com es poden consultar i gestionar els serveis de Windows.
 
 
 Què és exactament un servei?
