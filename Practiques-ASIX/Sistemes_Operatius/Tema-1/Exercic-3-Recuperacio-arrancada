@@ -144,11 +144,12 @@ s
 
 ![Regedit-Usuari](./Captures/pt-3/Configuracio-usuari.png)
 
-Quina funció tenen les extensions de fitxers (com .txt) dins del registre?
+- **Quina funció tenen les extensions de fitxers (com .txt) dins del registre?:**
+*Tenen la funció d'indicar el tipus d'un fitxer i aixi permeten a windows coneixer que accions ha de oferir al usuari (Obrir,editar,etc..), que aplicació utilitzar per defecte i quin icona mostrar en pantalla.*
 ---
 
-3. ## Eines natives de recuperació:
-1. ### Cerca les opcions de recuperació de Windows.
+1. ## Eines natives de recuperació:
+2. ### Cerca les opcions de recuperació de Windows.
 
 
 Quines opcions hi ha dins “Recuperació” a la Configuració?
