@@ -261,12 +261,17 @@ dism /online /cleanup-image /restorehealth
   - *I tot això t'ho permet obtenir desde el propi gestor de tasques.*
 
 - **Com pots controlar les aplicacions d’inici?**
-  *En la pestanya d'aplicacions d'inici al fer click sobre una aplicacio et permet si esta habilitada per que s'inici al engegar l'ordinador et permet deshabilitarla perquè no continui executanse al inici, i si esta deshabilitada et permet habilitar que s'inci.*
+*En la pestanya d'aplicacions d'inici al fer click sobre una aplicacio et permet si esta habilitada per que s'inici al engegar l'ordinador et permet deshabilitarla perquè no continui executanse al inici, i si esta deshabilitada et permet habilitar que s'inci.*  
 ---
 
-1. ## Creació d’eines de rescat
-2. ### Investiga com crear un disc o imatge de reparació del sistema.
+5. ## Creació d’eines de rescat
+   1. ### Investiga com crear un disc o imatge de reparació del sistema.
+**El primer pas per crear una imatge de resrautació és anar al panell de control, després a la categoria de Copias de Següretat i restauració:**
 
+![1-Pas-Imatge-Restauracio](./Captures/pt-3/Crear-imagen-1.png)
+
+*Una vegada estem en la pestanya de Copies de següretat i restauració en la part esquerra sota de Ventana principal del panel de control hi ha dues opcions "Crear una imagen del sistema" i "Crear un disco de reparacion del sistema", nosaltres farem click sobre crear una imagen del sistema.*
+*Una vegada hem fet click ens apareixara la següent finestra on a dalt de tot ens diu "Dónde desea guardar la copia de seguridad?" i ens fa una breu explicació de que es una imatge de sistema; Ens dona tres opcions per seleccionar on volem guarda l'imatge del sistema: En un disc dur, en un o diversos DVDs, o en una unitat en xarxa, nosaltres escollirem en un disc dur i següent.*
 
 Quina diferència hi ha entre un disc de reparació i una imatge del sistema?
 
