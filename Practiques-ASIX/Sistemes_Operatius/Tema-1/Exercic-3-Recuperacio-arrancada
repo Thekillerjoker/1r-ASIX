@@ -207,7 +207,7 @@ dism /online /cleanup-image /restorehealth
 ---
 
 4. ## Gestió de serveis i processos
-   1. ### Troba com es poden consultar i gestionar els serveis de Windows:
+  1. ### Troba com es poden consultar i gestionar els serveis de Windows:
    **Hi ha diferents maneres de consultar els serveis de windows:**
       - **Amb l'eina gràfica "Services.msc":**
         - *La combinació de tecles Win+R, i escriure services.msc i fer enter.*
@@ -235,20 +235,37 @@ dism /online /cleanup-image /restorehealth
 
   ![Servei-DHCP](./Captures/pt-3/Servei-3.png)
 
-    2. ### Explora el Gestor de tasques:
+  2. ### Explora el Gestor de tasques:ç
+   - **Quines pestanyes principals té?**
+    *Les categories del gestor de tasques són:Processos, Rendiment, Historial d'aplicacions, Aplicacions d'arrencada, Usuaris, Detalls i Serveis.*
+  ![Gestor-Tasques](./Captures/pt-3/Gestor-tareas-1.png)
+
+  ![Rendiment](./Captures/pt-3/Rendiment.png)
+
+  ![Historial-Aplicacions](./Captures/pt-3/Tareas-Historial.png)
 
 
-Quines pestanyes principals té?
+  ![Aplicaciones](./Captures/pt-3/Tareas-Applicacions.png)
+
+  ![Usuarios](./Captures/pt-3/Tareas-Usuario.png)
 
 
-Quina informació pots obtenir de “Rendiment” i “Serveis”?
+  ![Detalles](./Captures/pt-3/Tareas-Detalles.png)
+
+  ![Servicios](./Captures/pt-3/Tareas-serveis.png)
 
 
-Com pots controlar les aplicacions d’inici?
+- **Quina informació pots obtenir de “Rendiment” i “Serveis”?**
+  - **Informació que pots obtenir de la pestanya de Rendiment:** *En la pestanya de Rendiment tens diferents subcategories amb informacio i un grafic de cada component de hardware, una categoria per CPU on tens informació del model el seu us en %, la velocitat en ghz els processos i subprocesos actius, i un grafic amb el % us en 60 segons; aquesta informació i grafic el tens repetit i es casi igual per les altres categories que son la memoria que es la RAM,  el discos durs, i les interfaces de xarxa separades les de ethernet i si en tens la de wifi, i tambe en un ordinador real tens el rendiment de les grafiques ja sigui integrada o externa, o les dos per exemple una RTX i la GPU del procesador; Però en la maquina virtual no apareix.*
+  - **Informació que pots obtenir de la pestanya de Serveis:** *En la pestanya de serveis pots obtenir una petita i rapida informació dels serveis que s'estan o no executan en el sistema; Pots obtenir infomració com el nom del servei,el PID(l'identificador del procés asociat si el servei s'esta executant.), una breu descripcio de la funció del servei,l'estat del servei(si està actiu o inactiu), i Accions disponibles que son les següents:Iniciar,aturar o obrir serveis.msc.*
+  - *I tot això t'ho permet obtenir desde el propi gestor de tasques.*
+
+- **Com pots controlar les aplicacions d’inici?**
+  *En la pestanya d'aplicacions d'inici al fer click sobre una aplicacio et permet si esta habilitada per que s'inici al engegar l'ordinador et permet deshabilitarla perquè no continui executanse al inici, i si esta deshabilitada et permet habilitar que s'inci.*
 ---
 
-5. ## Creació d’eines de rescat
-1. ### Investiga com crear un disc o imatge de reparació del sistema.
+1. ## Creació d’eines de rescat
+2. ### Investiga com crear un disc o imatge de reparació del sistema.
 
 
 Quina diferència hi ha entre un disc de reparació i una imatge del sistema?
