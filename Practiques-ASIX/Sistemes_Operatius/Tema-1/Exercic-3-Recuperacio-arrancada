@@ -196,11 +196,19 @@ sfc /scannow
 ```
 *Amb la comanda dism repara la imagte de windows i descarrega o empara fitxers d'origen per restaurar components trencats.*
 ```powershell
-dism /online
+dism /online /cleanup-image /checkhealth
+# Verifica si hi ha danys a l'imatge de windows sense realitzar escanegos profuns.
+dism /online /cleanup-image /scanhealth
+#Realitza un escaneig compet de l'imatge de windows en busca de corrupció.
+dism /online /cleanup-image /restorehealth
+#Repara l'imatge de windows utilitzant arxius locals o descarregant-los des de windows update.
+```
+.
 ---
 
-1. ## Gestió de serveis i processos
-2. ### Troba com es poden consultar i gestionar els serveis de Windows.
+4. ## Gestió de serveis i processos
+   1. ### Troba com es poden consultar i gestionar els serveis de Windows:
+
 
 
 Què és exactament un servei?
@@ -212,7 +220,7 @@ Quins serveis essencials pots trobar (com Windows Update o Firewall)?
 Com pots aturar o reiniciar un servei?
 
 
-2. ### Explora el Gestor de tasques.
+1. ### Explora el Gestor de tasques.
 
 
 Quines pestanyes principals té?
