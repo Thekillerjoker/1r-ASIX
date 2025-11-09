@@ -208,19 +208,34 @@ dism /online /cleanup-image /restorehealth
 
 4. ## Gestió de serveis i processos
    1. ### Troba com es poden consultar i gestionar els serveis de Windows:
+   **Hi ha diferents maneres de consultar els serveis de windows:**
+      - **Amb l'eina gràfica "Services.msc":**
+        - *La combinació de tecles Win+R, i escriure services.msc i fer enter.*
+      - **Amb el gestor de tasques:**
+        - *Ctrl + shift + Esc -> pestanya **Serveis**.*
+      - **Amb el cercador d'aplicacions:**
+        - *Cercant **Serveis** en el cercador d'aplicacions de windows.*
+- **Què és exactament un servei?**
+  *Un servei a Windows és un programa o procés qeu s'executa en segon pla i que proporciona funcionalitaats esseencials al sistema operatiu o aplicacions sense necessitat d'interacció directa amb l'usuari.*
 
+  *Alguns exemples de serveis són: Windows Update,Windows Defender etc.*
 
+- **Quins serveis essencials pots trobar (com Windows Update o Firewall)?**
+  **Administrador d'aplicacions:** *Processa les solicituds d'instalació, eliminació i enumeració per el software implementat a traves de la directiva de grup. És ah dir si és deshabilita aquest servei no podras instalar,eliminar ni modificar cap software implementat a traves de la directiva de grup.*
 
-Què és exactament un servei?
+  ![Servei-Administracio-Aplicacions](./Captures/pt-3/Servei-1.png)
 
+  **Client DNS:** *Un DNS és el que tradueix una URL a una IP i una IP a una URL el que fa que per anar ha una pagina web no t'hagis de sapiguer la direcio IP només la URL.* 
+  *El serveid de client DNS, és el qeu s'encarrega de enviar consultes del sistema de noms de domini(DNS), i emmagatzema en catche els resultats de les consuletes i registre el nom complet del equip en la xarxa.*
 
-Quins serveis essencials pots trobar (com Windows Update o Firewall)?
+  ![Client-DNS](./Captures/pt-3/Servei-2.png)
 
+- **Com pots aturar o reiniciar un servei?**
+  *Per aturar un servei el priemr que has de fer es fer click a sobre del servei que vols aturar i en la part esquerra de la llista de serveis si el servei esta actiu et donara l'opcio de aturar o reiniciar el servei.*
 
-Com pots aturar o reiniciar un servei?
+  ![Servei-DHCP](./Captures/pt-3/Servei-3.png)
 
-
-1. ### Explora el Gestor de tasques.
+    2. ### Explora el Gestor de tasques:
 
 
 Quines pestanyes principals té?
