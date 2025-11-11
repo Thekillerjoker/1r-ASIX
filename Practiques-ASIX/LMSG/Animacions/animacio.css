@@ -72,6 +72,7 @@ body {
   left: 0px;
   opacity: 1;
   z-index: 2;
+  animation: nuvol 20s linear infinite;
 }
 
 #cloud .cloud {
@@ -81,6 +82,7 @@ body {
   background: #fff;
   position: absolute;
   top: 10px;
+ 
 }
 
 #cloud .cloud-2 {
@@ -91,6 +93,13 @@ body {
 #cloud .cloud-3 {
   left: 110px;
   top: 20px;
+}
+@keyframes nuvol {
+ 
+  33% {
+    left: 33%;
+  }
+
 }
 
 /* ******************* */
@@ -149,7 +158,7 @@ body {
   position: absolute;
   top: -20px;
   left: 20px;
-  animation: cel 20s ease infinite;
+  animation: cel 17s ease infinite;
 }
 
 
@@ -159,7 +168,7 @@ body {
 .cel {
   z-index: 0;
   background-color: #525252;
-  animation: cel 15s ease infinite;
+  animation: cel 17s ease infinite;
 }
 @keyframes cel {
   0% {
