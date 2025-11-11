@@ -286,14 +286,11 @@ dism /online /cleanup-image /restorehealth
 
 ![Comprovacio-Imatge-Creada](./Captures/pt-3/Comprovacio-Imatge-restauracio.png)
 
-Quina diferència hi ha entre un disc de reparació i una imatge del sistema?
+- **Quina diferència hi ha entre un disc de reparació i una imatge del sistema?**
+*Un disc de reparació és un eina d'arrencada amb eines per diagnosticar i reparar Windows l'arrencada, restaurar el sistema,CMD,per tant no contéla teva instalació ni fitxers personals. En canvi una imatge del sistema és una copia exacta del disc(amb el Windows, els programes ,fitxers i la teva configuració).*
 
-
-On es configuren les opcions d’historial de fitxers?
-
-
-2. ### Documenta les teves troballes i captura els passos més importants.
-ad
+- **On es configuren les opcions d’historial de fitxers?**
+*És configuren en el Panell de control -> Tots els Elements del panell de control -> Historial de fitxers.*
 ---
 6. ## Proves i simulacions
 1. ### Crea i modifica una clau de registre per fer proves.
