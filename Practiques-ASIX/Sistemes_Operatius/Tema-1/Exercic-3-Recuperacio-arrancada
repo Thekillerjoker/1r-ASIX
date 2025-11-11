@@ -272,6 +272,19 @@ dism /online /cleanup-image /restorehealth
 
 *Una vegada estem en la pestanya de Copies de següretat i restauració en la part esquerra sota de Ventana principal del panel de control hi ha dues opcions "Crear una imagen del sistema" i "Crear un disco de reparacion del sistema", nosaltres farem click sobre crear una imagen del sistema.*
 *Una vegada hem fet click ens apareixara la següent finestra on a dalt de tot ens diu "Dónde desea guardar la copia de seguridad?" i ens fa una breu explicació de que es una imatge de sistema; Ens dona tres opcions per seleccionar on volem guarda l'imatge del sistema: En un disc dur, en un o diversos DVDs, o en una unitat en xarxa, nosaltres escollirem en un disc dur i següent.*
+![Crear-Imagen-2](./Captures/pt-3/Crear-imagen-2.png)
+
+*Una vegada Hem seleccionat on volem guarda l'imatge del sistema el segúent pas es seleccionar quines particións volem inclure en la imatge del sistema.*
+
+![Crear-Imatge-2](./Captures/pt-3/Crear-imagen-3.png)
+
+*El seguent és confirmar la configuració.*
+
+![Crear-Imatge-3](./Captures/pt-3/Crear-imagen-4.png)
+
+*Comprovem que s'hagi creat la carpeta amb l'imatge de la configuració.*
+
+![Comprovacio-Imatge-Creada](./Captures/pt-3/Comprovacio-Imatge-restauracio.png)
 
 Quina diferència hi ha entre un disc de reparació i una imatge del sistema?
 
