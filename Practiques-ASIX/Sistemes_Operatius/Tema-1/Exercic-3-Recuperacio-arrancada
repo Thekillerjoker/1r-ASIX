@@ -537,17 +537,35 @@ sudo systemctl disable nomservei.service
 
 2. ### Analitza processos en execució.
 
+- **Com pots veure llistats de processos i consum de recursos?**
+*Per porde verue llistats de processos i consum de recursos es fa amb la comanda htop.*
+```bash
+#En cas de no tenir instalada htop:
+sudo apt-get install htop
+#Comanda per accedir a htop:
+htop
+```
+![HTOP](./Captures/pt-3/Linux/Htop.png)
 
-Com pots veure llistats de processos i consum de recursos?
+- **Quines diferències hi ha entre top, htop i ps?**
+*La principal diferencia entre Top, Htop i Ps son les següents:*
+- *Top és un monitor en temps real per veure el consum actual;*
+- *Htop és un monitor en temps real peró a diferencia de top és mes interactiu i més facil de navegar i implementa colors i funcions avançades.*
+- *Per ultim PS és una llista estàtica de processos per a sscripts i consultes puntuals.*
 
+![Top](./Captures/pt-3/Linux/TOP.png)
 
-Quines diferències hi ha entre top, htop i ps?
+![HTOP](./Captures/pt-3/Linux/Htop.png)
 
+![ps](./Captures/pt-3/Linux/PSAux.png)
 
-Què mostra la comanda pstree?
+- **Què mostra la comanda pstree?**
+*Pstree mostra els processos del sistema organitzats en forma d'abre segons la relació pare-fill; cada branca representa un procés i els seus fills.*
+
+![PSTREE](./Captures/pt-3/Linux/PSTree.png)
 ---
-4. ## Còpies de seguretat
-1. ## Cerca com utilitzar rsync per fer còpies incrementals.
+1. ## Còpies de seguretat
+2. ## Cerca com utilitzar rsync per fer còpies incrementals.
 
 
 Quina és la seva sintaxi bàsica?
