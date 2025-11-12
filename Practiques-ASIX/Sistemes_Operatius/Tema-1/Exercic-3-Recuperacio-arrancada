@@ -376,8 +376,18 @@ dism /online /cleanup-image /restorehealth
 
    *HKEY_CURRENT_CONFIG: És on s'emmagatzema l'informacio sobre el perfil de hardware que fa servir l'equip al iniciar el sistema.*
 
-3. Què fa exactament la comanda sfc /scannow?
-4. Com pots accedir al menú de recuperació si Windows no inicia?
+3. **Què fa exactament la comanda sfc /scannow?**
+   
+   *Examina tots els arxius protegits del sistema i remplaça els archius danyats per una copia emmagatzemada en caché, i una vegada a completat el procés apareixen els resultats de l'examen.*
+
+4. **Com pots accedir al menú de recuperació si Windows no inicia?**
+   
+   *Hi ha varies maneres d'accedir al menú de recuperació:*
+
+   **Autoamticament:** *Si Windows no s'inica correctament varies vegades, entrara automaticament al menú de recuperació (Windows RE).*
+   **Configuració:** *En la configuracio de windows si vas a Sistema -> Recuperació -> inici avançat -> Reiniciar hara.*
+   **Reinciant:** *Si mantens presionada la tecla Shift mentres selecciones "Inici/apagat > Reiniciar". al reiniciar entraras al menú de restauració.*
+   **Disc o USB de recuperació:** *Si tens un cd/dvd o usb de restauració pots entrar.*
 5. Quina informació pots obtenir del Registre d’esdeveniments?
 asd
 ---
