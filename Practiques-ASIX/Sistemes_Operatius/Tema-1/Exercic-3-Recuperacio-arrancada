@@ -388,8 +388,10 @@ dism /online /cleanup-image /restorehealth
    **Configuració:** *En la configuracio de windows si vas a Sistema -> Recuperació -> inici avançat -> Reiniciar hara.*
    **Reinciant:** *Si mantens presionada la tecla Shift mentres selecciones "Inici/apagat > Reiniciar". al reiniciar entraras al menú de restauració.*
    **Disc o USB de recuperació:** *Si tens un cd/dvd o usb de restauració pots entrar.*
-5. Quina informació pots obtenir del Registre d’esdeveniments?
-asd
+5. **Quina informació pots obtenir del Registre d’esdeveniments?**
+   
+   *Pots obtenir els esdevediments del sistema, a la categoria de Registres de Windows conte els registres d'aplicació, següretat i sistema.*
+.
 ---
 ---
  # 🐧 Part2: Ubuntu24.
