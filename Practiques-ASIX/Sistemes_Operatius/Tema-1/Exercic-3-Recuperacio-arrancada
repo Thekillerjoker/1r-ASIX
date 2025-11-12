@@ -294,15 +294,20 @@ dism /online /cleanup-image /restorehealth
 ---
 6. ## Proves i simulacions
 1. ### Crea i modifica una clau de registre per fer proves.
+  ```powershell
+    New-Item -Path "HKCU:\Software\Prova" -Force
+  ```
+  ![Creacio d'una clau de registre](./Captures/pt-3/Clau-1.png)
 
-
-Com pots exportar i restaurar una clau modificada?
+  
+- **Com pots exportar i restaurar una clau modificada?**
+  
 
 
 Què passa si restaures un punt de restauració?
 
 
-2. ### Explica com actuaries si el sistema no arrenca.
+1. ### Explica com actuaries si el sistema no arrenca.
 
 
 Quines opcions de rescat tens?
