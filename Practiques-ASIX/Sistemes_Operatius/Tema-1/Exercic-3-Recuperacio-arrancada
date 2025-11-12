@@ -475,7 +475,7 @@ journalctl -u NetworkManager.service
 ```bash
 journalctl --since "-20min" until "now"
 ```
-![Filtre-Temps](./Captures  )
+![Filtre-Temps](./Captures/)
 
 Quina diferència hi ha entre journalctl i els fitxers del directori /var/log/?
 
