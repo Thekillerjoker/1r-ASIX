@@ -306,7 +306,29 @@ dism /online /cleanup-image /restorehealth
   ![Clau-2](./Captures/pt-3/Clau-2.png)
 
 - **Com pots exportar i restaurar una clau modificada?**
-  
+  *Per exportar una clau es fa amb la següent comanda:*
+  ```powershell
+  reg export "HKCU\Software\Prova" "$env:USERPROFILE\Desktop\Prova_Backup.reg" /y
+  #Si s'ha exportat correctament ha de sortir el missatje La operació s'ha completaat correctament.
+  ```
+  ![Exportar-Clau](./Captures/pt-3/Clau-3.png)
+
+```powershell
+#Per modificar el valor de la clau es fa de la sefüent manera:
+Set-ItemProperty -Path "HKCU:\Software\Prova" -Name "ProvaValor" -Value "Modificat"
+#Per revisar si la clau s'ha modificat correctament es fa de la següent manera:
+Get-ItemProperty -Path "HKCU:\Software\Prova" 
+```
+![Modificar-Clau](./Captures/pt-3/Clau-8.png)
+
+```powershell
+#Per restaurar la clau al backup es fa de la següent manera:
+reg import "$env:USERPROFILE\Desktop\Prova_Backup.reg"
+#Despres revisem que la clau s'hagi restuarat:
+Get-ItemProperty -Path "HKCU:\Software\Prova"
+```
+
+![Restaurar-Clau](./Captures/pt-3/Clau-9.png)
 
 
 Què passa si restaures un punt de restauració?
