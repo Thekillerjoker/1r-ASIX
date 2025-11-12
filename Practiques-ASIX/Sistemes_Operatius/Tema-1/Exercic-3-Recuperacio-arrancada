@@ -519,12 +519,21 @@ journalctl -p err --since today
 3. ## Serveis i processos
 1. ### Investiga com es gestionen els serveis amb systemctl.
 
+- **Quines ordres permeten iniciar, aturar o habilitar serveis?**
+```bash
+#Per poder inicar un servei:
+sudo systemctl start nomservei.service
+#Per aturar un servei:
+sudo systemctl stop nomservei.service
+#Per Habilitar un servei:
+sudo systemctl enable nomservei.service
+#Per deshabilitar un servei:
+sudo systemctl disable nomservei.service
+```
+- **Quins serveis essencials pots comprovar (ssh, NetworkManager, ufw...)?**
+*Jo he comprovat NetworkManager:*
 
-Quines ordres permeten iniciar, aturar o habilitar serveis?
-
-
-Quins serveis essencials pots comprovar (ssh, NetworkManager, ufw...)?
-
+![NetwoekManager](./Captures/pt-3/Linux/Systemctl.png)
 
 2. ### Analitza processos en execució.
 
