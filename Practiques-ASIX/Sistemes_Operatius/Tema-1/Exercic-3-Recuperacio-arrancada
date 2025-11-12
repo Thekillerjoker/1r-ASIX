@@ -607,25 +607,85 @@ sudo dd if=/dev/sdX of=/dev/sdY bs=4M status=progress conv=fsync
 *És sol utilitzar en clonació de discs o particions per migracio de sistemes, creacio d'imatges completes de dispositius per copies de  seguretat exactes,creacio d'un USB/DVD arrencables, forense i recuperacio.*
 ---
 
-1. ## Mode de recuperació i Live USB
-2. ### Com pots accedir al mode de recuperació (GRUB Recovery Mode)?
+5. ## Mode de recuperació i Live USB
+1. ### Com pots accedir al mode de recuperació (GRUB Recovery Mode)?
+*Una vegada arrenques amb l'USB  et desplaçes amb les fletxes cap a l'opció de Advanced Options for Ubuntu:*
+![Mode-Recuperació](./Captures/pt-3/Linux/Mode-recuperacio.png)
 
+*Una vegada aqui et surten dues opcions Ubuntu i Ubuntu with Linux 6.14.0-29-generic (recovery-mode) que es l'opcio que hem d'escollir.*
 
-Quines opcions ofereix el menú?
+![Mode-Recuperacio-1](./Captures/pt-3/Linux/Mode-recuperacio-1.png)
 
+- **Quines opcions ofereix el menú?**
+*Ofereixen les següents opcions:*
+- **Resume:** *Inicia en el mode nomral*
+- **Clean:** *Borra coses per aconseguir espai lliure*
+- **fsck:** *Escaneja tots els arxius del sistema.*
+- **grub:** *Actualitza el grub bootloader.*
+- **network:** *Activa la xarxa.*
+- **Root:** *Carrega una shell amb permisos root.*
+- **system-summary:** *Et fa un resum del sistema.*
+![Grub-repair](./Captures/pt-3/Linux/Grub-Repair.png)
 
-En quins casos utilitzaries fsck, dpkg o root shell?
+- **En quins casos utilitzaries fsck, dpkg o root shell?**
+**Fsck:** *Si el sistema mostra errors d'entrada/sortida i/o arrancades aturades amb advertencies de sistema de fitxers, o si apareix el missatge "filesystem has errors".*
+**Dpkg:** *Si l'arrencada falla per problemes amb paquets trencats,actualitzacions interrumpides o paquets que no es carreguen correctament.*
 
+**Root Shell:** *Per a diangosi avançada o reparacions que no estan cobertes per altres opcions.*
 
-2. ### Simula un escenari de rescat des d’un Live USB.
+6. ### Simula un escenari de rescat des d’un Live USB.
 
+- **Quins passos cal seguir per muntar la partició del sistema i accedir-hi amb chroot?**
 
-Quins passos cal seguir per muntar la partició del sistema i accedir-hi amb chroot?
+**Muntar els discos:**
+![Muntar](./Captures/pt-3/Linux/Muntar.png)
 
+**Acediri amb chroot:**
+![Chroot](./Captures/pt-3/Linux/Chroot.png)
 
-Quines tasques pots fer un cop dins (reparar GRUB, reinstal·lar paquets, restaurar còpies...)?
+```bash
+sudo mount /dev/sda2 /mnt
+sudo mount --bind /dev /mnt/dev
+sudo mount --bind /dev/pts /mnt/dev/pts
+sudo mount --bind /proc /mnt/proc
+sudo mount --bind /sys /mnt/sys
+sudo mount --bind /run /mnt/run
+sudo chroot /mnt
+```
+
+- **Quines tasques pots fer un cop dins (reparar GRUB, reinstal·lar paquets, restaurar còpies...)?**
+
+```bash
+root@ubuntu:/# grub-install /dev/sda
+#installing for i386-pc plataform.
+#Installing finished. No error reported.
+# Actualitzar el grub:
+root@ubuntu:/# update-grub
+Sourcing file `/etc/default/grub´
+Genrating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.14.0-29-generic
+Found initrd image: /boot/initrd.img-6.14.0-29-generic
+Found memtest86+x64 image: /boot/memtest86+x64.bin
+Warning: os-prober will not be executed to detect otrher booteable partitions.
+Systems on then will not be added to the GRUB boot configurattion.
+Check GRUB_DISABLE_OS_PROBER documentation enntry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+#Reparar paquets:
+root@ubuntu:/# apt --fix-broken install
+Reading package lists... done
+Bulding dependency tree... done
+Reading state information... done
+0 upgraded, 0 newly installed, 0 to remove and 114 not upgraded.
+```
+**Demostració:**
+![Recuperar-Grub](./Captures/pt-3/Linux/Recuperar-grub.png)
+
+![Update-grub](./Captures/pt-3/Linux/Update-grub.png)
+
+![Repara-Paquets](./Captures/pt-3/Linux/Reparar-packets.png)
 ---
-6. ## Pràctiques finals
+7. ## Pràctiques finals
 1. ### Analitza els logs del sistema per detectar errors o intents d’intrusió.
 
 
