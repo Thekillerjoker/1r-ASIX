@@ -460,11 +460,16 @@ sudo timeshift --list
 ```bash
 tail -f /var/log/syslog
 ```
+![Temps-Real](./Captures/pt-3/Linux/Logs-tempsreal.png)
 
 2. ### Descobreix l’eina journalctl.
 
-Com pots filtrar logs per servei, per temps o per nivell de prioritat?
-
+- **Com pots filtrar logs per servei, per temps o per nivell de prioritat?**
+*Per filtrar logs per servei és fa amb la següent comanda:*
+```bash
+journalctl -u NetworkManager.service
+```
+![Filtre-Servei](./Captures/pt-3/Linux/Journalctl-serveis.png)
 
 Quina diferència hi ha entre journalctl i els fitxers del directori /var/log/?
 
