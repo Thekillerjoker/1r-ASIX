@@ -475,22 +475,43 @@ journalctl -u NetworkManager.service
 ```bash
 journalctl --since "-20min" until "now"
 ```
-![Filtre-Temps](./Captures/)
+![Filtre-Temps](./Captures/pt-3/Linux/Journalctl-temps.png)
 
-Quina diferència hi ha entre journalctl i els fitxers del directori /var/log/?
+*Per filtrar Logs per nivell de prioritat és fa amb la següent comanda:*
+```bash
+journalctl -p err --since today
+```
+![Filtre-Prioritat](./Captures/pt-3/Linux/Journalctl-prioritat.png)
+
+- **Quina diferència hi ha entre journalctl i els fitxers del directori /var/log/?**
+*La principal diferència es que journalctl mostre els registres que emagatzema systemd-jounrald en format binari i permet fer consultes i filtrats potents; mentre que els fitxers de /var/log son fitxers de text pla escrits per syslog o aplicaicons que son més llegibles i compatiblws amb eines tradicionals.*
 
 
-3. ### Examina fitxers de configuració importants.
+1. ### Examina fitxers de configuració importants.
+
+- **Què pots trobar a /etc/os-release, /etc/fstab, /etc/passwd o /etc/netplan/?**
+*/etc/os-release és un fitxer de text que conté informació sobre la distribució Linux i la versió instalada;inclou el nom de la distribució, el nom curt, la descripció de la versió amb el nom de llançament,l'ID de la versio,el nom en clau de la versió, l'ID curt per a scripts,i enllaços oficials (pàgina principal, suport, informe d'errors,política de  privacitat etc.).*
+
+![Os-Release](./Captures/pt-3/Linux/Os-release.png)
+
+**/Etc/fstab/:** *fstab és un fitxer de text que especifica els dispositius i sistemes de fitxers que s'han de muntar automàticament al'arrencada i les opcions de muntatge(filesystem,punt de muntatge, tipus, opcions, dump, pass).*
+
+![FSTAB](./Captures/pt-3/Linux/fstab.png)
+
+**/ETC/PASSWD/:** *Passwd és un fitxer de text que llista els comptes d'usuari del sistema. Cada línea conte set camps separats per dos punts: Username,placeholder de contrasenya, UID, GID, comentari, directroi home i shell per defecte.*
+
+![Passwd](./Captures/pt-3/Linux/Passwd.png)
+
+**/ETC/NETPLAN/:** *Netpanl és un directori amb dos arxius YAML que defineixen la configuració de xarxa per a Netplan; El primer arxiu **01-network-manager-all.yaml:** indica que networkManager gestionarà tots els dispositius, i **50-cloud-init.yaml:**defineix una interfície enp0s3 amb dhcp4:true es ha dir que et demanara una IPv4 via DHCP.*
+![NETPLAN](./Captures/pt-3/Linux/Netplan-2.png)
 
 
-Què pots trobar a /etc/os-release, /etc/fstab, /etc/passwd o /etc/netplan/?
+- **Quina informació proporcionen /proc/cpuinfo i /proc/meminfo?**
 
-
-Quina informació proporcionen /proc/cpuinfo i /proc/meminfo?
 ---
 
-3. ## Serveis i processos
-1. ### Investiga com es gestionen els serveis amb systemctl.
+1. ## Serveis i processos
+2. ### Investiga com es gestionen els serveis amb systemctl.
 
 
 Quines ordres permeten iniciar, aturar o habilitar serveis?
