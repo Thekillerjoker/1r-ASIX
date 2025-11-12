@@ -688,39 +688,78 @@ Reading state information... done
 7. ## Pràctiques finals
 1. ### Analitza els logs del sistema per detectar errors o intents d’intrusió.
 
+- **Troba intents de connexió fallits o errors del kernel recents.**
+```bash
+#Per veure els registres d'autentificació (debian/ubuntu)
+sudo grep -i "failed password" /var/log/auth.log
+sudo grep -i "invalid user" /var/log/auth.log
+sudo tail -n 200 /var/log/auth.log
+```
 
-Troba intents de connexió fallits o errors del kernel recents.
+8. ### Simula un error i restaura un fitxer essencial.
 
+*Primer el que fem es fer una copia de l'arxiu hostname, Desprès l'eliminem i després el restaurem amb les següents comandes:*
+```bash
+sudo cp /etc/hostname /etc/hostname.bak
+sudo rm /etc/hostname
+# Per restaurar:
+sudo cp /etc/hostname.bak /etc/hostname
+# comprovem amb hostname:
+```
+![Hostname](./Captures/pt-3/Linux/Hostname.png)
 
-Documenta la informació obtinguda.
+- **Comprova que tot torna a funcionar.**
 
-
-2. ### Simula un error i restaura un fitxer essencial.
-
-
-Comprova que tot torna a funcionar.
-
-
-Explica com podries haver evitat el problema amb una còpia de seguretat.
-
-
-3. ### Crea (o documenta com es crearia) un Live USB personalitzat amb eines de rescat.
-d
+![Recuerar-Hostname](./Captures/pt-3/Linux/Recuperar-Hostname.png)
 ----
-7. ## Qüestionari final:
-   Quina diferència hi ha entre rsync i cp?
+9. ## Qüestionari final:
+  - **Quina diferència hi ha entre rsync i cp?**
+  
+*Rsync sincronitza directoris trasferint només els fitxers o parts de fitxers qeu han canviat; permet fer còpies remotes via SSH , opcions d'exclusio, rentents, compressio i snapshots eficients amb hardlinks.*
 
+*Cp fa una còpia exacta dels fitxers/directoris i sempre rescriu el contingut;és més simple i és en local.*
 
-Què fa exactament la comanda fsck i quan no s’ha d’utilitzar?
+- **Què fa exactament la comanda fsck i quan no s’ha d’utilitzar?**
 
+*fsck comprova i repara la integritat d'un sistema de fitxers i pot corregir inconsitències.*
 
-Què és Timeshift i en què millora les còpies tradicionals?
+*No s'ha d'utilitzar sobre una partició muntada en escriptura.*
 
+- **Què és Timeshift i en què millora les còpies tradicionals?**
 
-Com pots restaurar el bootloader GRUB des d’un Live USB?
+*Timeshift crea snapshots de forma incremental que permeten restaurar l'estat del sistema i de la configuració a un punt anterior de manera ràpida.*
 
+*A diferència d'una còpia tradicional timehsift automatitza la programació , getinona la retenció d'instentanies i utilitza tecniques eficients per estalviar espai.*
 
-Quina diferència hi ha entre /var/log/syslog i journalctl?
+- **Com pots restaurar el bootloader GRUB des d’un Live USB?**
 
+*sudo mount /dev/sda2 /mnt*
 
-Què pots fer si oblides la contrasenya de root?
+*sudo mount --bind /dev /mnt/dev*
+
+*sudo mount --bind /dev/pts /mnt/dev/pts*
+
+*sudo mount --bind /proc /mnt/proc*
+
+*sudo mount --bind /sys /mnt/sys*
+
+*sudo mount --bind /run /mnt/run*
+
+*sudo chroot /mnt*
+
+*grub-install /dev/sda*
+
+*update-grub*
+
+- **Quina diferència hi ha entre /var/log/syslog i journalctl?**
+  
+  *La principal diferència es que journalctl mostre els registres que emagatzema systemd-jounrald en format binari i permet fer consultes i filtrats potents; mentre que els fitxers de /var/log son fitxers de text pla escrits per syslog o aplicaicons que son més llegibles i compatiblws amb eines tradicionals.*
+
+- **Què pots fer si oblides la contrasenya de root?**
+
+- *Si tens un usuari amb sudo: entra com a aquest usuari i canvia la contrasenya amb sudo passwd root o simplement usa sudo -i per obtenir shell root temporalment.*
+  
+- *Si no tens accés, arrenca pel GRUB i edita la línia del kernel per accedir a una root shell (mode single‑user o init=/bin/bash), remunta / en escriptura mount -o remount,rw / i executa passwd root (o canvia la contrasenya d’un usuari amb passwd usuari).*
+  
+- *Alternativa segura: arranca des d’un Live USB, munta la partició del sistema, fa chroot i canvia la contrasenya amb passwd. Recorda que tots aquests mètodes requereixen accés físic o a la consola i per això convé protegir l’arrencada amb contrasenya de firmware/secure boot i configurar el GRUB per demanar contrasenya si cal.*
+
