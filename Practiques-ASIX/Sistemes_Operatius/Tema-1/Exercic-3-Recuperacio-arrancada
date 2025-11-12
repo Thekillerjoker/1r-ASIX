@@ -564,33 +564,51 @@ htop
 
 ![PSTREE](./Captures/pt-3/Linux/PSTree.png)
 ---
-1. ## Còpies de seguretat
-2. ## Cerca com utilitzar rsync per fer còpies incrementals.
+4. ## Còpies de seguretat
+1. ## Cerca com utilitzar rsync per fer còpies incrementals.
 
+- **Quina és la seva sintaxi bàsica?**
+*La seva sintaxi bàsica es rsync -a [opcions] origen/ desti/.*
 
-Quina és la seva sintaxi bàsica?
+*Jo he fet aquest exemple:*
 
+![Rsync](./Captures/pt-3/Linux/Rsync.png)
 
-Quins avantatges té sobre cp?
-
+- *Quins avantatges té sobre cp?*
+*Rsync copia només els canvis,permet la sincornització remota, amb --link-dest permet crear snapshots que semblen copies competes pero comparteixen en disc els arxius no modificats mitjançant enllaços, entre altres.*s
 
 2. ### Aprèn a crear i restaurar arxius comprimits amb tar.
 
+- **Com pots llistar, crear i extreure arxius .tar.gz?**
+*Per llistar un arxiu .tar.gz:*
 
-Com pots llistar, crear i extreure arxius .tar.gz?
+![Llistar](./Captures/pt-3/Linux/Tar-2.png)
 
+*Per crear un arxiu.tar.gz:*
+
+![Crear](./Captures/pt-3/Linux/Tar.png)
+
+*Per exportar arxius .tar.gz:*
+![Exportar](./Captures/pt-3/Linux/Tar-3.png)
 
 3. ### Opcional: Investiga com fer còpies a nivell de bloc amb dd.
+```bash
+sudo dd if=/dev/sdX of=/dev/sdY bs=4M status=progress conv=fsync
+# If= Dispositiu d'origen.
+#Of= Destinació.
+#bs=4M= Mida de bloc (per millorar el rendiment).
+#status=progress= mostrar el progess en pantalla.
+#conv=fsync= assegurar escrits a disc abans de finalitzar.
+```
+- **Quins riscos té?**
+*Sobrescriptura irreversible,Consistencia de dades ja que clonar una partició o disc muntat pot produir una imatge incoherent,si hi ha sectors danyats dd els copiarà tamné i la següretat ja que una imatge bit a bit conté totes les dades incloent les contrasenyes.*
 
-
-Quins riscos té?
-
-
-En quins casos s’utilitza?
+- **En quins casos s’utilitza?**
+*És sol utilitzar en clonació de discs o particions per migracio de sistemes, creacio d'imatges completes de dispositius per copies de  seguretat exactes,creacio d'un USB/DVD arrencables, forense i recuperacio.*
 ---
 
-5. ## Mode de recuperació i Live USB
-1. ### Com pots accedir al mode de recuperació (GRUB Recovery Mode)?
+1. ## Mode de recuperació i Live USB
+2. ### Com pots accedir al mode de recuperació (GRUB Recovery Mode)?
 
 
 Quines opcions ofereix el menú?
