@@ -394,7 +394,7 @@ dism /online /cleanup-image /restorehealth
 .
 ---
 ---
- # 🐧 Part2: Ubuntu24.
+ # 🐧 Part2: Ubuntu24:
 **Objectiu:**
 *Explorar i posar en pràctica tècniques de manteniment, recuperació i còpia de seguretat en un sistema Linux basat en Ubuntu.*
 # Part 2: Ubuntu 24:
@@ -403,29 +403,33 @@ dism /online /cleanup-image /restorehealth
 - *Explorar els fitxers de log i configuració del sistema*
 - *Practicar tècniques de rescat des de la línia de comandes*
 - *Configurar còpies de seguretat automàtiques*
-dd
+.
 ---
 
 1. ## Preparació de l’entorn
-2. ### Cerca com actualitzar el sistema i instal·lar eines de recuperació.
+1. ### Cerca com actualitzar el sistema i instal·lar eines de recuperació:
 
-
-Quines comandes s’utilitzen per actualitzar i instal·lar paquets?
-
-
-Quines eines recomanaries per a còpies de seguretat o recuperació? (ex.: Timeshift, Rsync, GParted…)
-
+- **Quines comandes s’utilitzen per actualitzar i instal·lar paquets?**
+```bash
+#Comanda per actuar un paquet:
+sudo apt-get update && sudo apt upgrade -y
+#Comanda per instalar un paquet:
+sudo apt-get install "nom-del-paquet"
+```
+  
+- **Quines eines recomanaries per a còpies de seguretat o recuperació? (ex.: Timeshift, Rsync, GParted…)**
+  *Jo recomenaria si es per utilitzar en mode gràfic Timeshift per la seva sensilleza per crear i resturar una copia de següretat; Si és per utilitzar amb comandes des-de terminal o per exemple en un servidor utilitzaria Rsync.*
 
 2. ### Investiga com crear un “snapshot” del sistema.
 
+- **Què és un snapshot?**
+*Una snapshot és una instantánea del estat actual del sistema per fer una copia de seguretat d'una maquina localment o varies maquines a la vegada des d'una sola maquina*
 
-Què és un snapshot?
+- **Com pots llistar els snapshots existents?**
+  
 
 
-Com pots llistar els snapshots existents?
-
-
-3. ### Explora l’estructura bàsica del sistema.
+1. ### Explora l’estructura bàsica del sistema.
 
 
 Quins directoris hi ha a /?
