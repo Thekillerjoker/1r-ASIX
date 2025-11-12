@@ -487,7 +487,7 @@ journalctl -p err --since today
 *La principal diferència es que journalctl mostre els registres que emagatzema systemd-jounrald en format binari i permet fer consultes i filtrats potents; mentre que els fitxers de /var/log son fitxers de text pla escrits per syslog o aplicaicons que son més llegibles i compatiblws amb eines tradicionals.*
 
 
-1. ### Examina fitxers de configuració importants.
+3. ### Examina fitxers de configuració importants.
 
 - **Què pots trobar a /etc/os-release, /etc/fstab, /etc/passwd o /etc/netplan/?**
 */etc/os-release és un fitxer de text que conté informació sobre la distribució Linux i la versió instalada;inclou el nom de la distribució, el nom curt, la descripció de la versió amb el nom de llançament,l'ID de la versio,el nom en clau de la versió, l'ID curt per a scripts,i enllaços oficials (pàgina principal, suport, informe d'errors,política de  privacitat etc.).*
@@ -507,11 +507,17 @@ journalctl -p err --since today
 
 
 - **Quina informació proporcionen /proc/cpuinfo i /proc/meminfo?**
+*Cpuinfo proporciona informació detallada sobre el/els proecesador(s) detectats pel nucli com per exemple; el numeró lògic del processador,id del venedor, identificadors d'arquitectura i revisio del micrioprocesador, nom del model, versió del microcode, la freqüènica , el tamany de la cache etc.*
 
+![CPUINFO](./Captures/pt-3/Linux/CPUInfo.png)
+
+*Meminfo proporciona informació en temps real de l'estat de la memòria del sistema; cada línea és un camp amb un valor i una unitat normalment KB.Ens proporciona infomració com:La memòria RAM total disponible per al sistema, memòria no utilitzada, memòria disponible per a noves aplicacions sense la necessitat de fer swap etc.*
+
+![MemInfo](./Captures/pt-3/Linux/MemInfo.png)
 ---
 
-1. ## Serveis i processos
-2. ### Investiga com es gestionen els serveis amb systemctl.
+3. ## Serveis i processos
+1. ### Investiga com es gestionen els serveis amb systemctl.
 
 
 Quines ordres permeten iniciar, aturar o habilitar serveis?
