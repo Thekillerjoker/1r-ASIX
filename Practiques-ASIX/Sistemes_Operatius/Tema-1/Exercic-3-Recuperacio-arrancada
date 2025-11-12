@@ -426,30 +426,42 @@ sudo apt-get install "nom-del-paquet"
 *Una snapshot és una instantánea del estat actual del sistema per fer una copia de seguretat d'una maquina localment o varies maquines a la vegada des d'una sola maquina*
 
 - **Com pots llistar els snapshots existents?**
-  
+*Per llistar tots els snapshots creats amb Timeshift s'ha de fer la següent comandas:*
+```bash
+sudo timeshift --list
+```
 
+3. ### Explora l’estructura bàsica del sistema.
 
-1. ### Explora l’estructura bàsica del sistema.
+- **Quins directoris hi ha a /?**
+*Hi ha tots els direcitris del sistema:*
 
+![Arrel](./Captures/pt-3/Linux/Arrel-1.png)
 
-Quins directoris hi ha a /?
-
-
-On es guarden els logs principals?
+- **On es guarden els logs principals?**
+*Els logs es guarden en el directori '/var/log'*
 ---
-
 2. ## Logs i configuració del sistema
 1. ### Explora els fitxers de log al directori /var/log/.
 
+- **Quina informació hi contenen syslog, auth.log, kern.log i dpkg.log?**
+ - **Syslog:** *Conte els missatges de arrencada i apagada del sistema,serveis que s'inicien o fallen,errors generals i avisos del sistema,missatges de programari i daemons.*
+![Contingut-Syslog](./Captures/pt-3/Linux/Error-syslog.png)
 
-Quina informació hi contenen syslog, auth.log, kern.log i dpkg.log?
+  - **Auth.log:** *És el log d'autentificacií i seguretat;Conte la informació sobre: Conexions SSH i tambe si han fallat,l'ús de 'sudo' i intents d'escalada de privilegis,autentificació de serveis que utilitzen PAM(Pluggable Authentification Modules).*
+![Contingut-Authlog](./Captures/pt-3/Linux/Fails-log.png)
 
+  - **Kern.log:** *És el log del nucli de linux el Kernel;Conté informació sobre: Drivers de hardware, errors i advertències del kernel, i esdevediments relacionats amb dispositius i controladors.*
+  
+  - **dpkg.log:** *Conté informacio sobre les instal·lacions, actualitzacions i eliminacions de paquets gestionats per dpkg i per apt.*
 
-Com pots llegir-los en temps real?
-
+- **Com pots llegir-los en temps real?**
+*Per llegir-los en temps real s'ha d'executar la segúent comanda:*
+```bash
+tail -f /var/log/syslog
+```
 
 2. ### Descobreix l’eina journalctl.
-
 
 Com pots filtrar logs per servei, per temps o per nivell de prioritat?
 
