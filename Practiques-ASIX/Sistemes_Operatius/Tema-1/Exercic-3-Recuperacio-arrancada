@@ -331,23 +331,41 @@ Get-ItemProperty -Path "HKCU:\Software\Prova"
 ![Restaurar-Clau](./Captures/pt-3/Clau-9.png)
 
 
-Què passa si restaures un punt de restauració?
+- **Què passa si restaures un punt de restauració?**
+*Que que tornes al mateix moment en el que vas fer el punt*
 
+2. ### Explica com actuaries si el sistema no arrenca.
+   *Intentaria entrar al inici avançat ja sigui si m'inicia autómaticament o sino tendria un usb d'arrencada, una vegada en el inici avançat aniria a Solucionar problemes, després a opcións avançades i simbol del sistema.*
+   *Hi intentaria reparar els errors del sistema de fitxers amb la seguent comanda:*
+   ```powershell
+   chkdsk C: /f /r
+   ```
+*Després analitzaria tots els fitxers del sistema protegits i si hi ha alguns que estiguin malmesos els substituiria per versions correctes amb la següent comanda:*
+```powershell
+sfc /scannow
+```
+*ara repararia l'imatge de windows amb les següents comandes:*
+```powershell
+dism /online /cleanup-image /checkhealth
 
-1. ### Explica com actuaries si el sistema no arrenca.
+dism /online /cleanup-image /scanhealth
 
+dism /online /cleanup-image /restorehealth
 
-Quines opcions de rescat tens?
+```
+
+- **Quines opcions de rescat tens?**
+
 
 
 Quin ús tindrien les eines com cmd o “Inici avançat”?
 ---
-7. ## Qüestionari final
-1. Diferència entre punt de restauració i imatge del sistema.
-2. Quines són les claus principals del registre de Windows?
-3. Què fa exactament la comanda sfc /scannow?
-4. Com pots accedir al menú de recuperació si Windows no inicia?
-5. Quina informació pots obtenir del Registre d’esdeveniments?
+1. ## Qüestionari final
+2. Diferència entre punt de restauració i imatge del sistema.
+3. Quines són les claus principals del registre de Windows?
+4. Què fa exactament la comanda sfc /scannow?
+5. Com pots accedir al menú de recuperació si Windows no inicia?
+6. Quina informació pots obtenir del Registre d’esdeveniments?
 asd
 ---
 ---
@@ -364,7 +382,7 @@ dd
 ---
 
 1. ## Preparació de l’entorn
-1. ### Cerca com actualitzar el sistema i instal·lar eines de recuperació.
+2. ### Cerca com actualitzar el sistema i instal·lar eines de recuperació.
 
 
 Quines comandes s’utilitzen per actualitzar i instal·lar paquets?
