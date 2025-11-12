@@ -353,19 +353,32 @@ dism /online /cleanup-image /scanhealth
 dism /online /cleanup-image /restorehealth
 
 ```
-
 - **Quines opcions de rescat tens?**
+*Tinc l'opcio de retaurar el sistema amb una imatge del sistema o amb un punt de resstauració*
 
-
-
-Quin ús tindrien les eines com cmd o “Inici avançat”?
+- **Quin ús tindrien les eines com cmd o “Inici avançat”?**
+*La d'analitzar el sistema en busqueda de errors i reparar-los i o restaurar el sistema.*
 ---
-1. ## Qüestionari final
-2. Diferència entre punt de restauració i imatge del sistema.
-3. Quines són les claus principals del registre de Windows?
-4. Què fa exactament la comanda sfc /scannow?
-5. Com pots accedir al menú de recuperació si Windows no inicia?
-6. Quina informació pots obtenir del Registre d’esdeveniments?
+
+7. ## Qüestionari final
+1. **Diferència entre punt de restauració i imatge del sistema.?**
+   
+   *Amb una imatge del sistema recuperes tota l'informació de l'ordinador és ha dir fas una imatge de tot el disc, en canvi amb un punt de restauració recuperes només amb els elements més importants de la configuració del sistema en el moment que fas el punt.*
+2. **Quines són les claus principals del registre de Windows?**
+   
+   *HKEY_CLASSES_ROOT: És on s'emagatzema l'informació que garantiza que s'obri el programa correcte al obrir un arxiu, per exemple i obres un arxiu .docx s'obri el Word.*
+
+   *HKEY_CURRENT_USER:Conte l'arrel de l'informació de configuració de l'usuari que ha iniciat sessió actualment, aquesta informació conte: Les carpetes,colors de pantalla,configuració del panell de control etc.*
+
+   *HKEY_LOCAL_MACHINE: És on s'emagatzema l'informació de la configuració especifica de l'equip per qualsevol usuari.*
+
+   *HKEY_USERS: És on éstan tots els perfils d'usuari carregats actualment a l'equip.*
+
+   *HKEY_CURRENT_CONFIG: És on s'emmagatzema l'informacio sobre el perfil de hardware que fa servir l'equip al iniciar el sistema.*
+
+3. Què fa exactament la comanda sfc /scannow?
+4. Com pots accedir al menú de recuperació si Windows no inicia?
+5. Quina informació pots obtenir del Registre d’esdeveniments?
 asd
 ---
 ---
