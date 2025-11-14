@@ -820,7 +820,7 @@ Blanco: #FFFFFF
 .imagen-jefes-has img {
     border: 3px solid ;
 }
-.tabla-has th, .jefe-has th, .tabla-coche-has th {
+.tabla-has th, .jefes-has th, .tabla-coche-has th {
     background-color: #e10600;
     color: white;
     text-align: left;
@@ -832,3 +832,4 @@ Blanco: #FFFFFF
     padding: 10px;
     border-bottom: 1px solid #e10600;
 }
+
