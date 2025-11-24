@@ -1,6 +1,43 @@
 body {
   overflow: hidden;
 }
+/* Web font des de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* Font pròpia des del teu servidor */
+@font-face {
+  font-family: 'FontAutor';
+  src: url('fonts/font-autor.woff2') format('woff2'),
+    url('fonts/font-autor.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Estil del cartell */
+.cartell {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: white;
+  z-index: 10;
+}
+
+/* Títol amb web font */
+.titol {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+/* Autor amb font pròpia */
+.autor {
+  font-family: 'FontAutor', sans-serif;
+  font-size: 18px;
+  margin: 5px 0 0 0;
+}
 
 .foreground,
 .midground,
@@ -42,11 +79,11 @@ body {
   0% {
     background-position: -3000px 100%;
   }
+
   100% {
     background-position: 0 100%;
   }
 }
-
 /* ******************* */
 /*     MUNTANYES       */
 /* ******************* */
@@ -59,10 +96,9 @@ body {
 }
 @keyframes paralax_bg {
   100% {
-    background-position-x:2400px, 2000px, 1800px, 1600px, 1200px ;
+    background-position-x: 2400px, 2000px, 1800px, 1600px, 1200px;
   }
 }
-
 /* ******************* */
 /*       NUVOL         */
 /* ******************* */
@@ -72,7 +108,7 @@ body {
   left: 0px;
   opacity: 1;
   z-index: 2;
-  animation: nuvol 20s linear infinite;
+  animation: nuvol 15s linear infinite;
 }
 
 #cloud .cloud {
@@ -82,7 +118,6 @@ body {
   background: #fff;
   position: absolute;
   top: 10px;
- 
 }
 
 #cloud .cloud-2 {
@@ -95,13 +130,66 @@ body {
   top: 20px;
 }
 @keyframes nuvol {
- 
+
   33% {
     left: 33%;
   }
 
 }
+.pelota {
+  z-index: 3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  animation: mover 1.3s linear infinite;
+}
+@keyframes mover {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.bola {
+  z-index: 3;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #ff0000);
+  /* bola con efecto de luz */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rodarBotar 5s linear infinite;
+  transform-origin: center;
+}
 
+@keyframes rodarBotar {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+
+  20% {
+    transform: translateX(100%) translateY(-200%) rotate(72deg);
+  }
+
+  40% {
+    transform: translateX(200%) translateY(0) rotate(144deg);
+  }
+
+  60% {
+    transform:  translateX(300%) translateY(-200%) rotate(216deg);
+  }
+  80% {
+    transform: translateX(400%) translateY(0) rotate(288deg);
+  }
+  100% {
+    transform: translateX(500%) translateY(-200%) rotate(360deg);
+  }
+}
 /* ******************* */
 /*        SOL          */
 /* ******************* */
@@ -114,24 +202,31 @@ body {
   z-index: 1;
   top: 30px;
   left: 160px;
-  animation: sol 20s linear infinite;
+  animation: sun-cycle 15s linear infinite;
 }
-@keyframes sol {
+@keyframes sun-cycle {
   0% {
-    top: 0%;
-    left: 10%;
-  }
-  33% {
-    top: 50%;
-    left: 90%;
-  }
-  60% {
-    top: 95%;
-    left: -33%;
+    left: 100%;
+    top: 100%;
+    background: orange;
   }
 
+  50% {
+    left: 20%;
+    top: 5%;
+    background: yellow;
+  }
+  75% {
+    left: 5%;
+    top: 40%;
+    background: red;
+  }
+  100% {
+    left: -150px;
+    top: 100%;
+    background: red;
+  }
 }
-
 
 /* ******************* */
 /*       LLUNA         */
@@ -150,40 +245,25 @@ body {
   border-radius: 50%;
   background: #fff;
   position: absolute;
-  
+  animation: lluna 15s ease infinite;
 }
+
 
 #moon .moon-2 {
   background: #525252;
   position: absolute;
   top: -20px;
   left: 20px;
-  animation: cel 17s ease infinite;
+  animation:cel 15s ease infinite;
+  
 }
-.pelota {
-  z-index: 3;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 80%;
-  left: 30%;
-  animation: mover 17s linear infinite;
-}
-@keyframes mover {
-  0% {
-    left: 30%;
-    transform: rotate(-740deg);
-  }
-  25% {
-    transform: rotate(-1000deg);
-  }
+@keyframes lluna {
 
-  100% {
-    left: -100px;
-    transform: rotate(-10100deg);
+  50%,
+  75% {
+    opacity: 0;
   }
 }
-
 
 /* ******************* */
 /*        CEL          */
@@ -191,26 +271,32 @@ body {
 .cel {
   z-index: 0;
   background-color: #525252;
-  animation: cel 17s ease infinite;
+  animation: cel 15s ease infinite;
 }
 @keyframes cel {
   0% {
-    background-color: #525252;
+    background-color: #0a1a3a;
   }
-  33% {
-    background-color: #6293e5;
+  25% {
+    background-color: #1e3f66;
   }
-  60% {
-    background-color: #525252;
+  50% {
+    background-color: #87ceeb;
+  }
+  75% {
+    background-color: #ff7f50;
+  }
+  100% {
+    background-color: #2c0a1a;
   }
 
 }
+
 /* ******************* */
 /*        PANTERA      */
 /* ******************* */
 .tuna {
-  animation: walk-cycle 1s steps(12) 3, walk-to-run 0.75s steps(12) 3s 1,
-  run-cycle 0.75s steps(13) 3.75s infinite;
+  animation: walk-cycle 1s steps(12) 3, walk-to-run 0.75s steps(12) 3s 1, run-cycle 0.75s steps(13) 3.75s infinite;
   background: url(imatges/tuna_sprite.png) 0 0 no-repeat;
   height: 200px;
   width: 400px;
