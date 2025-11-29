@@ -833,3 +833,119 @@ Blanco: #FFFFFF
     border-bottom: 1px solid #e10600;
 }
 
+
+
+#verstappen {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: #fff5e6;
+    /* fondo claro para el cuerpo */
+}
+
+/* --- Header Verstappen --- */
+.header-verstappen {
+    background-color: #1E2D6E;
+    /* azul Red Bull */
+    color: #FFD700;
+    /* dorado */
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.header-verstappen h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Imagen piloto */
+.imatge-verstappen {
+    width: 120px;
+    border-radius: 10px;
+    border: 3px solid #DA291C;
+    /* rojo Red Bull */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Número grande de fondo */
+#verstappen::before {
+    content: "1";
+    /* dorsal Verstappen */
+    position: absolute;
+    font-size: 12rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* --- Contenedores info/carrera/estadísticas --- */
+.info-verstappen,
+.carrera-verstappen,
+.estadistica-verstappen {
+    background-color: #fff5e6;
+    /* fondo claro */
+    border: 2px solid #1E2D6E;
+    /* borde azul */
+    padding: 20px;
+    margin-top: -10px;
+    /* une con header */
+    border-radius: 0 0 15px 15px;
+}
+
+/* --- Tablas Verstappen --- */
+.tabla-versttapen th,
+.tabla-carrera-verstappen th,
+.tabla-estadistica-verstappen th {
+    background-color: #1E2D6E;
+    /* azul */
+    color: #FFD700;
+    /* dorado */
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #1E2D6E;
+}
+
+.tabla-versttapen td,
+.tabla-carrera-verstappen td,
+.tabla-estadistica-verstappen td {
+    background-color: #2a2a2a;
+    /* gris oscuro */
+    color: white;
+    padding: 10px;
+    border: 1px solid #1E2D6E;
+}
+
+/* Zebra stripes */
+.tabla-versttapen tr:nth-child(even),
+.tabla-carrera-verstappen tr:nth-child(even),
+.tabla-estadistica-verstappen tr:nth-child(even) {
+    background-color: rgba(255, 215, 0, 0.1);
+    /* dorado suave */
+}
+
+/* Hover efecto tarjeta */
+#verstappen:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
