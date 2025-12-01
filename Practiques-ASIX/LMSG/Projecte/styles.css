@@ -749,12 +749,12 @@ th {
 }
 .tabla-kick, .jefes-kick, .tabla-coche-kick {
     width: 90%;
-        margin: 20px auto;
-        border-collapse: collapse;
-        background-color: #0f0f0f;
-        border: 2px solid #00FF87;
-        border-radius: 10px;
-        overflow: hidden;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #0f0f0f;
+    border: 2px solid #00FF87;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .tabla-kick th, .jefes-kick th, .tabla-coche-kick th {
     background-color: #003366;
@@ -986,18 +986,7 @@ Blanco: #FFFFFF
     padding: 20px;
     border-radius: 10px;
 }
-.Imatge-pilots {
-    display: flex;
-    gap: 40px;
-    margin-top: 20px;
-}
-.Imatge-pilots img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-}
+
 .estadistiques-pilots {
     margin-top: 20px;
     padding: 20px;
@@ -1046,6 +1035,22 @@ Blanco: #FFFFFF
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid #DA291C;
+}
+.imatge-tsunoda {
+    position: absolute;
+    padding-top: 0.125rem;
+    width: 122px;
+}
+@media (min-width: 768px) {
+    .imatge-tsunoda {
+        padding-top: 1px;
+        width: 36px;
+    }
+}
+@media (min-width: 1024px) {
+    .imatge-tsunoda {
+        width: 36px;
+    }
 }
 
 .info-antonelli,
@@ -1252,4 +1257,300 @@ Blanco: #FFFFFF
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid white;
+}
+
+.info-gasly,
+.tabla-carrera-gasly,
+.estadistica-gasly {
+        background-color: #fff5e6;
+        border: 2px solid #ff66cc;
+}
+
+.info-gasly th,
+.tabla-carrera-gasly th,
+.estadistica-gasly th {
+        background-color: #0050a0;
+        color: #ff66cc;
+        text-align: center;
+        padding: 10px;
+
+}
+
+.info-gasly td,
+.tabla-carrera-gasly td,
+.estadistica-gasly td {
+        background-color: #2a2a2a;
+        color: white;
+        padding: 10px;
+        border: 2px solid #0050a0;
+        border-bottom: 2px solid #ff66cc;
+}
+.info-colapinto,
+.tabla-carrera-colapinto,
+.estadistica-colapinto {
+    background-color: #fff5e6;
+    border: 2px solid #ff66cc;
+}
+
+.info-colapinto th,
+.tabla-carrera-colapinto th,
+.estadistica-colapinto th {
+    background-color: #0050a0;
+    color: #ff66cc;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.info-colapinto td,
+.tabla-carrera-colapinto td,
+.estadistica-colapinto td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 2px solid #0050a0;
+    border-bottom: 2px solid #ff66cc;
+}
+.info-sainz,
+.tabla-carrera-sainz,
+.estadistica-sainz {
+    background-color: #fff5e6;
+    border: 3px solid #00205b;
+}
+
+.info-sainz th,
+.tabla-carrera-sainz th,
+.estadistica-sainz th {
+    background-color: #00205b;
+    color: #00aeef;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.info-sainz td,
+.tabla-carrera-sainz td,
+.estadistica-sainz td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #00aeef;
+}
+.info-albon,
+.tabla-carrera-albon,
+.estadistica-albon {
+    background-color: #fff5e6;
+    border: 3px solid #00205b;
+}
+
+.info-albon th,
+.tabla-carrera-albon th,
+.estadistica-albon th {
+    background-color: #00205b;
+    color: #00aeef;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.info-albon td,
+.tabla-carrera-albon td,
+.estadistica-albon td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #00aeef;
+}
+.info-lawson,
+.tabla-carrera-lawson,
+.estadistica-lawson {
+    background-color: #fff5e6;
+    border: 1px solid #e10600;
+}
+
+.info-lawson th,
+.tabla-carrera-lawson th,
+.estadistica-lawson th {
+    background-color: #1e1e60;
+    color: #d4af37;
+    text-align: left;
+    padding: 10px;
+}
+
+.info-lawson td,
+.tabla-carrera-lawson td,
+.estadistica-lawson td {
+    background-color: #bfc2c6;
+    color: #1e1e60;
+    padding: 10px;
+    border: 1px solid #1e1e60;
+    border-bottom: 1px solid #d4af37;
+}
+.info-hadjar,
+.tabla-carrera-hadjar,
+.estadistica-hadjar {
+    background-color: #fff5e6;
+    border: 1px solid #e10600;
+}
+
+.info-hadjar th,
+.tabla-carrera-hadjar th,
+.estadistica-hadjar th {
+    background-color: #1e1e60;
+    color: #d4af37;
+    text-align: left;
+    padding: 10px;
+}
+
+.info-hadjar td,
+.tabla-carrera-hadjar td,
+.estadistica-hadjar td {
+    background-color: #bfc2c6;
+    color: #1e1e60;
+    padding: 10px;
+    border: 1px solid #1e1e60;
+    border-bottom: 1px solid #d4af37;
+}
+.info-hulkenberg,
+.tabla-carrera-hulkenberg,
+.estadistica-hulkenberg {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #00FF87;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #0f0f0f;
+    border: 2px solid #00FF87;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info-hulkenberg th,
+.tabla-carrera-hulkenberg th,
+.estadistica-hulkenberg th {
+    background-color: #003366;
+    color: #d50032;
+    padding: 12px;
+    text-align: center;
+}
+
+.info-hulkenberg td,
+.tabla-carrera-hulkenberg td,
+.estadistica-hulkenberg td {
+    border: 1px solid #00FF87;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom:1px solid #ffffff;
+}
+.info-hulkenberg tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+.tabla-carrera-hulkenberg tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+.estadistica-hulkenberg tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+.info-bortoleto,
+.tabla-carrera-bortoleto,
+.estadistica-bortoleto {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #00FF87;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #0f0f0f;
+    border: 2px solid #00FF87;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info-bortoleto th,
+.tabla-carrera-bortoleto th,
+.estadistica-bortoleto th {
+    background-color: #003366;
+    color: #d50032;
+    padding: 12px;
+    text-align: center;
+}
+
+.info-bortoleto td,
+.tabla-carrera-bortoleto td,
+.estadistica-bortoleto td {
+    border: 1px solid #00FF87;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.info-bortoleto tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+
+.tabla-carrera-bortoleto tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+
+.estadistica-bortoleto tr:nth-child(even) {
+    background-color: rgba(0, 255, 135, 0.1);
+}
+.info-bearman,
+.tabla-carrera-bearman,
+.estadistica-bearman {
+    background-color: #fff5e6;
+    border: 2px solid #e10600;
+    padding: 10px;
+}
+
+.info-bearman th,
+.tabla-carrera-bearman th,
+.estadistica-bearman th {
+    background-color: #e10600;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+.info-bearman td,
+.tabla-carrera-bearman td,
+.estadistica-bearman td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #e10600;
+}
+.info-ocon,
+.tabla-carrera-ocon,
+.estadistica-ocon {
+    background-color: #fff5e6;
+    border: 2px solid #e10600;
+    padding: 10px;
+}
+
+.info-ocon th,
+.tabla-carrera-ocon th,
+.estadistica-ocon th {
+    background-color: #e10600;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+.info-ocon td,
+.tabla-carrera-ocon td,
+.estadistica-ocon td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #e10600;
 }
