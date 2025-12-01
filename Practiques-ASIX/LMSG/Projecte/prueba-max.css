@@ -988,127 +988,13 @@ Blanco: #FFFFFF
 }
 
 
-
-/* -#verstappen {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 50px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background: #fff5e6;
-    /* fondo claro para el cuerpo */
-}
-
-/* --- Header Verstappen --- */
-/* .header-verstappen {
-    background-color: #1E2D6E;
-    
-    color: #FFD700;
-    
-    padding: 20px;
-    border-radius: 15px 15px 0 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-}*/
-
-/*.header-verstappen h2 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}*/
-
-/* Imagen piloto */
-/*.imatge-verstappen {
-    
-    border-radius: 10px;
-    border: 3px solid #DA291C;
-    
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}+/
-
-/* Número grande de fondo */
-/*#verstappen::before {
-    content: "1";
-   
-    position: absolute;
-    font-size: 12rem;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.1);
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    z-index: 0;
-    pointer-events: none;
-}*/
-
-/* --- Contenedores info/carrera/estadísticas --- */
-.info-verstappen,
-.carrera-verstappen,
-.estadistica-verstappen {
-    background-color: #fff5e6;
-    /* fondo claro */
-    border: 2px solid #1E2D6E;
-    /* borde azul */
-    padding: 20px;
-    margin-top: -10px;
-    /* une con header */
-    border-radius: 0 0 15px 15px;
-}
-
-/* --- Tablas Verstappen --- */
-.tabla-versttapen th,
-.tabla-carrera-verstappen th,
-.tabla-estadistica-verstappen th {
-    background-color: #1E2D6E;
-    /* azul */
-    color: #FFD700;
-    /* dorado */
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #1E2D6E;
-}
-
-.tabla-versttapen td,
-.tabla-carrera-verstappen td,
-.tabla-estadistica-verstappen td {
-    background-color: #2a2a2a;
-    /* gris oscuro */
-    color: white;
-    padding: 10px;
-    border: 1px solid #1E2D6E;
-}
-
-/* Zebra stripes */
-.tabla-versttapen tr:nth-child(even),
-.tabla-carrera-verstappen tr:nth-child(even),
-.tabla-estadistica-verstappen tr:nth-child(even) {
-    background-color: rgba(255, 215, 0, 0.1);
-    /* dorado suave */
-}
-
 /* Hover efecto tarjeta */
-#verstappen:hover {
+#verstappen:hover, #tsunoda:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
 }
 
-/*#pilots {
-    width: 90%;
-    margin: 0 auto;
-    padding: 40px 0;
-}*/
+
 #verstappen,
 #tsunoda,
 #rusell,
@@ -1133,24 +1019,6 @@ Blanco: #FFFFFF
     font-family: 'Poppins', sans-serif;
 }
 
-/*.Header-pilots {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 20px;
-    position: relative;
-}*/
-/*.Header-pilots h2 {
-    font-size: 2em;
-    font-weight: 600;
-    margin: 0;
-    text-transform: uppercase;
-}*/
-/*.Imatge-pilots {
-    height: auto;
-    width: auto;
-}*/
-
 .info-pilots {
     margin-top: 20px;
     padding: 20px;
@@ -1169,96 +1037,16 @@ Blanco: #FFFFFF
     border-radius: 10px;
 }
 
-/*#verstappen {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 50px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background: #fff5e6;
 
-}*/
-/*#verstappen:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-}*/
-.info-verstappen,
-.tabla-carrera-verstappen,
-.estadistica-verstappen {
-    background-color: #fff5e6;
-    border: 2px solid #1E2D6E;
-}
 
-.info-verstappen th,
-.tabla-carrera-verstappen th,
-.estadistica-verstappen th {
-    background-color: #1e2d6e;
-    color: #ffd700;
-    text-align: left;
-    border: 1px solid;
-}
 
-.info-verstappen td,
-.tabla-carrera-verstappen td,
-.estadistica-verstappen td {
-    background-color: #fff5e6;
-    color: var(--color-redbull-blue-dark);
-    padding: 10px;
-    border: 1px solid;
-    border-bottom: 1px solid #DA291C;
-}
 
-.tabla-tsunoda,
-.tabla-carrera-tsunoda,
-.estadistica-tsunoda {
-    background-color: #fff5e6;
-    border: 2px solid #1E2D6E;
-}
 
-.tabla-tsunoda th,
-.tabla-carrera-tsunoda th,
-.estadistica-tsunoda th {
-    background-color: #1e2d6e;
-    color: #ffd700;
-    text-align: left;
-    border: 1px solid;
-}
 
-.tabla-tsunoda td,
-.tabla-carrera-tsunoda td,
-.estadistica-tsunoda td {
-    background-color: #2a2a2a;
-    color: white;
-    padding: 10px;
-    border: 1px solid;
-    border-bottom: 1px solid #DA291C;
-}
 
-.imatge-tsunoda {
-    position: absolute;
-    padding-top: 0.125rem;
-    width: 122px;
-}
 
-@media (min-width: 768px) {
-    .imatge-tsunoda {
-        padding-top: 1px;
-        width: 36px;
-    }
-}
 
-@media (min-width: 1024px) {
-    .imatge-tsunoda {
-        width: 36px;
-    }
-}
+
 
 .info-antonelli,
 .tabla-carrera-antonelli,
@@ -1804,7 +1592,7 @@ Blanco: #FFFFFF
     margin: 0 auto;
     padding: 40px 0;
 }
-#verstappen {
+#verstappen, #tsunoda {
     margin-bottom: 60px;
     font-family: var(--font-header);
     background-color: var(--color-redbull-blue-dark);
@@ -1827,11 +1615,11 @@ Blanco: #FFFFFF
 .Header-pilots {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     /* Alinear los elementos de abajo (imagen y texto) */
     background-color: transparent;
     /* Azul Oscuro: #1e3f87 */
-    padding: 40px 20px 0 40px;
+    padding: 40px 20px 0 100px;
     /* Más padding arriba y a los lados */
     position: relative;
     /* Necesario para posicionar el número de fondo */
@@ -1839,11 +1627,8 @@ Blanco: #FFFFFF
     /* Ocultar el número que sobresale */
     border-radius: 15px 15px 0 0;
     /* Bordes redondeados solo en la parte superior */
+    
 }
-.header-verstappen {
-
-}
-
 
 .header-left {
     z-index: 10;
@@ -1866,13 +1651,17 @@ Blanco: #FFFFFF
         font-family: var(--font-heading);
         /* 'Oswald' */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-        color: #FFD700;
+}
+.nom-verstappen, .nom-tsunoda {
+    color: #FFD700;
 }
 
 .datos-piloto {
     font-size: 1.2em;
     font-weight: 300;
     margin-top: 10px;
+}
+.datos-verstappen, .datos-tsunoda {
     color: var(--color-text-white);
 }
 
@@ -1880,11 +1669,12 @@ Blanco: #FFFFFF
 
 .numero-fondo {
     position: absolute;
+    left: 0;
         top: -50px;
         /* Mover el número hacia arriba */
-        left: -100px;
+      transform: translateX(-65%) rotate(-5deg);
         /* Mover el número hacia la izquierda, fuera del texto */
-        font-size: 30em;
+        font-size: 25em;
         /* ¡Muy grande! */
         font-weight: 900;
         color: white;
@@ -1896,10 +1686,11 @@ Blanco: #FFFFFF
         /* 'Oswald' */
         
         /* Aseguramos que esté detrás de la imagen y texto */
-        transform: rotate(-5deg);
+    
         /* Un poco de inclinación para dinamismo */
         user-select: none;
         /* No seleccionable */
+        z-index: 5;
 }
 .Imatge-pilots {
     display: block;
@@ -1921,4 +1712,28 @@ Blanco: #FFFFFF
     border-radius: 8px;
     border: none;
     /* Ya no necesitamos el borde, la sombra del padre es suficiente */
+}
+.info-verstappen th,
+.info-tsunoda th,
+.tabla-carrera-verstappen th,
+.tabla-carrera-tsunoda th,
+.estadistica-verstappen th,
+.estadistica-tsunoda th {
+    background-color: #1e2d6e;
+    color: #ffd700;
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-verstappen td,
+.info-tsunoda td,
+.tabla-carrera-verstappen td,
+.tabla-carrera-tsunoda td,
+.estadistica-verstappen td,
+.estadistica-tsunoda td {
+    background-color: #fff5e6;
+    color: var(--color-redbull-blue-dark);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
 }
