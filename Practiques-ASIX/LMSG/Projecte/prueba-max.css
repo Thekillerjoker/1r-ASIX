@@ -2286,7 +2286,7 @@ Blanco: #FFFFFF
 .estadistica-bearman td,
 .estadistica-ocon td {
     background-color: var(--negro-ferrari);
-    color: var(--amarillo-ferrari);
+    color: var(--blanco-hass);
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid #DA291C;
