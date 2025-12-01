@@ -954,7 +954,7 @@ Blanco: #FFFFFF
     margin: 0 auto;
     padding: 40px 0;
 }*/
-
+#verstappen
 #tsunoda,
 #rusell,
 #antonelli,
@@ -1609,76 +1609,29 @@ Blanco: #FFFFFF
 
 
 .header-verstappen {
-    display: grid;
-    grid-template-columns: 20% 25% 45% 10%;
-    grid-template-rows: 1fr;
-    font-family: var(--font-header);
-    grid-template-areas:"main main main main";
-    align-items: center;
-    width: 100%;
-    min-height: 550px;
-    position: relative;
-    color: var(--color-text-white);
-    background-color: var(--color-redbull-blue-dark);
-}
-.header-left, .header-rigth {
-    grid-area: main;
+
 }
 
 
 .header-left {
-    grid-column: 1 / span 2;
-    display: flex;
-    flex-direction: column;
-    padding-left: 150px;
-    /* Espacio para alejar del borde y de las líneas */
-    z-index: 10;
+ 
 }
 .header-right {
-    grid-column: 3 / 5;
-    position: relative;
-    height: 100%;
-    z-index: 5;
+
 }
 
 
 .nom-Pilot {
-    font-family: var(--font-heading);
-    font-size: 6.5rem; 
-    text-transform: uppercase;
-    margin: 0;
-    line-height: 1;
-    font-weight: 900;
+  
 }
 .datos-piloto {
-    font-size: 1.2rem;
-    margin-top: 15px;
+
 }
 
 .Imatge-pilots {
-    display: block;
-    height: 700px;
-    /* Ajusta esta altura para controlar el tamaño visual del piloto */
-    width: auto;
-    object-fit: contain;
-    position: absolute;
 
-    /* Mueve el piloto fuera del contenedor para el efecto de la foto */
-    /* Ajuste vertical fino */
-    z-index: 1;
-    /* Delante del número de fondo */
 }
 .numero-fondo {
-    position: absolute;
-    /* Ajusta la posición del número detrás del piloto */
-    top: 50%;
-    left: 20%;
-    transform: translateY(-50%);
-    font-family: var(--font-heading);
-    font-size: 30rem;
-    color: rgba(255, 255, 255, 0.05);
-    /* Transparencia para que sirva de fondo */
-    font-weight: 900;
-    z-index: 3;
+
 }
 
