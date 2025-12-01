@@ -835,7 +835,7 @@ Blanco: #FFFFFF
 
 
 
-#verstappen {
+/* -#verstappen {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -853,41 +853,41 @@ Blanco: #FFFFFF
 }
 
 /* --- Header Verstappen --- */
-.header-verstappen {
+/* .header-verstappen {
     background-color: #1E2D6E;
-    /* azul Red Bull */
+    
     color: #FFD700;
-    /* dorado */
+    
     padding: 20px;
     border-radius: 15px 15px 0 0;
     display: flex;
     align-items: center;
     gap: 20px;
     position: relative;
-}
+}*/
 
-.header-verstappen h2 {
+/*.header-verstappen h2 {
     font-size: 2rem;
     margin: 0;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
+}*/
 
 /* Imagen piloto */
-.imatge-verstappen {
+/*.imatge-verstappen {
     
     border-radius: 10px;
     border: 3px solid #DA291C;
-    /* rojo Red Bull */
+    
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     z-index: 1;
-}
+}+/
 
 /* Número grande de fondo */
-#verstappen::before {
+/*#verstappen::before {
     content: "1";
-    /* dorsal Verstappen */
+   
     position: absolute;
     font-size: 12rem;
     font-weight: bold;
@@ -897,7 +897,7 @@ Blanco: #FFFFFF
     transform: translateY(-50%);
     z-index: 0;
     pointer-events: none;
-}
+}*/
 
 /* --- Contenedores info/carrera/estadísticas --- */
 .info-verstappen,
@@ -949,32 +949,52 @@ Blanco: #FFFFFF
     transform: scale(1.02);
     transition: transform 0.3s ease;
 }
-#pilots {
+/*#pilots {
     width: 90%;
     margin: 0 auto;
     padding: 40px 0;
-}
-#verstappen, #tsunoda, #rusell, #antonelli, #leclercl, #hamilton, #norris, #piastri, #alonso, #stroll, #gasly, #colapinto, #sainz, #albon, #lawson, #hadjar, #hulkenberg, #bortoleto, #bearman, #ocon {
+}*/
+
+#tsunoda,
+#rusell,
+#antonelli,
+#leclercl,
+#hamilton,
+#norris,
+#piastri,
+#alonso,
+#stroll,
+#gasly,
+#colapinto,
+#sainz,
+#albon,
+#lawson,
+#hadjar,
+#hulkenberg,
+#bortoleto,
+#bearman,
+#ocon {
     margin-top: 60px;
     font-family: 'Poppins', sans-serif;
 }
-.Header-pilots {
+
+/*.Header-pilots {
     display: flex;
     align-items: center;
     justify-content: left;
     padding: 20px;
     position: relative;
-}
-.Header-pilots h2 {
+}*/
+/*.Header-pilots h2 {
     font-size: 2em;
     font-weight: 600;
     margin: 0;
     text-transform: uppercase;
-}
-.Imatge-pilots {
+}*/
+/*.Imatge-pilots {
     height: auto;
     width: auto;
-}
+}*/
 
 .info-pilots {
     margin-top: 20px;
@@ -992,17 +1012,37 @@ Blanco: #FFFFFF
     padding: 20px;
     border-radius: 10px;
 }
-.tabla-versttapen, .tabla-carrera-verstappen, .estadistica-verstappen {
+/*#verstappen {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: #fff5e6;
+
+}*/
+/*#verstappen:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}*/
+.info-verstappen, .tabla-carrera-verstappen, .estadistica-verstappen {
     background-color: #fff5e6;
     border: 2px solid #1E2D6E;
 }
-.tabla-versttapen th, .tabla-carrera-verstappen th, .estadistica-verstappen th {
+.info-verstappen th, .tabla-carrera-verstappen th, .estadistica-verstappen th {
     background-color: #1e2d6e;
     color: #ffd700;
     text-align: left;
     border: 1px solid;
 }
-.tabla-versttapen td,
+.info-verstappen td,
 .tabla-carrera-verstappen td,
 .estadistica-verstappen td {
     background-color: #2a2a2a;
@@ -1553,4 +1593,131 @@ Blanco: #FFFFFF
     color: white;
     padding: 10px;
     border-bottom: 1px solid #e10600;
+}
+:root {
+    --color-redbull-blue-dark: #1e3f87;
+        /* Azul oscuro principal */
+        --color-redbull-blue-light: #5275c9;
+        /* Azul claro para el patrón */
+        --color-text-white: #ffffff;
+        --font-script: 'Dancing Script', cursive;
+        --font-heading: 'Oswald', sans-serif;
+        --font-header: 'Roboto', sans-serif;
+        --pattern-color: rgba(255, 255, 255, 0.08)
+        --pattern-size: 16px;
+}
+
+
+.Header-pilots {
+    display: grid;
+    grid-template-columns: 20% 25% 45% 10%;
+    grid-template-rows: 1fr;
+    font-family: var(--font-header);
+    grid-template-areas:"main main main main";
+    align-items: center;
+    width: 100%;
+    min-height: 550px;
+    position: relative;
+    color: var(--color-text-white);
+    background-color: var(--color-redbull-blue-dark);
+}
+.header-left, .header-rigth, .background-ligth-blue, .background-pattern {
+    grid-area: main;
+}
+
+
+.header-left {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    /* Espacio para alejar del borde y de las líneas */
+    z-index: 10;
+}
+.header-right {
+    grid-column: 3 / 5;
+    position: relative;
+    height: 100%;
+    z-index: 5;
+}
+.background-ligth-blue {
+    grid-column: 3 / 5;
+    background-color: var(--color-redbull-blue-light);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+.background-pattern {
+    grid-column: 3 / 5;
+    background-image:
+    repeating-linear-gradient(to right, transparent 0, transparent 15px, var(--pattern-color) 15px, var(--pattern-color) 16px),
+        repeating-linear-gradient(to bottom, transparent 0, transparent 15px, var(--pattern-color) 15px, var(--pattern-color) 16px);
+        background-size: var(--pattern-size) var(--pattern-size);
+    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 2;
+}
+
+
+.nombre-piloto-script {
+    font-family: var(--font-script);
+    font-size: 6rem;
+    line-height: 0.8;
+    margin: 0 0 -10px 5px;
+}
+.nombre-piloto {
+    font-family: var(--font-heading);
+    font-size: 6.5rem; 
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    font-weight: 900;
+}
+.datos-piloto {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.Imatge-pilots {
+    display: block;
+    height: 700px;
+    /* Ajusta esta altura para controlar el tamaño visual del piloto */
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    /* Mueve el piloto fuera del contenedor para el efecto de la foto */
+    /* Ajuste vertical fino */
+    z-index: 4;
+    /* Delante del número de fondo */
+}
+.numero-fondo {
+    position: absolute;
+    /* Ajusta la posición del número detrás del piloto */
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    font-family: var(--font-heading);
+    font-size: 30rem;
+    color: rgba(255, 255, 255, 0.05);
+    /* Transparencia para que sirva de fondo */
+    font-weight: 900;
+    z-index: 3;
+}
+.linea-decorativa {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: var(--color-text-white);
+    z-index: 15;
+    /* Crea el efecto de línea rota */
+    mask-image: linear-gradient(to bottom, white 30%, transparent 30%, transparent 70%, white 70%);
+}
+.linea-decorativa.linea-1 {
+    width: 45px;
+    left: 0;
+}
+
+.linea-decorativa.linea-2 {
+    width: 20px;
+    left: 100px;
 }

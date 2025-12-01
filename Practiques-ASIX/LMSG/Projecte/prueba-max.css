@@ -1,0 +1,123 @@
+:root {
+--color-redbull-blue-dark: #1e3f87;
+    /* Azul oscuro principal */
+    --color-redbull-blue-light: #5275c9;
+    /* Azul claro para el patrón */
+    --color-text-white: #ffffff;
+    --font-script: 'Dancing Script', cursive;
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+}
+.Header-pilots {
+    /* Flexbox para dividir izquierda (texto) y derecha (imagen) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    /* Altura del "hero" */
+    position: relative;
+    overflow: hidden;
+    color: var(--color-text-white);
+    background-color: var(--color-redbull-blue-dark);
+}
+.header-verstappen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-redbull-blue-light);
+    /* Clip-path crea la forma inclinada del patrón de fondo */
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+.linea-decorativa {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    background: var(--color-text-white);
+    z-index: 2;
+    /* Sobre el fondo, pero bajo el contenido principal */
+}
+.linea-1 {
+    width: 45px;
+    left: 0;
+}
+
+/* Segunda línea más delgada */
+.linea-2 {
+    width: 20px;
+    left: 100px;
+    /* Distancia de la primera línea */
+}
+.header-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    /* Espacio para alejar del borde y de las líneas */
+    z-index: 10;
+}
+.nombre-piloto-script {
+    font-family: var(--font-script);
+    font-size: 8rem;
+    line-height: 0.8;
+    margin: 0;
+    margin-left: 10px;
+    /* Pequeño ajuste horizontal */
+    margin-bottom: -50px;
+    /* Acercar a Verstappen */
+}
+.nombre-piloto {
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    font-weight: 900;
+}
+.datos-piloto {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.header-right {
+    position: relative;
+    height: 100%;
+    z-index: 5;
+}
+.numero-fondo {
+    position: absolute;
+    /* Ajusta la posición del número detrás del piloto */
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-family: var(--font-heading);
+    font-size: 30rem;
+    color: rgba(255, 255, 255, 0.05);
+    /* Transparencia para que sirva de fondo */
+    font-weight: 900;
+    z-index: 3;
+    /* Detrás de la imagen pero sobre los fondos */
+    line-height: 1;
+}
+.Imatge-pilots {
+    display: block;
+    height: 650px;
+    /* Ajusta esta altura para controlar el tamaño visual del piloto */
+    width: auto;
+    object-fit: contain;
+    position: relative;
+    right: -100px;
+    /* Mueve el piloto fuera del contenedor para el efecto de la foto */
+    transform: translateY(20px);
+    /* Ajuste vertical fino */
+    z-index: 4;
+    /* Delante del número de fondo */
+}
