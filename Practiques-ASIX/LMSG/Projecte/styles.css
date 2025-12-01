@@ -876,7 +876,7 @@ Blanco: #FFFFFF
 
 /* Imagen piloto */
 .imatge-verstappen {
-    width: 120px;
+    
     border-radius: 10px;
     border: 3px solid #DA291C;
     /* rojo Red Bull */
@@ -948,4 +948,308 @@ Blanco: #FFFFFF
 #verstappen:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
+}
+#pilots {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+#verstappen, #tsunoda, #rusell, #antonelli, #leclercl, #hamilton, #norris, #piastri, #alonso, #stroll, #gasly, #colapinto, #sainz, #albon, #lawson, #hadjar, #hulkenberg, #bortoleto, #bearman, #ocon {
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.Header-pilots {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+    position: relative;
+}
+.Header-pilots h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+.Imatge-pilots {
+    height: auto;
+    width: auto;
+}
+
+.info-pilots {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.carrera-pilots {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Imatge-pilots {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+.Imatge-pilots img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.estadistiques-pilots {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.tabla-versttapen, .tabla-carrera-verstappen, .estadistica-verstappen {
+    background-color: #fff5e6;
+    border: 2px solid #1E2D6E;
+}
+.tabla-versttapen th, .tabla-carrera-verstappen th, .estadistica-verstappen th {
+    background-color: #1e2d6e;
+    color: #ffd700;
+    text-align: left;
+    border: 1px solid;
+}
+.tabla-versttapen td,
+.tabla-carrera-verstappen td,
+.estadistica-verstappen td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
+}
+.tabla-tsunoda,
+.tabla-carrera-tsunoda,
+.estadistica-tsunoda {
+    background-color: #fff5e6;
+    border: 2px solid #1E2D6E;
+}
+
+.tabla-tsunoda th,
+.tabla-carrera-tsunoda th,
+.estadistica-tsunoda th {
+    background-color: #1e2d6e;
+    color: #ffd700;
+    text-align: left;
+    border: 1px solid;
+}
+
+.tabla-tsunoda td,
+.tabla-carrera-tsunoda td,
+.estadistica-tsunoda td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
+}
+
+.info-antonelli,
+.tabla-carrera-antonelli,
+.estadistica-antonelli {
+    background-color: #d9d9d9;
+    border: 2px solid #0D0D0D;
+}
+.tabla-antonelli th,
+.tabla-carrera-antonelli th,
+.estadistica-antonelli th {
+    background-color: #00A19C;
+    color: #d9d9d9;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #0D0D0D;
+}
+.tabla-antonelli td,
+.tabla-carrera-antonelli td,
+.estadistica-antonelli td {
+    background-color: #0D0D0D;
+    color: #00a19c;
+    padding: 10px;
+    border: 1px solid white;
+}
+.info-rusell,
+.tabla-carrera-rusell,
+.estadistica-rusell {
+    background-color: #d9d9d9;
+    border: 2px solid #0D0D0D;
+}
+
+.tabla-rusell th,
+.tabla-carrera-rusell th,
+.estadistica-rusell th {
+    background-color: #00A19C;
+    color: #d9d9d9;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #0D0D0D;
+}
+
+.tabla-rusell td,
+.tabla-carrera-rusell td,
+.estadistica-rusell td {
+    background-color: #0D0D0D;
+    color: #00a19c;
+    padding: 10px;
+    border: 1px solid white;
+}
+.info-leclerc,
+.tabla-carrera-leclerc,
+.estadistica-leclerc {
+        background-color: #F5F5F5;
+        border: 2px solid #DC0000;
+}
+.info-leclerc th,
+.tabla-carrera-leclerc th,
+.estadistica-leclerc th {
+    background-color: #dc0000;
+    color: #FFF200;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.info-leclerc td,
+.tabla-carrera-leclerc td,
+.estadistica-leclerc td  {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DC0000;
+}
+.info-hamilton,
+.tabla-carrera-hamilton,
+.estadistica-hamilton {
+    background-color: #F5F5F5;
+    border: 2px solid #DC0000;
+}
+
+.info-hamilton th,
+.tabla-carrera-hamilton th,
+.estadistica-hamilton th {
+    background-color: #dc0000;
+    color: #FFF200;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.info-hamilton td,
+.tabla-carrera-hamilton td,
+.estadistica-hamilton td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DC0000;
+}
+.info-norris,
+.tabla-carrera-norris,
+.estadistica-norris {
+    background-color: #fff5e6;
+    border: 2px solid #ff8700;
+}
+.info-norris th,
+.tabla-carrera-norris th,
+.estadistica-norris th {
+    background-color: #ff8700;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+
+}
+
+.info-norris td,
+.tabla-carrera-norris td,
+.estadistica-norris td {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #ff8700;
+}
+.info-piastri,
+.tabla-carrera-piastri,
+.estadistica-piastri {
+    background-color: #fff5e6;
+    border: 2px solid #ff8700;
+}
+
+.info-piastri th,
+.tabla-carrera-piastri th,
+.estadistica-piastri th {
+    background-color: #ff8700;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+
+}
+
+.info-piastri td,
+.tabla-carrera-piastri td,
+.estadistica-piastri td {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #ff8700;
+}
+.info-alonso,
+.tabla-carrera-alonso,
+.estadistica-alonso {
+    background-color: #fff5e6;
+    border: 2px solid #00352F;
+}
+.info-alonso th,
+.tabla-carrera-alonso th,
+.estadistica-alonso th {
+    background-color: #00352F;
+    color: #00ff87;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+
+}
+
+.info-alonso td,
+.tabla-carrera-alonso td,
+.estadistica-alonso td {
+        background-color: #2a2a2a;
+        color: white;
+        padding: 10px;
+        border: 1px solid;
+        border-bottom: 1px solid white;
+}
+.info-stroll,
+.tabla-carrera-stroll,
+.estadistica-stroll {
+    background-color: #fff5e6;
+    border: 2px solid #00352F;
+}
+
+.info-stroll th,
+.tabla-carrera-stroll th,
+.estadistica-stroll th {
+    background-color: #00352F;
+    color: #00ff87;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+
+}
+
+.info-stroll td,
+.tabla-carrera-stroll td,
+.estadistica-stroll td {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid white;
 }
