@@ -999,7 +999,7 @@ Blanco: #FFFFFF
 #tsunoda,
 #rusell,
 #antonelli,
-#leclercl,
+#leclerc,
 #hamilton,
 #norris,
 #piastri,
@@ -1048,57 +1048,7 @@ Blanco: #FFFFFF
 
 
 
-.info-antonelli,
-.tabla-carrera-antonelli,
-.estadistica-antonelli {
-    background-color: #d9d9d9;
-    border: 2px solid #0D0D0D;
-}
 
-.tabla-antonelli th,
-.tabla-carrera-antonelli th,
-.estadistica-antonelli th {
-    background-color: #00A19C;
-    color: #d9d9d9;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #0D0D0D;
-}
-
-.tabla-antonelli td,
-.tabla-carrera-antonelli td,
-.estadistica-antonelli td {
-    background-color: #0D0D0D;
-    color: #00a19c;
-    padding: 10px;
-    border: 1px solid white;
-}
-
-.info-rusell,
-.tabla-carrera-rusell,
-.estadistica-rusell {
-    background-color: #d9d9d9;
-    border: 2px solid #0D0D0D;
-}
-
-.tabla-rusell th,
-.tabla-carrera-rusell th,
-.estadistica-rusell th {
-    background-color: #00A19C;
-    color: #d9d9d9;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #0D0D0D;
-}
-
-.tabla-rusell td,
-.tabla-carrera-rusell td,
-.estadistica-rusell td {
-    background-color: #0D0D0D;
-    color: #00a19c;
-    padding: 10px;
-    border: 1px solid white;
-}
 
 .info-leclerc,
 .tabla-carrera-leclerc,
@@ -1575,10 +1525,32 @@ Blanco: #FFFFFF
 }
 
 :root {
-    --color-redbull-blue-dark: #1e3f87;
+    --azul-oscuro-redbull: #1e3f87;
     /* Azul oscuro principal */
-    --color-redbull-blue-light: #5275c9;
-    /* Azul claro para el patrón */
+    --azul-claro-redbull: #5275c9;
+    --amarillo-redbull: #ffd700;
+    --color-mercedes-verde: #00A19C;
+    --color-mercedes-negro: #0D0D0D;
+    --mercedes-iridium-hex: #B7B9BC;
+    --rojo-ferrari: #DC0000;
+    --amarillo-ferrari: #FFF200;
+    --negro-ferrari: #2a2a2a;
+    --naranja-mclaren: #ff8700;
+    --blanco-mclaren: #fff5e6;
+    --verde-aston: #00FF87;
+    --verde-oscuro-aston: #00352f;
+    --negro-aston: #2a2a2a;
+    --azul-williams: #00205b;
+    --azul-claro-williams: #00aeef;
+    --azul-alpine: #0050a0;
+    --rosa-alpine: #ff66cc;
+    --azul-racinbulls: #1e1e60;
+    --rojo-racingbulls: #e10600;
+    --dorado-racingbulls: #d4af37;
+    --verde-kick: #00ff87;
+    --color-secundario-kick: #0f0f0f;
+    --rojo-hass: #e10600;
+    --blanco-hass: #fff5e6;
     --color-text-white: #ffffff;
     --font-script: 'Dancing Script', cursive;
     --font-heading: 'Oswald', sans-serif;
@@ -1733,6 +1705,588 @@ Blanco: #FFFFFF
 .estadistica-tsunoda td {
     background-color: #fff5e6;
     color: var(--color-redbull-blue-dark);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
+}
+#russell, #antonelli {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--color-mercedes-verde);
+    background-image: repeating-linear-gradient(
+        45deg,
+        var(--color-mercedes-negro) 0, var(--color-mercedes-negro) 1px,
+        transparent 1px,
+        transparent 50%),
+    repeating-linear-gradient(
+        -45deg,
+        var(--color-mercedes-negro) 0,
+        var(--color-mercedes-negro) 1px,
+        transparent 1px,
+        transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-russell, .nom-antonelli {
+    color: var(--color-text-white);
+}
+.datos-russell, .datos-antonelli {
+    color: #ffD700;
+}
+.info-russell th,
+.info-antonelli th,
+.tabla-carrera-russell th,
+.tabla-carrera-antonelli th,
+.estadistica-russell th,
+.estadistica-antonelli th {
+    background-color: var(--color-mercedes-verde);
+    color: #ffffff;
+    text-align: left;
+    border: 1px solid;
+}
+.info-russell td,
+.info-antonelli td,
+.tabla-carrera-russell td,
+.tabla-carrera-antonelli td,
+.estadistica-russell td,
+.estadistica-antonelli td {
+    background-color: var(--mercedes-iridium-hex);
+    color: var(--color-mercedes-negro);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
+}
+#leclerc,
+#hamilton {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--rojo-ferrari);
+    background-image: repeating-linear-gradient(45deg,
+            var(--negro-ferrari) 0, var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-leclerc,
+.nom-hamilton {
+    color: var(--color-text-white);
+}
+
+.datos-leclerc,
+.datos-hamilton {
+    color: var(--amarillo-ferrari);
+}
+
+.info-leclerc th,
+.info-hamilton th,
+.tabla-carrera-leclerc th,
+.tabla-carrera-hamilton th,
+.estadistica-leclerc th,
+.estadistica-hamilton th {
+    background-color: var(--rojo-ferrari);
+    color: #ffffff;
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-leclerc td,
+.info-hamilton td,
+.tabla-carrera-leclerc td,
+.tabla-carrera-hamilton td,
+.estadistica-leclerc td,
+.estadistica-hamilton td {
+    background-color: var(--negro-ferrari);
+    color: var(--amarillo-ferrari);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
+}
+#leclerc,
+#hamilton {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--rojo-ferrari);
+    background-image: repeating-linear-gradient(45deg,
+            var(--negro-ferrari) 0, var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-leclerc,
+.nom-hamilton {
+    color: var(--color-text-white);
+}
+
+.datos-leclerc,
+.datos-hamilton {
+    color: var(--amarillo-ferrari);
+}
+
+.info-leclerc th,
+.info-hamilton th,
+.tabla-carrera-leclerc th,
+.tabla-carrera-hamilton th,
+.estadistica-leclerc th,
+.estadistica-hamilton th {
+    background-color: var(--rojo-ferrari);
+    color: #ffffff;
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-leclerc td,
+.info-hamilton td,
+.tabla-carrera-leclerc td,
+.tabla-carrera-hamilton td,
+.estadistica-leclerc td,
+.estadistica-hamilton td {
+    background-color: var(--negro-ferrari);
+    color: var(--amarillo-ferrari);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
+}
+#leclerc,
+#hamilton {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--rojo-ferrari);
+    background-image: repeating-linear-gradient(45deg,
+            var(--negro-ferrari) 0, var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-leclerc,
+.nom-hamilton {
+    color: var(--color-text-white);
+}
+
+.datos-leclerc,
+.datos-hamilton {
+    color: var(--amarillo-ferrari);
+}
+
+.info-leclerc th,
+.info-hamilton th,
+.tabla-carrera-leclerc th,
+.tabla-carrera-hamilton th,
+.estadistica-leclerc th,
+.estadistica-hamilton th {
+    background-color: var(--rojo-ferrari);
+    color: #ffffff;
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-leclerc td,
+.info-hamilton td,
+.tabla-carrera-leclerc td,
+.tabla-carrera-hamilton td,
+.estadistica-leclerc td,
+.estadistica-hamilton td {
+    background-color: var(--negro-ferrari);
+    color: var(--amarillo-ferrari);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
+}
+#norris,
+#piastri {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--naranja-mclaren);
+    background-image: repeating-linear-gradient(45deg,
+            var(--blanco-mclaren) 0, var(--blanco-mclaren) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--blanco-mclaren) 0,
+            var(--blanco-mclaren) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-norris,
+.nom-piastri {
+    color: var(--blanco-mclaren);
+}
+
+.datos-norris,
+.datos-piastri {
+    color: var(--negro-ferrari);
+}
+
+.info-norris th,
+.info-piastri th,
+.tabla-carrera-norris th,
+.tabla-carrera-piastri th,
+.estadistica-norris th,
+.estadistica-piastri th {
+    background-color: var(--naranja-mclaren);
+    color: white;
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-norris td,
+.info-piastri td,
+.tabla-carrera-norris td,
+.tabla-carrera-piastri td,
+.estadistica-norris td,
+.estadistica-piastri td {
+    background-color: var(--negro-aston);
+    color: var(--blanco-mclaren);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid var(--naranja-mclaren);
+}
+#alonso,
+#stroll {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--verde-oscuro-aston);
+    background-image: repeating-linear-gradient(45deg,
+            var(--verde-aston) 0, var(--verde-aston) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-aston) 0,
+            var(--negro-aston) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-alonso,
+.nom-stroll {
+    color: var(--color-text-white);
+}
+
+.datos-alonso,
+.datos-stroll {
+    color: var(--verde-aston);
+}
+
+.info-alonso th,
+.info-stroll th,
+.tabla-carrera-alonso th,
+.tabla-carrera-stroll th,
+.estadistica-alonso th,
+.estadistica-stroll th {
+    background-color: var(--verde-oscuro-aston);
+    color: var(--verde-aston);
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-alonso td,
+.info-stroll td,
+.tabla-carrera-alonso td,
+.tabla-carrera-stroll td,
+.estadistica-alonso td,
+.estadistica-stroll td {
+    background-color: var(--negro-aston);
+    color: var(--color-text-white);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid var(--color-text-white);
+}
+#gasly,
+#colapinto {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--azul-alpine);
+    background-image: repeating-linear-gradient(45deg,
+            var(--rosa-alpine) 0, var(--rosa-alpine) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-gasly,
+.nom-colapinto {
+    color: var(--rosa-alpine);
+}
+
+.datos-gasly,
+.datos-colapinto {
+    color: var(--color-text-white);
+}
+
+.info-gasly th,
+.info-colapinto th,
+.tabla-carrera-gasly th,
+.tabla-carrera-colapinto th,
+.estadistica-gasly th,
+.estadistica-colapinto th {
+    background-color: var(--azul-alpine);
+    color:  var(--rosa-alpine);
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-gasly td,
+.info-colapinto td,
+.tabla-carrera-gasly td,
+.tabla-carrera-colapinto td,
+.estadistica-gasly td,
+.estadistica-colapinto td {
+    background-color: var(--negro-aston);
+    color: var(--color-text-white);
+    padding: 10px;
+    border: 1px solid var(--azul-alpine);
+    border-bottom: 1px solid var(--rosa-alpine);
+}
+#sainz,
+#albon {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--azul-williams);
+    background-image: repeating-linear-gradient(45deg,
+            var(--color-text-white) 0, var(--color-text-white) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-sainz,
+.nom-albon {
+    color: var(--azul-claro-williams);
+}
+
+.datos-sainz,
+.datos-albon {
+    color: var(--azul-claro-williams);
+}
+
+.info-sainz th,
+.info-albon th,
+.tabla-carrera-sainz th,
+.tabla-carrera-albon th,
+.estadistica-sainz th,
+.estadistica-albon th {
+    background-color: var(--azul-williams);
+    color: var(--azul-claro-williams);
+    text-align: left;
+    border: 1px solid white;
+}
+
+.info-sainz td,
+.info-albon td,
+.tabla-carrera-sainz td,
+.tabla-carrera-albon td,
+.estadistica-sainz td,
+.estadistica-albon td {
+    background-color: var(--negro-ferrari);
+    color: var(--color-text-white);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 1px solid var(--azul-claro-williams);
+}
+#lawson,
+#hadjar {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--azul-racinbulls);
+    background-image: repeating-linear-gradient(45deg,
+            var(--dorado-racingbulls) 0, var(--dorado-racingbulls) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.nom-lawson,
+.nom-hadjar {
+    color: var(--rojo-racingbulls);
+}
+
+.datos-lawson,
+.datos-hadjar {
+    color: var(--color-text-white);
+}
+
+.info-lawson th,
+.info-hadjar th,
+.tabla-carrera-lawson th,
+.tabla-carrera-hadjar th,
+.estadistica-lawson th,
+.estadistica-hadjar th {
+    background-color: var(--azul-racinbulls);
+    color:  var(--dorado-racingbulls);
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-lawson td,
+.info-hadjar td,
+.tabla-carrera-lawson td,
+.tabla-carrera-hadjar td,
+.estadistica-lawson td,
+.estadistica-hadjar td {
+    background-color: #bfc2c6;
+    color: var(--azul-racinbulls);
+    padding: 10px;
+    border: 1px solid var(--dorado-racingbulls);
+    border-bottom: 1px solid #DA291C;
+}
+#hulkenberg,
+#bortoleto {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--verde-kick);
+    background-image: repeating-linear-gradient(45deg,
+            var(--color-text-white) 0, var(--color-text-white) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.nom-hulkenberg,
+.nom-bortoleto {
+    color: var(--color-secundario-kick);
+}
+
+.datos-hulkenberg,
+.datos-bortoleto {
+    color: var(--color-secundario-kick);
+}
+
+.info-hulkenberg th,
+.info-bortoleto th,
+.tabla-carrera-hulkenberg th,
+.tabla-carrera-bortoleto th,
+.estadistica-hulkenberg th,
+.estadistica-bortoleto th {
+    background-color: var(--color-secundario-kick);
+    color: var(--verde-kick);
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-hulkenberg td,
+.info-bortoleto td,
+.tabla-carrera-hulkenberg td,
+.tabla-carrera-bortoleto td,
+.estadistica-hulkenberg td,
+.estadistica-bortoleto td {
+    background-color: var(--negro-ferrari);
+    color: var(--color-text-white);
+    padding: 10px;
+    border: 1px solid var(--verde-kick);
+    border-bottom: 1px solid #DA291C;
+}
+
+#bearman,
+#ocon {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--rojo-hass);
+    background-image: repeating-linear-gradient(45deg,
+            var(--negro-ferrari) 0, var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.nom-bearman,
+.nom-ocon {
+    color: var(--blanco-hass);
+}
+
+.datos-bearman,
+.datos-ocon {
+    color: var(--amarillo-ferrari);
+}
+
+.info-bearman th,
+.info-ocon th,
+.tabla-carrera-bearman th,
+.tabla-carrera-ocon th,
+.estadistica-bearman th,
+.estadistica-ocon th {
+    background-color: var(--rojo-ferrari);
+    color: #ffffff;
+    text-align: left;
+    border: 1px solid;
+}
+
+.info-bearman td,
+.info-ocon td,
+.tabla-carrera-bearman td,
+.tabla-carrera-ocon td,
+.estadistica-bearman td,
+.estadistica-ocon td {
+    background-color: var(--negro-ferrari);
+    color: var(--amarillo-ferrari);
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid #DA291C;
