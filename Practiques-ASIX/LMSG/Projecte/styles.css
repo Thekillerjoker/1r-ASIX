@@ -1608,7 +1608,7 @@ Blanco: #FFFFFF
 }
 
 
-.Header-pilots {
+.header-verstappen {
     display: grid;
     grid-template-columns: 20% 25% 45% 10%;
     grid-template-rows: 1fr;
@@ -1621,7 +1621,7 @@ Blanco: #FFFFFF
     color: var(--color-text-white);
     background-color: var(--color-redbull-blue-dark);
 }
-.header-left, .header-rigth, .background-ligth-blue, .background-pattern {
+.header-left, .header-rigth {
     grid-area: main;
 }
 
@@ -1640,30 +1640,9 @@ Blanco: #FFFFFF
     height: 100%;
     z-index: 5;
 }
-.background-ligth-blue {
-    grid-column: 3 / 5;
-    background-color: var(--color-redbull-blue-light);
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-    z-index: 1;
-}
-.background-pattern {
-    grid-column: 3 / 5;
-    background-image:
-    repeating-linear-gradient(to right, transparent 0, transparent 15px, var(--pattern-color) 15px, var(--pattern-color) 16px),
-        repeating-linear-gradient(to bottom, transparent 0, transparent 15px, var(--pattern-color) 15px, var(--pattern-color) 16px);
-        background-size: var(--pattern-size) var(--pattern-size);
-    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
-    z-index: 2;
-}
 
 
-.nombre-piloto-script {
-    font-family: var(--font-script);
-    font-size: 6rem;
-    line-height: 0.8;
-    margin: 0 0 -10px 5px;
-}
-.nombre-piloto {
+.nom-Pilot {
     font-family: var(--font-heading);
     font-size: 6.5rem; 
     text-transform: uppercase;
@@ -1683,11 +1662,10 @@ Blanco: #FFFFFF
     width: auto;
     object-fit: contain;
     position: absolute;
-    right: -100px;
-    bottom: -100px;
+
     /* Mueve el piloto fuera del contenedor para el efecto de la foto */
     /* Ajuste vertical fino */
-    z-index: 4;
+    z-index: 1;
     /* Delante del número de fondo */
 }
 .numero-fondo {
@@ -1703,21 +1681,4 @@ Blanco: #FFFFFF
     font-weight: 900;
     z-index: 3;
 }
-.linea-decorativa {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    background: var(--color-text-white);
-    z-index: 15;
-    /* Crea el efecto de línea rota */
-    mask-image: linear-gradient(to bottom, white 30%, transparent 30%, transparent 70%, white 70%);
-}
-.linea-decorativa.linea-1 {
-    width: 45px;
-    left: 0;
-}
 
-.linea-decorativa.linea-2 {
-    width: 20px;
-    left: 100px;
-}
