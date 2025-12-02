@@ -106,10 +106,9 @@ a {
         left: 0;
     }
 }
-header h1 {
-    color: red;
+#Inicio h1 {
+    color: rgb(201, 14, 14);
     font-family: var(--font-heading);
-    
 }
 #Alineacio {
     display: grid;
