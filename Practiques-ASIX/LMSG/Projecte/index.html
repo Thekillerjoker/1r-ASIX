@@ -4650,6 +4650,34 @@
     </div>
 
     </div>
+        <div class="Formulari">
+            <form>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" required>
+                <label for="PrimerCognom">Primer Cognomn:</label>
+                <input type="text" id="PrimerCognom" required>
+                <label for="SegonCognom">Segon Cognom:</label>
+                <input type="text" id="SegonCognom" required>
+                <label for="DNI">DNI:</label>
+                <input type="text" id="DNI" pattern="[0-9]{8}[A-Z]{1}" required>
+                <label for="correu">Email:</label>
+                <input type="email" id="correu" placeholder="exemple@gmail.com">
+                <label for="telefon">Número de telefon:</label>
+                <input type="text" id="telefon" pattern="[0-9]{9}" placeholder="606159679">
+                <label for="Aniversari">Data de neixament:</label>
+                <input type="date" id="Aniversari">
+        
+        
+                <p>Quin Pilot guanyara el mundial?</p>
+                Verstappen:<input type="radio" name="Campeo" value="verstappen">
+                Norris:<input type="radio" name="Camepo" value="Norris">
+        
+                Comentaris:<textarea id="comentaris" maxlength="100"></textarea>
+        
+                <input type="submit" value="Enviar">
+                <input type="reset" value="reset">
+            </form>
+        </div>
 
     <script>
         const btnMenu = document.getElementById('boton-menu');
