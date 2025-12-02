@@ -1183,7 +1183,7 @@ th {
     line-height: 1;
     font-family: var(--font-heading);
     /* 'Oswald' */
-    z-index: 6;
+    z-index: 2;
 }
 
 .Imatge-pilots {
