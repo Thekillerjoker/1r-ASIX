@@ -1,3 +1,37 @@
+:root {
+    --azul-oscuro-redbull: #1e3f87;
+    --azul-claro-redbull: #5275c9;
+    --amarillo-redbull: #ffd700;
+    --color-mercedes-verde: #00A19C;
+    --color-mercedes-negro: #0D0D0D;
+    --mercedes-iridium-hex: #B7B9BC;
+    --rojo-ferrari: #DC0000;
+    --amarillo-ferrari: #FFF200;
+    --negro-ferrari: #2a2a2a;
+    --naranja-mclaren: #ff8700;
+    --blanco-mclaren: #fff5e6;
+    --verde-aston: #00FF87;
+    --verde-oscuro-aston: #00352f;
+    --negro-aston: #2a2a2a;
+    --azul-williams: #00205b;
+    --azul-claro-williams: #00aeef;
+    --azul-alpine: #0050a0;
+    --rosa-alpine: #ff66cc;
+    --azul-racinbulls: #1e1e60;
+    --rojo-racingbulls: #e10600;
+    --dorado-racingbulls: #d4af37;
+    --verde-kick: #00ff87;
+    --color-secundario-kick: #0f0f0f;
+    --rojo-hass: #e10600;
+    --blanco-hass: #fff5e6;
+    --color-text-white: #ffffff;
+    --font-script: 'Dancing Script', cursive;
+    --font-heading: 'Oswald', sans-serif;
+    --font-header: 'Roboto', sans-serif;
+    --pattern-color: rgba(255, 255, 255, 0.08);
+    --pattern-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -72,6 +106,7 @@ a {
         left: 0;
     }
 }
+
 #Alineacio {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
@@ -300,25 +335,38 @@ a {
     margin: 0 auto;
     padding: 40px 0;
 }
+
 /* -- Seccion prinipal para cada escuderia -- */
-#Mclaren, #redbull, #Ferrari, #Aston-Martin, #Mercedes, #Williams, #Alpine, #RacingBulls, #Kick, #Has {
+#Mclaren,
+#redbull,
+#Ferrari,
+#Aston-Martin,
+#Mercedes,
+#Williams,
+#Alpine,
+#RacingBulls,
+#Kick,
+#Has {
     margin-bottom: 60px;
     font-family: 'Poppins', sans-serif;
 }
+
 /* --Cabeceras---*/
 .header-equipo {
     display: flex;
     align-items: center;
-    justify-content:left;
+    justify-content: left;
     padding: 20px;
     position: relative;
 }
+
 .header-equipo h2 {
     font-size: 2em;
     font-weight: 600;
     margin: 0;
     text-transform: uppercase;
 }
+
 .logo-escuderia {
     display: inline-block;
     max-width: 180px;
@@ -328,42 +376,51 @@ a {
     -webkit-filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.55));
     z-index: 20;
 }
+
 /* --- Bloques de información general --- */
 .Info-general {
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
 }
+
 .Info-general h3 {
     margin-bottom: 10px;
     font-size: 1.4em;
     font-weight: 600;
 }
+
 /* --- Tablas generales (información y coches) --- */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
-th, td {
+
+th,
+td {
     padding: 10px 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
 th {
     font-weight: 600;
 }
+
 /* --- Directiva de equipo --- */
 .Directiva {
-  margin-top: 40px;
-  padding: 20px;
-  border-radius: 10px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
 }
+
 .Imagen-Jefes {
     display: flex;
     gap: 40px;
     margin-top: 20px;
 }
+
 .Jefe-equipo img {
     max-width: 100%;
     width: auto;
@@ -371,52 +428,72 @@ th {
     display: block;
     border-radius: 10px;
 }
+
 .Jefe-equipo p {
     text-align: center;
     font-weight: 600;
     margin-top: 8px;
 }
+
 /* --- Coche actual e icónico --- */
 .Coche {
     margin-top: 40px;
     padding: 20px;
     border-radius: 10px;
 }
+
 .coches-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+
 .imagen-coche {
     display: block;
     max-width: 100%;
     height: auto;
-   
+
 }
-.coche-actual, .coche-iconico {
+
+.coche-actual,
+.coche-iconico {
     flex: 1 1 45%;
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-.coche-actual h4, .coche-iconico h4 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+
+.coche-actual h4,
+.coche-iconico h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
-/* Slideshow container */ 
+
+/* Slideshow container */
 .carrousel-container {
     max-width: 100%;
     position: relative;
     margin-bottom: 10px;
 }
-.carrouselmclaren, .carrouselredbull, .carrouselferrari, .carrouselmercedes, .carrouselaston, .carrouselwilliams, .carrouselalpine, .carrouselracingbulls, .carrouselkick, .carrouselhas {
+
+.carrouselmclaren,
+.carrouselredbull,
+.carrouselferrari,
+.carrouselmercedes,
+.carrouselaston,
+.carrouselwilliams,
+.carrouselalpine,
+.carrouselracingbulls,
+.carrouselkick,
+.carrouselhas {
     display: none;
 }
 
 
 /* Next & previous buttons */
-.prev,.next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -439,7 +516,8 @@ th {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,.next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -501,6 +579,7 @@ th {
 .imagen-jefes-mclaren img {
     border: 3px solid #ff8700;
 }
+
 .coche-mclaren {
     background-color: #fff5e6;
     border: 2px solid #ff8700;
@@ -516,56 +595,71 @@ th {
     border: 1px solid;
 
 }
+
 .tabla-mclaren td,
 .tabla-coche-mclaren td,
 .jefes-mclaren td {
     background-color: #2a2a2a;
     color: #ffffff;
     padding: 10px;
-    border: 1px solid ;
+    border: 1px solid;
     border-bottom: 1px solid #ff8700;
 }
+
 .header-redbull {
     background-color: #1E2D6E;
     color: #ffD700;
 }
+
 .info-redbull {
     background-color: #fff5e6;
     border: 2px solid #1E2D6E;
 }
+
 .directiva-redbull {
     background-color: #fff5e6;
     border: 2px solid #1E2D6E;
 }
+
 .imagen-jefes-redbull img {
     border: 3px solid #DA291C;
 }
+
 .coche-redbull {
     background-color: #fff5e6;
     border: 2px solid #1E2D6E;
 }
-.tabla-redbull th, .jefes-redbull th, .tabla-coche-redbull th {
+
+.tabla-redbull th,
+.jefes-redbull th,
+.tabla-coche-redbull th {
     background-color: #1E2D6E;
     color: #ffD700;
     text-align: left;
     padding: 10px;
     border: 1px solid;
 }
-.tabla-redbull td, .jefes-redbull td, .tabla-coche-redbull td {
+
+.tabla-redbull td,
+.jefes-redbull td,
+.tabla-coche-redbull td {
     background-color: #2a2a2a;
     color: white;
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid #DA291C;
 }
+
 .header-ferrari {
     background-color: #DC0000;
     color: #FFF200;
 }
+
 .info-ferrari {
     background-color: #F5F5F5;
     border: 2px solid #DC0000;
 }
+
 .directiva-ferrari {
     background-color: #F5F5F5;
     border: 2px solid #DC0000;
@@ -574,158 +668,220 @@ th {
 .imagen-jefes-ferrari img {
     border: 3px solid #000000;
 }
+
 .coche-ferrari {
     background-color: #F5F5F5;
     border: 2px solid #DC0000;
 }
-.tabla-ferrari th, .jefes-ferrari th, .tabla-coche-ferrari th {
+
+.tabla-ferrari th,
+.jefes-ferrari th,
+.tabla-coche-ferrari th {
     background-color: #dc0000;
     color: #FFF200;
     text-align: left;
     padding: 10px;
     border: 1px solid;
 }
-.tabla-ferrari td, .jefes-ferrari td, .tabla-coche-ferrari td {
+
+.tabla-ferrari td,
+.jefes-ferrari td,
+.tabla-coche-ferrari td {
     background-color: #2a2a2a;
     color: white;
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid #DC0000;
 }
+
 .header-aston {
     background-color: #00352f;
     color: #00ff87;
 }
+
 .info-aston {
     background-color: #fff5e6;
     border: 2px solid #00352F;
 }
+
 .directiva-aston {
     background-color: #fff5e6;
     border: 2px solid #00352F;
 }
+
 .imagen-jefes-aston img {
     border: 3px solid #00FF87;
     /* Borde de acento brillante */
     border-radius: 10px;
 }
+
 .coche-aston {
     background-color: #fff5e6;
     border: 2px solid #00352F;
 }
-.tabla-aston th, .jefes-aston th, .tabla-coche-aston th {
+
+.tabla-aston th,
+.jefes-aston th,
+.tabla-coche-aston th {
     background-color: #00352F;
     color: #00ff87;
     text-align: left;
     padding: 10px;
     border: 1px solid;
 }
-.tabla-aston td, .jefes-aston td, .tabla-coche-aston td {
+
+.tabla-aston td,
+.jefes-aston td,
+.tabla-coche-aston td {
     background-color: #2a2a2a;
     color: white;
     padding: 10px;
     border: 1px solid;
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .header-mercedes {
     background-color: #0D0D0D;
     color: #00A19C;
 }
-.info-mercedes, .directiva-mercedes, .coche-mercedes {
+
+.info-mercedes,
+.directiva-mercedes,
+.coche-mercedes {
     background-color: #d9d9d9;
     border: 2px solid #0D0D0D;
 }
+
 .imagen-jefes-mercedes img {
     border: 3px solid #00A19C;
     border-radius: 10px;
 }
-.tabla-mercedes th, .jefes-mercedes th, .tabla-coche-mercedes th {
+
+.tabla-mercedes th,
+.jefes-mercedes th,
+.tabla-coche-mercedes th {
     background-color: #00A19C;
     color: #d9d9d9;
     text-align: left;
     padding: 10px;
     border: 1px solid #0D0D0D;
 }
-.tabla-mercedes td, .jefes-mercedes td, .tabla-coche-mercedes td {
+
+.tabla-mercedes td,
+.jefes-mercedes td,
+.tabla-coche-mercedes td {
     background-color: #0D0D0D;
     color: #00a19c;
     padding: 10px;
     border: 1px solid white;
 }
+
 .header-williams {
     background-color: #00205b;
     color: #00aeef;
 }
-.info-williams, .directiva-williams, .coche-williams {
+
+.info-williams,
+.directiva-williams,
+.coche-williams {
     background-color: #fff5e6;
     border: 3px solid #00205b;
 }
+
 .imagen-jefes-williams img {
     border: 3px solid #00aeef;
 }
-.tabla-williams th, .jefes-williams th, .tabla-coche-williams th {
+
+.tabla-williams th,
+.jefes-williams th,
+.tabla-coche-williams th {
     background-color: #00205b;
     color: #00aeef;
     text-align: left;
     padding: 10px;
     border: 1px solid white;
 }
-.tabla-williams td, .jefes-williams td, .tabla-coche-williams td {
+
+.tabla-williams td,
+.jefes-williams td,
+.tabla-coche-williams td {
     background-color: #2a2a2a;
     color: white;
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid #00aeef;
 }
+
 .header-alpine {
     background-color: #0050a0;
     color: #ff66cc;
 }
-.info-alpine, .directiva-alpine, .coche-alpine {
+
+.info-alpine,
+.directiva-alpine,
+.coche-alpine {
     background-color: #fff5e6;
     border: 2px solid #ff66cc;
 }
+
 .imagen-jefes-alpine img {
     border: 3px solid #0050a0;
 }
-.tabla-alpine th, .jefes-alpine th, .tabla-coche-alpine th {
+
+.tabla-alpine th,
+.jefes-alpine th,
+.tabla-coche-alpine th {
     background-color: #0050a0;
     color: #ff66cc;
     text-align: center;
     padding: 10px;
 }
-.tabla-alpine td, .jefes-alpine td, .tabla-coche-alpine td {
+
+.tabla-alpine td,
+.jefes-alpine td,
+.tabla-coche-alpine td {
     background-color: #2a2a2a;
     color: white;
     padding: 10px;
     border: 2px solid #0050a0;
     border-bottom: 2px solid #ff66cc;
 }
+
 .header-racingbulls {
     background-color: #1e1e60;
     color: #e10600;
 }
-.info-racingbulls, .directiva-racingbulls, .coche-racingbulls {
+
+.info-racingbulls,
+.directiva-racingbulls,
+.coche-racingbulls {
     background-color: #fff5e6;
     border: 1px solid #e10600;
 }
+
 .imagen-jefes-racingbulls img {
     border: 3px solid #d4af37;
 }
-.tabla-racingbulls th, .jefes-racingbulls th, .tabla-coche-racingbulls th {
+
+.tabla-racingbulls th,
+.jefes-racingbulls th,
+.tabla-coche-racingbulls th {
     background-color: #1e1e60;
     color: #d4af37;
     text-align: left;
     padding: 10px;
 }
-.tabla-racingbulls td, .jefes-racingbulls td, .tabla-coche-racingbulls td {
+
+.tabla-racingbulls td,
+.jefes-racingbulls td,
+.tabla-coche-racingbulls td {
     background-color: #bfc2c6;
     color: #1e1e60;
     padding: 10px;
     border: 1px solid #1e1e60;
     border-bottom: 1px solid #d4af37;
 }
+
 #Kick {
     background: linear-gradient(180deg, #0a0a0a 0%, #003366 100%);
     color: white;
@@ -733,6 +889,7 @@ th {
     border-top: 4px solid #00ff87;
     border-bottom: 4px solid #00ff87;
 }
+
 .header-kick {
     background-color: #0a0a0a;
     color: #00ff87;
@@ -740,14 +897,20 @@ th {
     padding: 20px;
     border-bottom: 2px solid #00ff87;
 }
-.info-kick, .directiva-kick, .coche-kick {
+
+.info-kick,
+.directiva-kick,
+.coche-kick {
     background-color: rgba(255, 255, 255, 0.05);
     border-left: 4px solid #00FF87;
     padding: 20px;
     margin: 20px;
     border-radius: 12px;
 }
-.tabla-kick, .jefes-kick, .tabla-coche-kick {
+
+.tabla-kick,
+.jefes-kick,
+.tabla-coche-kick {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
@@ -756,77 +919,98 @@ th {
     border-radius: 10px;
     overflow: hidden;
 }
-.tabla-kick th, .jefes-kick th, .tabla-coche-kick th {
+
+.tabla-kick th,
+.jefes-kick th,
+.tabla-coche-kick th {
     background-color: #003366;
-        color: #d50032;
-        padding: 12px;
-        text-align: center;
+    color: #d50032;
+    padding: 12px;
+    text-align: center;
 }
-.tabla-kick td, .jefes-kick td, .tabla-coche-kick td {
+
+.tabla-kick td,
+.jefes-kick td,
+.tabla-coche-kick td {
     border: 1px solid #00FF87;
-        padding: 10px;
-        text-align: center;
-        color: #ffffff;
-        border-bottom:1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
+
 .tabla-kick tr:nth-child(even) {
     background-color: rgba(0, 255, 135, 0.1);
 }
+
 .jefes-kick tr:nth-child(even) {
     background-color: rgba(0, 255, 135, 0.1);
 }
+
 .tabla-coche-kick tr:nth-child(even) {
     background-color: rgba(0, 255, 135, 0.1);
 }
+
 /* Carrusel */
 .carrouselkick img {
     border: 3px solid #00FF87;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
 }
+
 .imagen-jefes-kick img {
     border: 3px solid #00ff87;
 
 }
+
 .carrouselkick .descripcio-imatge {
     background-color: rgba(0, 51, 102, 0.7);
     color: #ffffff;
     padding: 8px;
     border-radius: 8px;
 }
+
 /* Flechas del carrusel */
 .prev,
 .next {
     color: #00FF87;
 }
+
 .prev:hover,
 .next:hover {
     color: #d50032;
 }
-/*cOLRES HAS:
-🎨 Paleta: Negro: #1A1A1A 
-Rojo Haas: #E10600 
-Blanco: #FFFFFF
-*/
+
+
 .header-has {
     background-color: #e10600;
     color: white;
 }
-.info-has, .directiva-has, .coche-has {
+
+.info-has,
+.directiva-has,
+.coche-has {
     background-color: #fff5e6;
     border: 2px solid #e10600;
     padding: 10px;
 }
+
 .imagen-jefes-has img {
-    border: 3px solid ;
+    border: 3px solid;
 }
-.tabla-has th, .jefes-has th, .tabla-coche-has th {
+
+.tabla-has th,
+.jefes-has th,
+.tabla-coche-has th {
     background-color: #e10600;
     color: white;
     text-align: left;
     padding: 10px;
 }
-.tabla-has td, .jefes-has td, .tabla-coche-has td {
+
+.tabla-has td,
+.jefes-has td,
+.tabla-coche-has td {
     background-color: #2a2a2a;
     color: white;
     padding: 10px;
@@ -834,131 +1018,36 @@ Blanco: #FFFFFF
 }
 
 
-
-/* -#verstappen {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 50px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background: #fff5e6;
-    /* fondo claro para el cuerpo */
-}
-
-/* --- Header Verstappen --- */
-/* .header-verstappen {
-    background-color: #1E2D6E;
-    
-    color: #FFD700;
-    
-    padding: 20px;
-    border-radius: 15px 15px 0 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-}*/
-
-/*.header-verstappen h2 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}*/
-
-/* Imagen piloto */
-/*.imatge-verstappen {
-    
-    border-radius: 10px;
-    border: 3px solid #DA291C;
-    
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}+/
-
-/* Número grande de fondo */
-/*#verstappen::before {
-    content: "1";
-   
-    position: absolute;
-    font-size: 12rem;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.1);
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    z-index: 0;
-    pointer-events: none;
-}*/
-
-/* --- Contenedores info/carrera/estadísticas --- */
-.info-verstappen,
-.carrera-verstappen,
-.estadistica-verstappen {
-    background-color: #fff5e6;
-    /* fondo claro */
-    border: 2px solid #1E2D6E;
-    /* borde azul */
-    padding: 20px;
-    margin-top: -10px;
-    /* une con header */
-    border-radius: 0 0 15px 15px;
-}
-
-/* --- Tablas Verstappen --- */
-.tabla-versttapen th,
-.tabla-carrera-verstappen th,
-.tabla-estadistica-verstappen th {
-    background-color: #1E2D6E;
-    /* azul */
-    color: #FFD700;
-    /* dorado */
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #1E2D6E;
-}
-
-.tabla-versttapen td,
-.tabla-carrera-verstappen td,
-.tabla-estadistica-verstappen td {
-    background-color: #2a2a2a;
-    /* gris oscuro */
-    color: white;
-    padding: 10px;
-    border: 1px solid #1E2D6E;
-}
-
-/* Zebra stripes */
-.tabla-versttapen tr:nth-child(even),
-.tabla-carrera-verstappen tr:nth-child(even),
-.tabla-estadistica-verstappen tr:nth-child(even) {
-    background-color: rgba(255, 215, 0, 0.1);
-    /* dorado suave */
-}
-
 /* Hover efecto tarjeta */
-#verstappen:hover {
+#verstappen:hover,
+#tsunoda:hover,
+#russell:hover,
+#antonelli:hover,
+#leclerc:hover,
+#hamilton:hover,
+#norris:hover,
+#piastri:hover,
+#alonso:hover,
+#stroll:hover,
+#gasly:hover,
+#colapinto:hover,
+#sainz:hover,
+#albon:hover,
+#lawson:hover,
+#hadjar:hover,
+#hulkenberg:hover,
+#bortoleto:hover,
+#bearman:hover,
+#ocon:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
 }
-/*#pilots {
-    width: 90%;
-    margin: 0 auto;
-    padding: 40px 0;
-}*/
-#verstappen
+
+#verstappen,
 #tsunoda,
-#rusell,
+#russell,
 #antonelli,
-#leclercl,
+#leclerc,
 #hamilton,
 #norris,
 #piastri,
@@ -978,29 +1067,12 @@ Blanco: #FFFFFF
     font-family: 'Poppins', sans-serif;
 }
 
-/*.Header-pilots {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 20px;
-    position: relative;
-}*/
-/*.Header-pilots h2 {
-    font-size: 2em;
-    font-weight: 600;
-    margin: 0;
-    text-transform: uppercase;
-}*/
-/*.Imatge-pilots {
-    height: auto;
-    width: auto;
-}*/
-
 .info-pilots {
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
 }
+
 .carrera-pilots {
     margin-top: 40px;
     padding: 20px;
@@ -1012,54 +1084,133 @@ Blanco: #FFFFFF
     padding: 20px;
     border-radius: 10px;
 }
-/*#verstappen {
+
+#pilots {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+#verstappen,
+#tsunoda {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--azul-oscuro-redbull);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--azul-claro-redbull) 0, var(--azul-claro-redbull) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--azul-claro-redbull) 0,
+            var(--azul-claro-redbull) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.Header-pilots {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* Alinear los elementos de abajo (imagen y texto) */
+    background-color: transparent;
+    /* Azul Oscuro: #1e3f87 */
+    padding: 40px 20px 0 100px;
+    /* Más padding arriba y a los lados */
     position: relative;
-    border-radius: 20px;
+    /* Necesario para posicionar el número de fondo */
     overflow: hidden;
-    margin-bottom: 50px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    font-family: 'Poppins', sans-serif;
+    /* Ocultar el número que sobresale */
+    border-radius: 15px 15px 0 0;
+    /* Bordes redondeados solo en la parte superior */
+
+}
+
+.header-left {
+    z-index: 10;
+    padding-bottom: 20px;
+}
+
+.header-right {
+    position: relative;
+    z-index: 10;
+}
+
+
+.nom-Pilot {
+    font-size: 5em;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+    /* Para que el texto sea más compacto */
+    font-family: var(--font-heading);
+    /* 'Oswald' */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nom-verstappen,
+.nom-tsunoda {
+    color: #FFD700;
+}
+
+.datos-piloto {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.datos-verstappen,
+.datos-tsunoda {
+    color: var(--color-text-white);
+}
+
+.numero-fondo {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    /* Mover el número hacia arriba */
+    transform: translateX(-65%) rotate(-5deg);
+    /* Mover el número hacia la izquierda, fuera del texto */
+    font-size: 25em;
+    font-weight: 900;
     color: white;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    opacity: 0.50;
+    /* Semitransparente */
+    line-height: 1;
+    font-family: var(--font-heading);
+    /* 'Oswald' */
+    z-index: 4;
+}
+
+.Imatge-pilots {
     display: block;
-    background: #fff5e6;
-
-}*/
-/*#verstappen:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-}*/
-.info-verstappen, .tabla-carrera-verstappen, .estadistica-verstappen {
-    background-color: #fff5e6;
-    border: 2px solid #1E2D6E;
-}
-.info-verstappen th, .tabla-carrera-verstappen th, .estadistica-verstappen th {
-    background-color: #1e2d6e;
-    color: #ffd700;
-    text-align: left;
-    border: 1px solid;
-}
-.info-verstappen td,
-.tabla-carrera-verstappen td,
-.estadistica-verstappen td {
-    background-color: #2a2a2a;
-    color: white;
-    padding: 10px;
-    border: 1px solid;
-    border-bottom: 1px solid #DA291C;
-}
-.tabla-tsunoda,
-.tabla-carrera-tsunoda,
-.estadistica-tsunoda {
-    background-color: #fff5e6;
-    border: 2px solid #1E2D6E;
+    max-height: 450px;
+    /* Ajusta la altura de la imagen */
+    width: auto;
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.5));
+    z-index: 1;
 }
 
-.tabla-tsunoda th,
+.info-pilots,
+.carrera-pilots,
+.estadistiques-pilots {
+    background-color: #0b0303a8;
+    padding: 20px;
+    margin: 20px 40px;
+    /* Más margen lateral para separarlas del borde azul */
+    border-radius: 8px;
+    border: none;
+}
+
+.info-verstappen th,
+.info-tsunoda th,
+.tabla-carrera-verstappen th,
 .tabla-carrera-tsunoda th,
+.estadistica-verstappen th,
 .estadistica-tsunoda th {
     background-color: #1e2d6e;
     color: #ffd700;
@@ -1067,571 +1218,520 @@ Blanco: #FFFFFF
     border: 1px solid;
 }
 
-.tabla-tsunoda td,
+.info-verstappen td,
+.info-tsunoda td,
+.tabla-carrera-verstappen td,
 .tabla-carrera-tsunoda td,
+.estadistica-verstappen td,
 .estadistica-tsunoda td {
-    background-color: #2a2a2a;
-    color: white;
+    background-color: #fff5e6;
+    color: var(--color-redbull-blue-dark);
     padding: 10px;
     border: 1px solid;
     border-bottom: 1px solid #DA291C;
 }
-.imatge-tsunoda {
-    position: absolute;
-    padding-top: 0.125rem;
-    width: 122px;
-}
-@media (min-width: 768px) {
-    .imatge-tsunoda {
-        padding-top: 1px;
-        width: 36px;
-    }
-}
-@media (min-width: 1024px) {
-    .imatge-tsunoda {
-        width: 36px;
-    }
+
+#russell,
+#antonelli {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--color-mercedes-verde);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--color-mercedes-negro) 0, var(--color-mercedes-negro) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--color-mercedes-negro) 0,
+            var(--color-mercedes-negro) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
-.info-antonelli,
-.tabla-carrera-antonelli,
-.estadistica-antonelli {
-    background-color: #d9d9d9;
-    border: 2px solid #0D0D0D;
+.nom-russell,
+.nom-antonelli {
+    color: var(--color-text-white);
 }
-.tabla-antonelli th,
+
+.datos-russell,
+.datos-antonelli {
+    color: #ffD700;
+}
+
+.info-russell th,
+.info-antonelli th,
+.tabla-carrera-russell th,
 .tabla-carrera-antonelli th,
+.estadistica-russell th,
 .estadistica-antonelli th {
-    background-color: #00A19C;
-    color: #d9d9d9;
+    background-color: var(--color-mercedes-verde);
+    color: #ffffff;
     text-align: left;
-    padding: 10px;
-    border: 1px solid #0D0D0D;
+    border: 1px solid;
 }
-.tabla-antonelli td,
+
+.info-russell td,
+.info-antonelli td,
+.tabla-carrera-russell td,
 .tabla-carrera-antonelli td,
+.estadistica-russell td,
 .estadistica-antonelli td {
-    background-color: #0D0D0D;
-    color: #00a19c;
+    background-color: var(--mercedes-iridium-hex);
+    color: var(--color-mercedes-negro);
     padding: 10px;
-    border: 1px solid white;
-}
-.info-rusell,
-.tabla-carrera-rusell,
-.estadistica-rusell {
-    background-color: #d9d9d9;
-    border: 2px solid #0D0D0D;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
 }
 
-.tabla-rusell th,
-.tabla-carrera-rusell th,
-.estadistica-rusell th {
-    background-color: #00A19C;
-    color: #d9d9d9;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #0D0D0D;
+#leclerc,
+#hamilton {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--rojo-ferrari);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--negro-ferrari) 0, var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
-.tabla-rusell td,
-.tabla-carrera-rusell td,
-.estadistica-rusell td {
-    background-color: #0D0D0D;
-    color: #00a19c;
-    padding: 10px;
-    border: 1px solid white;
+.nom-leclerc,
+.nom-hamilton {
+    color: var(--color-text-white);
 }
-.info-leclerc,
-.tabla-carrera-leclerc,
-.estadistica-leclerc {
-        background-color: #F5F5F5;
-        border: 2px solid #DC0000;
+
+.datos-leclerc,
+.datos-hamilton {
+    color: var(--amarillo-ferrari);
 }
+
 .info-leclerc th,
+.info-hamilton th,
 .tabla-carrera-leclerc th,
-.estadistica-leclerc th {
-    background-color: #dc0000;
-    color: #FFF200;
+.tabla-carrera-hamilton th,
+.estadistica-leclerc th,
+.estadistica-hamilton th {
+    background-color: var(--rojo-ferrari);
+    color: #ffffff;
     text-align: left;
-    padding: 10px;
     border: 1px solid;
 }
 
 .info-leclerc td,
-.tabla-carrera-leclerc td,
-.estadistica-leclerc td  {
-    background-color: #2a2a2a;
-    color: white;
-    padding: 10px;
-    border: 1px solid;
-    border-bottom: 1px solid #DC0000;
-}
-.info-hamilton,
-.tabla-carrera-hamilton,
-.estadistica-hamilton {
-    background-color: #F5F5F5;
-    border: 2px solid #DC0000;
-}
-
-.info-hamilton th,
-.tabla-carrera-hamilton th,
-.estadistica-hamilton th {
-    background-color: #dc0000;
-    color: #FFF200;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid;
-}
-
 .info-hamilton td,
+.tabla-carrera-leclerc td,
 .tabla-carrera-hamilton td,
+.estadistica-leclerc td,
 .estadistica-hamilton td {
-    background-color: #2a2a2a;
-    color: white;
+    background-color: var(--negro-ferrari);
+    color: var(--amarillo-ferrari);
     padding: 10px;
     border: 1px solid;
-    border-bottom: 1px solid #DC0000;
+    border-bottom: 1px solid #DA291C;
 }
-.info-norris,
-.tabla-carrera-norris,
-.estadistica-norris {
-    background-color: #fff5e6;
-    border: 2px solid #ff8700;
+
+
+#norris,
+#piastri {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--naranja-mclaren);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--blanco-mclaren) 0, var(--blanco-mclaren) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--blanco-mclaren) 0,
+            var(--blanco-mclaren) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
+
+.nom-norris,
+.nom-piastri {
+    color: var(--blanco-mclaren);
+}
+
+.datos-norris,
+.datos-piastri {
+    color: var(--negro-ferrari);
+}
+
 .info-norris th,
+.info-piastri th,
 .tabla-carrera-norris th,
-.estadistica-norris th {
-    background-color: #ff8700;
+.tabla-carrera-piastri th,
+.estadistica-norris th,
+.estadistica-piastri th {
+    background-color: var(--naranja-mclaren);
     color: white;
     text-align: left;
-    padding: 10px;
     border: 1px solid;
-
 }
 
 .info-norris td,
-.tabla-carrera-norris td,
-.estadistica-norris td {
-    background-color: #2a2a2a;
-    color: #ffffff;
-    padding: 10px;
-    border: 1px solid;
-    border-bottom: 1px solid #ff8700;
-}
-.info-piastri,
-.tabla-carrera-piastri,
-.estadistica-piastri {
-    background-color: #fff5e6;
-    border: 2px solid #ff8700;
-}
-
-.info-piastri th,
-.tabla-carrera-piastri th,
-.estadistica-piastri th {
-    background-color: #ff8700;
-    color: white;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid;
-
-}
-
 .info-piastri td,
+.tabla-carrera-norris td,
 .tabla-carrera-piastri td,
+.estadistica-norris td,
 .estadistica-piastri td {
-    background-color: #2a2a2a;
-    color: #ffffff;
+    background-color: var(--negro-aston);
+    color: var(--blanco-mclaren);
     padding: 10px;
     border: 1px solid;
-    border-bottom: 1px solid #ff8700;
+    border-bottom: 1px solid var(--naranja-mclaren);
 }
-.info-alonso,
-.tabla-carrera-alonso,
-.estadistica-alonso {
-    background-color: #fff5e6;
-    border: 2px solid #00352F;
-}
-.info-alonso th,
-.tabla-carrera-alonso th,
-.estadistica-alonso th {
-    background-color: #00352F;
-    color: #00ff87;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid;
 
+#alonso,
+#stroll {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--verde-oscuro-aston);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--verde-aston) 0, var(--verde-aston) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-aston) 0,
+            var(--negro-aston) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.nom-alonso,
+.nom-stroll {
+    color: var(--color-text-white);
+}
+
+.datos-alonso,
+.datos-stroll {
+    color: var(--verde-aston);
+}
+
+.info-alonso th,
+.info-stroll th,
+.tabla-carrera-alonso th,
+.tabla-carrera-stroll th,
+.estadistica-alonso th,
+.estadistica-stroll th {
+    background-color: var(--verde-oscuro-aston);
+    color: var(--verde-aston);
+    text-align: left;
+    border: 1px solid;
 }
 
 .info-alonso td,
-.tabla-carrera-alonso td,
-.estadistica-alonso td {
-        background-color: #2a2a2a;
-        color: white;
-        padding: 10px;
-        border: 1px solid;
-        border-bottom: 1px solid white;
-}
-.info-stroll,
-.tabla-carrera-stroll,
-.estadistica-stroll {
-    background-color: #fff5e6;
-    border: 2px solid #00352F;
-}
-
-.info-stroll th,
-.tabla-carrera-stroll th,
-.estadistica-stroll th {
-    background-color: #00352F;
-    color: #00ff87;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid;
-
-}
-
 .info-stroll td,
+.tabla-carrera-alonso td,
 .tabla-carrera-stroll td,
+.estadistica-alonso td,
 .estadistica-stroll td {
-    background-color: #2a2a2a;
-    color: white;
+    background-color: var(--negro-aston);
+    color: var(--color-text-white);
     padding: 10px;
     border: 1px solid;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--color-text-white);
 }
 
-.info-gasly,
-.tabla-carrera-gasly,
-.estadistica-gasly {
-        background-color: #fff5e6;
-        border: 2px solid #ff66cc;
+#gasly,
+#colapinto {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--azul-alpine);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--rosa-alpine) 0, var(--rosa-alpine) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.nom-gasly,
+.nom-colapinto {
+    color: var(--rosa-alpine);
+}
+
+.datos-gasly,
+.datos-colapinto {
+    color: var(--color-text-white);
 }
 
 .info-gasly th,
+.info-colapinto th,
 .tabla-carrera-gasly th,
-.estadistica-gasly th {
-        background-color: #0050a0;
-        color: #ff66cc;
-        text-align: center;
-        padding: 10px;
-
+.tabla-carrera-colapinto th,
+.estadistica-gasly th,
+.estadistica-colapinto th {
+    background-color: var(--azul-alpine);
+    color: var(--rosa-alpine);
+    text-align: left;
+    border: 1px solid;
 }
 
 .info-gasly td,
-.tabla-carrera-gasly td,
-.estadistica-gasly td {
-        background-color: #2a2a2a;
-        color: white;
-        padding: 10px;
-        border: 2px solid #0050a0;
-        border-bottom: 2px solid #ff66cc;
-}
-.info-colapinto,
-.tabla-carrera-colapinto,
-.estadistica-colapinto {
-    background-color: #fff5e6;
-    border: 2px solid #ff66cc;
-}
-
-.info-colapinto th,
-.tabla-carrera-colapinto th,
-.estadistica-colapinto th {
-    background-color: #0050a0;
-    color: #ff66cc;
-    text-align: center;
-    padding: 10px;
-
-}
-
 .info-colapinto td,
+.tabla-carrera-gasly td,
 .tabla-carrera-colapinto td,
+.estadistica-gasly td,
 .estadistica-colapinto td {
-    background-color: #2a2a2a;
-    color: white;
+    background-color: var(--negro-aston);
+    color: var(--color-text-white);
     padding: 10px;
-    border: 2px solid #0050a0;
-    border-bottom: 2px solid #ff66cc;
+    border: 1px solid var(--azul-alpine);
+    border-bottom: 1px solid var(--rosa-alpine);
 }
-.info-sainz,
-.tabla-carrera-sainz,
-.estadistica-sainz {
-    background-color: #fff5e6;
-    border: 3px solid #00205b;
+
+#sainz,
+#albon {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--azul-williams);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--color-text-white) 0, var(--color-text-white) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.nom-sainz,
+.nom-albon {
+    color: var(--azul-claro-williams);
+}
+
+.datos-sainz,
+.datos-albon {
+    color: var(--azul-claro-williams);
 }
 
 .info-sainz th,
+.info-albon th,
 .tabla-carrera-sainz th,
-.estadistica-sainz th {
-    background-color: #00205b;
-    color: #00aeef;
+.tabla-carrera-albon th,
+.estadistica-sainz th,
+.estadistica-albon th {
+    background-color: var(--azul-williams);
+    color: var(--azul-claro-williams);
     text-align: left;
-    padding: 10px;
     border: 1px solid white;
 }
 
 .info-sainz td,
-.tabla-carrera-sainz td,
-.estadistica-sainz td {
-    background-color: #2a2a2a;
-    color: white;
-    padding: 10px;
-    border: 1px solid;
-    border-bottom: 1px solid #00aeef;
-}
-.info-albon,
-.tabla-carrera-albon,
-.estadistica-albon {
-    background-color: #fff5e6;
-    border: 3px solid #00205b;
-}
-
-.info-albon th,
-.tabla-carrera-albon th,
-.estadistica-albon th {
-    background-color: #00205b;
-    color: #00aeef;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid white;
-}
-
 .info-albon td,
+.tabla-carrera-sainz td,
 .tabla-carrera-albon td,
+.estadistica-sainz td,
 .estadistica-albon td {
-    background-color: #2a2a2a;
-    color: white;
+    background-color: var(--negro-ferrari);
+    color: var(--color-text-white);
     padding: 10px;
     border: 1px solid;
-    border-bottom: 1px solid #00aeef;
+    border-bottom: 1px solid var(--azul-claro-williams);
 }
-.info-lawson,
-.tabla-carrera-lawson,
-.estadistica-lawson {
-    background-color: #fff5e6;
-    border: 1px solid #e10600;
+
+#lawson,
+#hadjar {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--azul-racinbulls);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--dorado-racingbulls) 0, var(--dorado-racingbulls) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.nom-lawson,
+.nom-hadjar {
+    color: var(--rojo-racingbulls);
+}
+
+.datos-lawson,
+.datos-hadjar {
+    color: var(--color-text-white);
 }
 
 .info-lawson th,
+.info-hadjar th,
 .tabla-carrera-lawson th,
-.estadistica-lawson th {
-    background-color: #1e1e60;
-    color: #d4af37;
+.tabla-carrera-hadjar th,
+.estadistica-lawson th,
+.estadistica-hadjar th {
+    background-color: var(--azul-racinbulls);
+    color: var(--dorado-racingbulls);
     text-align: left;
-    padding: 10px;
+    border: 1px solid;
 }
 
 .info-lawson td,
-.tabla-carrera-lawson td,
-.estadistica-lawson td {
-    background-color: #bfc2c6;
-    color: #1e1e60;
-    padding: 10px;
-    border: 1px solid #1e1e60;
-    border-bottom: 1px solid #d4af37;
-}
-.info-hadjar,
-.tabla-carrera-hadjar,
-.estadistica-hadjar {
-    background-color: #fff5e6;
-    border: 1px solid #e10600;
-}
-
-.info-hadjar th,
-.tabla-carrera-hadjar th,
-.estadistica-hadjar th {
-    background-color: #1e1e60;
-    color: #d4af37;
-    text-align: left;
-    padding: 10px;
-}
-
 .info-hadjar td,
+.tabla-carrera-lawson td,
 .tabla-carrera-hadjar td,
+.estadistica-lawson td,
 .estadistica-hadjar td {
     background-color: #bfc2c6;
-    color: #1e1e60;
+    color: var(--azul-racinbulls);
     padding: 10px;
-    border: 1px solid #1e1e60;
-    border-bottom: 1px solid #d4af37;
+    border: 1px solid var(--dorado-racingbulls);
+    border-bottom: 1px solid #DA291C;
 }
-.info-hulkenberg,
-.tabla-carrera-hulkenberg,
-.estadistica-hulkenberg {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-left: 4px solid #00FF87;
+
+#hulkenberg,
+#bortoleto {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--verde-kick);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--color-text-white) 0, var(--color-text-white) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    margin: 20px;
-    border-radius: 12px;
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #0f0f0f;
-    border: 2px solid #00FF87;
-    border-radius: 10px;
-    overflow: hidden;
+}
+
+.nom-hulkenberg,
+.nom-bortoleto {
+    color: var(--color-secundario-kick);
+}
+
+.datos-hulkenberg,
+.datos-bortoleto {
+    color: var(--color-secundario-kick);
 }
 
 .info-hulkenberg th,
+.info-bortoleto th,
 .tabla-carrera-hulkenberg th,
-.estadistica-hulkenberg th {
-    background-color: #003366;
-    color: #d50032;
-    padding: 12px;
-    text-align: center;
+.tabla-carrera-bortoleto th,
+.estadistica-hulkenberg th,
+.estadistica-bortoleto th {
+    background-color: var(--color-secundario-kick);
+    color: var(--verde-kick);
+    text-align: left;
+    border: 1px solid;
 }
 
 .info-hulkenberg td,
-.tabla-carrera-hulkenberg td,
-.estadistica-hulkenberg td {
-    border: 1px solid #00FF87;
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
-    border-bottom:1px solid #ffffff;
-}
-.info-hulkenberg tr:nth-child(even) {
-    background-color: rgba(0, 255, 135, 0.1);
-}
-.tabla-carrera-hulkenberg tr:nth-child(even) {
-    background-color: rgba(0, 255, 135, 0.1);
-}
-.estadistica-hulkenberg tr:nth-child(even) {
-    background-color: rgba(0, 255, 135, 0.1);
-}
-.info-bortoleto,
-.tabla-carrera-bortoleto,
-.estadistica-bortoleto {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-left: 4px solid #00FF87;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 12px;
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #0f0f0f;
-    border: 2px solid #00FF87;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.info-bortoleto th,
-.tabla-carrera-bortoleto th,
-.estadistica-bortoleto th {
-    background-color: #003366;
-    color: #d50032;
-    padding: 12px;
-    text-align: center;
-}
-
 .info-bortoleto td,
+.tabla-carrera-hulkenberg td,
 .tabla-carrera-bortoleto td,
+.estadistica-hulkenberg td,
 .estadistica-bortoleto td {
-    border: 1px solid #00FF87;
+    background-color: var(--negro-ferrari);
+    color: var(--color-text-white);
     padding: 10px;
-    text-align: center;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border: 1px solid var(--verde-kick);
+    border-bottom: 1px solid #DA291C;
 }
 
-.info-bortoleto tr:nth-child(even) {
-    background-color: rgba(0, 255, 135, 0.1);
+#bearman,
+#ocon {
+    margin-bottom: 60px;
+    font-family: var(--font-header);
+    background-color: var(--rojo-hass);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--negro-ferrari) 0, var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(-45deg,
+            var(--negro-ferrari) 0,
+            var(--negro-ferrari) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: var(--pattern-size) var(--pattern-size);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
-.tabla-carrera-bortoleto tr:nth-child(even) {
-    background-color: rgba(0, 255, 135, 0.1);
+.nom-bearman,
+.nom-ocon {
+    color: var(--blanco-hass);
 }
 
-.estadistica-bortoleto tr:nth-child(even) {
-    background-color: rgba(0, 255, 135, 0.1);
-}
-.info-bearman,
-.tabla-carrera-bearman,
-.estadistica-bearman {
-    background-color: #fff5e6;
-    border: 2px solid #e10600;
-    padding: 10px;
+.datos-bearman,
+.datos-ocon {
+    color: var(--amarillo-ferrari);
 }
 
 .info-bearman th,
+.info-ocon th,
 .tabla-carrera-bearman th,
-.estadistica-bearman th {
-    background-color: #e10600;
-    color: white;
+.tabla-carrera-ocon th,
+.estadistica-bearman th,
+.estadistica-ocon th {
+    background-color: var(--rojo-ferrari);
+    color: #ffffff;
     text-align: left;
-    padding: 10px;
+    border: 1px solid;
 }
 
 .info-bearman td,
-.tabla-carrera-bearman td,
-.estadistica-bearman td {
-    background-color: #2a2a2a;
-    color: white;
-    padding: 10px;
-    border-bottom: 1px solid #e10600;
-}
-.info-ocon,
-.tabla-carrera-ocon,
-.estadistica-ocon {
-    background-color: #fff5e6;
-    border: 2px solid #e10600;
-    padding: 10px;
-}
-
-.info-ocon th,
-.tabla-carrera-ocon th,
-.estadistica-ocon th {
-    background-color: #e10600;
-    color: white;
-    text-align: left;
-    padding: 10px;
-}
-
 .info-ocon td,
+.tabla-carrera-bearman td,
 .tabla-carrera-ocon td,
+.estadistica-bearman td,
 .estadistica-ocon td {
-    background-color: #2a2a2a;
-    color: white;
+    background-color: var(--negro-ferrari);
+    color: var(--blanco-hass);
     padding: 10px;
-    border-bottom: 1px solid #e10600;
+    border: 1px solid;
+    border-bottom: 1px solid #DA291C;
 }
-:root {
-    --color-redbull-blue-dark: #1e3f87;
-        /* Azul oscuro principal */
-        --color-redbull-blue-light: #5275c9;
-        /* Azul claro para el patrón */
-        --color-text-white: #ffffff;
-        --font-script: 'Dancing Script', cursive;
-        --font-heading: 'Oswald', sans-serif;
-        --font-header: 'Roboto', sans-serif;
-        --pattern-color: rgba(255, 255, 255, 0.08)
-        --pattern-size: 16px;
-}
-
-
-.header-verstappen {
-
-}
-
-
-.header-left {
- 
-}
-.header-right {
-
-}
-
-
-.nom-Pilot {
-  
-}
-.datos-piloto {
-
-}
-
-.Imatge-pilots {
-
-}
-.numero-fondo {
-
-}
-
