@@ -106,7 +106,11 @@ a {
         left: 0;
     }
 }
-
+header h1 {
+    color: red;
+    font-family: var(--font-heading);
+    
+}
 #Alineacio {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
@@ -1742,7 +1746,7 @@ th {
     align-items: center;
     justify-content: space-around;
     transition: all .5s ease-out;
-    background-image: url(Imatges/fondo.jpg);
+    background-image: url(Imatges/Formula-1.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #f4f4f4;
