@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP.GG - Leaderboards</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0d1821;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #0d6efd;
+            border-bottom: 1px solid #2a3f4f;
+        }
+
+        .navbar-brand {
+            color: #f7931e !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #b8c5d3 !important;
+            padding: 0.5rem 1rem;
+            transition: color 0.2s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #f7931e !important;
+            font-weight: 600;
+        }
+
+        .main-content-card {
+            background-color: #1a202c;
+            border: 1px solid #2a3f4f;
+            border-radius: 8px;
+        }
+
+        .nav-tabs {
+            border-bottom: 1px solid #2a3f4f;
+        }
+
+        .nav-tabs .nav-link {
+            color: #8899a6;
+            border: none;
+            border-bottom: 3px solid transparent;
+            background: none;
+            padding: 0.75rem 1rem;
+        }
+        .nav-tabs .nav-link:hover {
+            color: #b8c5d3;
+            border-bottom-color: #4a5f6f;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #f7931e !important;
+            background-color: transparent;
+            border-bottom: 3px solid #f7931e;
+        }
+
+        .table {
+            color: #b8c5d3;
+            margin-bottom: 0;
+        }
+
+        .table thead th {
+            color: #8899a6;
+            font-weight: 500;
+            border-bottom: 1px solid #2a3f4f;
+            background-color: #1a202c;
+        }
+        .table tbody tr {
+            transition: background-color 0.2s;
+        }
+
+        .table tbody tr:nth-of-type(odd) {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .table tbody tr:hover {
+            background-color: #2a3f4f;
+        }
+        .table td {
+            border-bottom: 1px solid #2a3f4f;
+            vertical-align: middle;
+        }
+        .table td, .table th {
+            border-color: #2a3f4f;
+        }
+        .summoner-name {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .rank-badge {
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .challenger { background-color: #e3a729; color: #000; }
+        .grandmaster { background-color: #c0398e; color: #fff; }
+        .master { background-color: #8e44ad; color: #fff; }
+        .diamond { background-color: #3498db; color: #fff; }
+        .platinum { background-color: #1abc9c; color: #fff; }
+        .gold { background-color: #f1c40f; color: #000; }
+        .silver { background-color: #95a5a6; color: #000; }
+        .iron { background-color: #7f8c8d; color: #fff; }
+        .lp {
+            font-weight: 600;
+        }
+        .win-rate {
+            color: #6bcf7f; /* Verde para el winrate positivo */
+        }
+        .champion-icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 4px;
+            margin-right: 3px;
+        }
+
+        .header-info {
+            color: #8899a6;
+            font-size: 0.875rem;
+            padding: 1rem;
+            background-color: #1a202c;
+            border-bottom: 1px solid #2a3f4f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">OP.GG</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Champions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Game modes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skins leaderboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="leaderboards.html">Leaderboards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pro spectate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Stats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Multi-search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lessons</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container mt-4">
+        <div class="main-content-card">
+
+            <div class="header-info">
+                There are currently 1,715,466 summoners in Summoner's Rift. Displaying summoners ranked Iron and above.
+                Rankings are updated periodically.
+            </div>
+
+            <!-- TABS -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#solo">Ranked Solo/Duo</a>
+                </li>
+            </ul>
+
+            <!-- TAB CONTENT -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="solo">
+
+                    <table class="table table-hover align-middle">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Summoner</th>
+                                <th>Tier</th>
+                                <th>LP</th>
+                                <th>Champions</th>
+                                <th>Winrate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <!-- ROW 1 -->
+                            <tr>
+                                <td>1</td>
+                                <td class="summoner-name">
+                                    <img src="Imatges/Perffil-1.jpg"
+                                        class="rounded-circle me-2" width="32" height="32">
+                                    OP cant type #1998
+                                </td>
+                                <td><span class="rank-badge challenger">Challenger</span></td>
+                                <td>2,155 LP</td>
+
+                                <td>
+                                    <img class="champion-icon"
+                                        src="Imatges/Riven.jpg">
+                                    <img class="champion-icon"
+                                        src="Imatges/Vayne.jpg">
+                                    <img class="champion-icon"
+                                        src="Imatges/Kayle.jpg">
+                                </td>
+
+                                <!-- WINRATE -->
+                                <td style="width:240px;">
+                                    <div class="d-flex">
+                                        <span class="me-2" style="color:#6bcf7f;font-weight:600;">528W</span>
+                                        <span style="color:#ff6b6b;font-weight:600;">381L</span>
+                                    </div>
+
+                                    <div class="progress" style="height:8px;background:#2a3f4f;">
+                                        <div class="progress-bar bg-primary" style="width:58%;"></div>
+                                        <div class="progress-bar bg-danger" style="width:42%;"></div>
+                                    </div>
+
+                                    <div class="text-end mt-1" style="font-weight:600;">58%</div>
+                                </td>
+                            </tr>
+
+                            <!-- ROW 2 -->
+                            <tr>
+                                <td>2</td>
+                                <td class="summoner-name">
+                                    <img src="Imatges/Perfil-2.jpg"
+                                        class="rounded-circle me-2" width="32" height="32">
+                                    OP never type #1998
+                                </td>
+                                <td><span class="rank-badge grandmaster">grandmaster</span></td>
+                                <td>2,052 LP</td>
+
+                                <td>
+                                    <img class="champion-icon"
+                                        src="Imatges/Riven.jpg">
+                                    <img class="champion-icon"
+                                        src="Imatges/Vayne.jpg">
+                                        <img class="champion-icon" 
+                                        src="Imatges/Jayce.jpg">
+                                </td>
+
+                                <td style="width:240px;">
+                                    <div class="d-flex">
+                                        <span class="me-2" style="color:#6bcf7f;font-weight:600;">333W</span>
+                                        <span style="color:#ff6b6b;font-weight:600;">206L</span>
+                                    </div>
+                                    <div class="progress" style="height:8px;background:#2a3f4f;">
+                                        <div class="progress-bar bg-primary" style="width:62%;"></div>
+                                        <div class="progress-bar bg-danger" style="width:38%;"></div>
+                                    </div>
+                                    <div class="text-end mt-1" style="font-weight:600;">62%</div>
+                                </td>
+                            </tr>
+
+                            <!-- ROW 3 -->
+                            <tr>
+                                <td>3</td>
+                                <td class="summoner-name">
+                                    <img src="Imatges/Perfil-3.jpg"
+                                        class="rounded-circle me-2" width="32" height="32">
+                                    white space #kimmy
+                                </td>
+                                <td><span class="rank-badge diamond">diamond</span></td>
+                                <td>1,965 LP</td>
+
+                                <td>
+                                    <img class="champion-icon"
+                                        src="Imatges/Jayce.jpg">
+                                    <img class="champion-icon"
+                                        src="Imatges/Ambessa.jpg">
+                                        <img class="champion-icon" 
+                                        src="Imatges/Rumble.jpg">
+                                </td>
+
+                                <td style="width:240px;">
+                                    <div class="d-flex">
+                                        <span class="me-2" style="color:#6bcf7f;font-weight:600;">503W</span>
+                                        <span style="color:#ff6b6b;font-weight:600;">368L</span>
+                                    </div>
+                                    <div class="progress" style="height:8px;background:#2a3f4f;">
+                                        <div class="progress-bar bg-primary" style="width:58%;"></div>
+                                        <div class="progress-bar bg-danger" style="width:42%;"></div>
+                                    </div>
+                                    <div class="text-end mt-1" style="font-weight:600;">58%</div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
