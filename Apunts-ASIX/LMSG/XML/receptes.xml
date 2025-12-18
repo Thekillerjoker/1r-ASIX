@@ -1,0 +1,43 @@
+<? xml version="1.0" encoding="UTF-8"?>
+<receptes>
+    <recepta valoracions="4 i mig" dificultat="Facil" preparacio="5min" tempstotal="5min" racions="6gots">
+        <titol>Berbaje Sangriento</titol>
+        <ingredients>
+            <ingredient cuantitat="50-60g">sucre</ingredient>
+            <ingredient cuantitat="30-50g">Jengibre</ingredient>
+            <ingredient cuantitat="2">Llimones</ingredient>
+            <ingredient cuantitat="125g">Arandans</ingredient>
+            <ingredient cuantitat="1000g">Suc D'arandans vermells.</ingredient>
+            <ingredient cuantitat="1 llata">lichis en conserva</ingredient>
+            <ingredient cuantitat="6-8 cubs">de Gel</ingredient>
+        </ingredients>
+        <informacio-nutricional>
+            <nom cuantitat="per 6 gots">Inf.Nutricional</nom>
+            <calories>3320.1 KJ/ 794.3 Kcal</calories>
+            <proteina>6.5g</proteina>
+            <carboidrats>192.1 g</carboidrats>
+            <grasa>1.8g</grasa>
+            <fibra>9.9g</fibra>
+        </informacio-nutricional>
+    </recepta>
+        <recepta valoracions="4" dificultat="Facil" preparacio="5min" tempstotal="5min" racions="6copes">
+        <titol>Coctel cerbero de zombi</titol>
+        <ingredients>
+            <ingredient cuantitat="200g">Vodka</ingredient>
+            <ingredient cuantitat="1-2 chorrits">de grandia</ingredient>
+            <ingredient cuantitat="80g">de taronja</ingredient>
+            <ingredient cuantitat="2 cullarades">de sucre</ingredient>
+            <ingredient cuantitat="100g">Suc de Llima</ingredient>
+            <ingredient cuantitat="350g">de gel</ingredient>
+        </ingredients>
+        <informacio-nutricional>
+            <nom cuantitat="per 1 copa">Inf.Nutricional</nom>
+            <calories>530KJ/ 126Kcal</calories>
+            <proteina>0.1g</proteina>
+            <carboidrats>8.8g</carboidrats>
+            <grasa>0g</grasa>
+            <colesterol>0mg</colesterol>
+            <fibra>0.1g</fibra>
+        </informacio-nutricional>
+    </recepta>
+</receptes>
