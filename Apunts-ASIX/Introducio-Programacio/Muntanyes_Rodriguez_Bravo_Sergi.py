@@ -6,5 +6,8 @@ numero5 = int(input())
 
 if numero2 > numero1  and numero3 < numero2 and numero4 > numero3 and numero5 < numero4 :
     print("SI")
+elif numero2 < numero1 and numero3 > numero2 and numero4 < numero3 and numero5 > numero4:
+    print("SI")
+
 else :
     print("NO")
