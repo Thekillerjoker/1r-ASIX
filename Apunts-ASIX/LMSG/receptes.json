@@ -1,0 +1,57 @@
+{
+    "receptes": [
+        {
+        "nom":"Brevaje sangriento",
+        "valoracio":5,
+        "dificultat":"facil",
+        "preparacio":"5min",
+        "tempstotal":"5min",
+        "racions":"6gots",
+        "ingredients":[
+            {"nom":"sucre","quaitnitat":"50-60g"},
+            {"nom":"jengibre","quaitnitat":"30-50g"},
+            {"nom":"Llinmones","quaitnitat":2},
+            {"nom":"arandans","quaitnitat":"125g"},
+            {"nom":"suc d'arandans vermells","quaitnitat":"100g"},
+            {"nom":"lichis de conserva","quaitnitat":"1 llata"},
+            {"nom":"gel","quaitnitat":"6-8 cubs"}
+        ],
+        "infomracio-nutricional":[
+            {
+                "calories":"3320.1 kj/ 794.3 Kcal",
+                "proteines":"6.5g",
+                "carboidrats":"192.1g",
+                "grasa":"1.8g",
+                "fibra":"9.9g"
+            }
+        ]
+    }
+        {
+        "nom":"Coctel cerebro de zombi",
+        "valoracio":5,
+        "dificultat":"facil",
+        "preparacio":"5min",
+        "tempstotal":"5min",
+        "racions":"6 copes",
+        "ingredients":[
+            {"nom":"Vodka","quaitnitat":"200g"},
+            {"nom":"grandia","quaitnitat":"1-2"},
+            {"nom":"taronja","quaitnitat":"80g"},
+            {"nom":"sucre","quaitnitat":"2 qullarades"},
+            {"nom":"suc de llima","quaitnitat":"100g"},
+            {"nom":"gel","quaitnitat":"350g"}
+        ],
+        "infomracio-nutricional":[
+            {
+                "calories":"530kj / 125kcal",
+                "proteinea":"0.1g",
+                "carboidrats":"8.8g",
+                "grasa":"0g",
+                "colesterol":"0mg",
+                "fibra":"0.1g"
+            }
+        ]
+    }
+
+    ]
+}
