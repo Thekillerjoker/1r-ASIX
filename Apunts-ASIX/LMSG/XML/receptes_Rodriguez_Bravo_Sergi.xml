@@ -19,6 +19,7 @@
             <carboidrats>192.1 g</carboidrats>
             <grasa>1.8g</grasa>
             <fibra>9.9g</fibra>
+            <colesterol>0mg</colesterol>
         </informacio-nutricional>
     </recepta>
     <recepta valoracions="4" dificultat="Facil" preparacio="5min" tempstotal="5min" racions="6copes">
@@ -37,8 +38,8 @@
             <proteina>0.1g</proteina>
             <carboidrats>8.8g</carboidrats>
             <grasa>0g</grasa>
-            <colesterol>0mg</colesterol>
             <fibra>0.1g</fibra>
+            <colesterol>0mg</colesterol>
         </informacio-nutricional>
     </recepta>
 </receptes>

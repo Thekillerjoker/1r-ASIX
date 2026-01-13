@@ -1,1 +1,11 @@
 <!ELEMENT receptes (recepta+)>
+<!ELEMENT recepta (titol, ingredients, informacio-nutricional)>
+<!ATTLIST recepta valoracions CDATA #REQUIRED>
+<!ATTLIST recepta dificultat CDATA #REQUIRED>
+<!ATTLIST recepta preparacio CDATA #REQUIRED>
+<!ATTLIST recepta tempstotal CDATA #REQUIRED>
+<!ATTLIST recepta racions CDATA #REQUIRED>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT ingredients (ingredient+)>
+<!ELEMENT ingredient (#PCDATA)>
+<!ELEMENT informacio-nutricional (nom, calories, proteina, carboidrats, grasa, fibra, colesterol)>
