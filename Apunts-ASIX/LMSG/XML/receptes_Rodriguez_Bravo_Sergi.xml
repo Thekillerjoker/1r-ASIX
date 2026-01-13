@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE receptes SYSTEM "receptes.dtd">
 <receptes>
     <recepta valoracions="4 i mig" dificultat="Facil" preparacio="5min" tempstotal="5min" racions="6gots">
         <titol>Berbaje Sangriento</titol>
@@ -20,7 +21,7 @@
             <fibra>9.9g</fibra>
         </informacio-nutricional>
     </recepta>
-        <recepta valoracions="4" dificultat="Facil" preparacio="5min" tempstotal="5min" racions="6copes">
+    <recepta valoracions="4" dificultat="Facil" preparacio="5min" tempstotal="5min" racions="6copes">
         <titol>Coctel cerbero de zombi</titol>
         <ingredients>
             <ingredient cuantitat="200g">Vodka</ingredient>
