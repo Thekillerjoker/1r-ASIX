@@ -14,3 +14,4 @@ for i in range(casos):
             posicio = x
 
     print(posicio)
+# Hacerlo con un while
