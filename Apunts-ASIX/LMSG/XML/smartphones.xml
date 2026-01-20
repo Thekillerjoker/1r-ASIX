@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE smartphones SYSTEM "smartphones.dtd">
+<smartphones any="2025">
+    <smartphone id="S01" gamma="alta">
+        <marca>Apple</marca>
+        <model>iPhone 15 Pro</model>
+        <processador fabricant="Apple">A17 Pro</processador>
+        <pantalla tipus="OLED" mida="6.1" unitat="polzades" />
+        <emmagatzematge>256 GB</emmagatzematge>
+        <connectivitat>
+            <xarxa>5G</xarxa>
+            <wifi>Wi-Fi 6E</wifi>
+            <bluetooth versio="5.3" />
+        </connectivitat>
+    </smartphone>
+
+    <smartphone id="S02" gamma="mitjana">
+        <marca>Samsung</marca>
+        <model>Galaxy S23 FE</model>
+        <processador fabricant="Samsung">Exynos 2200</processador>
+        <pantalla tipus="AMOLED" mida="6.4" unitat="polzades" />
+        <emmagatzematge>128 GB</emmagatzematge>
+        <connectivitat>
+            <xarxa>5G</xarxa>
+            <wifi>Wi-Fi 6</wifi>
+        </connectivitat>
+    </smartphone>
+</smartphones>

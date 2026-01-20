@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE classe SYSTEM "classe.dtd">
+<classe>
+    <alumne id="alumne1">
+        <nom>sergi</nom>
+        <cognom>rodríguez</cognom>
+        <any_naixement>15/04/2004</any_naixement>
+        <assignatures>
+            <assignatura>
+                <nom_assignatura>Matematiques</nom_assignatura>
+                <nota>9</nota>
+            </assignatura>
+        </assignatures>
+        <comentari>Molt bé</comentari>
+        <foto url="" />
+    </alumne>
+    <alumne id="alumne2">
+        <nom>Pere</nom>
+        <cognom>Pi</cognom>
+        <cognom>Pla</cognom>
+        <any_naixement>27/9/2005</any_naixement>
+        <assignatures>
+            <assignatura>
+                <nom_assignatura>Llengua Catalana</nom_assignatura>
+                <nota>7.5</nota>
+            </assignatura>
+        </assignatures>
+        <foto url="" />
+    </alumne>
+</classe>

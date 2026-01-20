@@ -1,0 +1,19 @@
+<!ELEMENT smartphones (smartphone+)>
+<!ATTLIST smartphones any CDATA #REQUIRED>
+<!ELEMENT smartphone (marca, model, processador, pantalla, emmagatzematge, connectivitat)>
+<!ATTLIST smartphone id CDATA #REQUIRED>
+<!ATTLIST smartphone gamma CDATA #REQUIRED>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT processador (#PCDATA)>
+<!ATTLIST processador fabricant CDATA #REQUIRED>
+<!ELEMENT pantalla (#PCDATA)>
+<!ATTLIST pantalla tipus CDATA #REQUIRED>
+<!ATTLIST pantalla mida CDATA #REQUIRED>
+<!ATTLIST pantalla unitat CDATA #REQUIRED>
+<!ELEMENT emmagatzematge (#PCDATA)>
+<!ELEMENT connectivitat (xarxa, wifi, bluetooth?)>
+<!ELEMENT xarxa (#PCDATA)>
+<!ELEMENT wifi (#PCDATA)>
+<!ELEMENT bluetooth (#PCDATA)>
+<!ATTLIST bluetooth versio CDATA #REQUIRED>

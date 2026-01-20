@@ -1,0 +1,18 @@
+<!ELEMENT classe (alumne+)>
+
+<!ELEMENT alumne (nom, cognom, cognom?, any_naixement, assignatures, comentari?, foto)>
+<!ATTLIST alumne id ID #REQUIRED>
+
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT any_naixement (#PCDATA)>
+
+<!ELEMENT assignatures (assignatura+)>
+<!ELEMENT assignatura (nom_assignatura, nota)>
+<!ELEMENT nom_assignatura (#PCDATA)>
+<!ELEMENT nota (#PCDATA)>
+
+<!ELEMENT comentari (#PCDATA)>
+
+<!ELEMENT foto EMPTY>
+<!ATTLIST foto url CDATA #REQUIRED>

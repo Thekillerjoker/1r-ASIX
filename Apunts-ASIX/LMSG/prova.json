@@ -1,0 +1,31 @@
+{"equips":[
+        {
+            "tipus": "Sobretaula",
+            "nom": "Ordinador de sobretaula",
+            "processador": {
+                "marca": "Intel",
+                "model": "Core I7"
+            },
+            "enmagatzematge": {
+                "tipus": "SSD",
+                "capacitat": "512GB"
+            },
+            "component": ["Tarjeta Grafica Nvidia", "Font d'alimentació"]
+        },
+        {
+            "tipus": "portatil",
+            "nom": "Ordinador portatil",
+            "processador": {
+                "marca": "AMD",
+                "model": "Ryzen 5"
+            },
+            "enmagatzematge": {
+                "tipus": "SSD",
+                "capacitat": "256GB"
+            },
+            "component": ["Tarjeta Grafica Integrada", "Bateria 4000mAh"]
+
+        }
+    ]
+}
+

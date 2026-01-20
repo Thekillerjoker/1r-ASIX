@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<futbol>
+    <equips>
+        <equip>
+            <nom>Fc Barcelona</nom>
+            <pais>Espanya</pais>
+            <fundacio>1899</fundacio>
+            <estadi>Spotify Camp Nou</estadi>
+            <titols>
+                <titol>Lliga</titol>
+                <titol>Copa del Rei</titol>
+                <titol>Champions League</titol>
+            </titols>
+        </equip>
+        <equip>
+            <nom>Manchester United</nom>
+            <pais>Anglaterra</pais>
+            <fundacio>1878</fundacio>
+            <estadi>Old Trafford</estadi>
+            <titols>
+                <titol>Premier League</titol>
+                <titol>FA Cup</titol>
+                <titol>Champions League</titol>
+            </titols>
+        </equip>
+    </equips>
+</futbol>
