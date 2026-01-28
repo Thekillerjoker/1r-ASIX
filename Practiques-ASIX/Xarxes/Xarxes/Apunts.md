@@ -162,3 +162,10 @@ El client respon amb un segment confirmant que han iniciat la connexió. Aquest 
 Ports origen i destí adequats.
 Nombre de seqüència = A+1.
 Num. ACK = B + 1
+## Enllaços:
+
+L’agregació d’enllaços la podem fer:
+Estàtica: els enllaços seleccionats no es modifiquen automàticament.
+Dinàmica: els commutadors poden treure enllaços seleccionats si detecten errors.
+Ens trobarem amb la possibilitat d’utilitzar un protocol estàndard com el LACP (802.3ax) que permet agregar enllaços entre commutadors de diferents marques o un protocol propi de la marca utilitzada. Haurem d’estudiar els manuals per decidir si els protocols propietaris ens suposen alguna avantatge.
+
