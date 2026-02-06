@@ -1,0 +1,21 @@
+{
+    "llibres"{
+        "llibre"{
+            {"titol"}"El nom del Vent",
+            {"any"}2007,
+            {"editorial"}"Delbolsillo",
+            generes[
+                {"genere"}"fantasia",
+                {"genere"}"aventura"
+            ],
+        },
+        "llibre"{
+            {"titol"}"Dune",
+            {"any"}1965,
+            {"editorial"}"Chilton",
+            generes[
+                {"genere"}"Ciència-ficció"
+            ],
+        },
+    }
+}

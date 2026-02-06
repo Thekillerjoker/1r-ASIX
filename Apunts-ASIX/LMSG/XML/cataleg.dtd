@@ -1,0 +1,12 @@
+<!ELEMENT cataleg (consola+)>
+<!ELEMENT consola (jocs+)>
+<!ATTLIST consola nom CDATA #REQUIRED>
+<!ELEMENT jocs (joc+)>
+<!ELEMENT joc (titol+, any+, nivells*, novetat?)>
+<!ELEMENT nivells (nivell+)>
+<!ATTLIST nivells dificultat (alta | mitjana) #REQUIRED>
+<!ATTLIST nivell num CDATA #REQUIRED>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT any (#PCDATA)>
+<!ELEMENT nivell (#PCDATA)>
+<!ELEMENT novetat EMPTY>

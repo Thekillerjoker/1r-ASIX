@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg SYSTEM "cataleg.dtd">
+<cataleg>
+
+    <consola nom="PlayStation 5">
+        <jocs>
+            <joc>
+                <titol>God of War Ragnarök</titol>
+                <any>2022</any>
+                <nivells dificultat="alta">
+                    <nivell num="1">Fàcil</nivell>
+                    <nivell num="2">Normal</nivell>
+                    <nivell num="3">Difícil</nivell>
+                </nivells>
+                <novetat />
+            </joc>
+
+            <joc>
+                <titol>Spider-Man 2</titol>
+                <any>2023</any>
+
+            </joc>
+        </jocs>
+    </consola>
+
+    <consola nom="Nintendo Switch">
+        <jocs>
+            <joc>
+                <titol>The Legend of Zelda: Breath of the Wild</titol>
+                <any>2017</any>
+                <nivells dificultat="mitjana">
+                    <nivell num="1">Normal</nivell>
+                </nivells>
+            </joc>
+        </jocs>
+    </consola>
+
+</cataleg>
