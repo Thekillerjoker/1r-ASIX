@@ -84,3 +84,123 @@ while i < len(numeros):
 print(numeros[i])
 # Entonces esto te hace lo mismo mientras i sea mas pequeño que la longitud total de numeros printea.
 ```
+## Diccionari:
+**Els diccionaris s'utilitzen per emmagatzemar valors de dades en els parells de valors clau.**
+
+**Un diccionari és una col·lecció ordenada*, variable i no Permet duplicar els duplicats.**
+
+*Com un array pero s'escriuen amb claus { i tenen claus i valors*
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+```
+*Aixo imprimira cada valor de la seguent manera: 'nom_clau': 'Valor'*
+
+**Articles del diccionari**
+
+*Els elements del diccionari s'ordenen, es poden canviar i no permeten duplicats.*
+
+*Els elements del diccionari es presenten en els parells de valors clau, i es poden fer referència a utilitzant el nom de la clau.*
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"])
+```
+*Aixo imprimeix el valor de brand que es Ford.*
+
+**Ordenat o desordenat?**
+
+*Quan diem que s'ordenen diccionaris, vol dir que els elements tenen un ordre definit, i que l'ordre no canviarà.*
+
+*Desordenat significa que els elements no tenir un ordre definit, no es pot referir a un element mitjançant l'ús d'un índex*
+
+**Canviable**
+
+*Els diccionaris són canviables, el que significa que podem canviar, afegir o eliminar elements després de l'element S'ha creat el diccionari*
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+```
+
+*Aixo imprimeix {'brand': 'Ford', 'model': 'Mustang', 'year': 2020} i no imprimeix el year 1964 ja que no permet duplicats per tant mostra el ultim valor ja que python es un llenguatje variable*
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(len(thisdict))
+```
+
+*Aixo mostra 3*
+*Imprimeix el nombre d'elements del diccionari:*
+
+**Articles del diccionari - Tipus de dades**
+
+*Els valors en els elements del diccionari poden ser de qualsevol tipus de dades:*
+
+```python
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+print(thisdict)
+```
+*Aixo imprimeix {'brand': 'Ford', 'electric': False, 'year': 1964, 'colors': ['red', 'white', 'blue']}.*
+
+**tipus()**
+
+*Des de la perspectiva de Python, els diccionaris es defineixen com a objectes amb el tipus de dades 'dict':*
+
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(type(thisdict))
+```
+*Aixo imprimeix el tipus de dades d'un diccionari és ha dir axio imprimira :<class 'dict'> .*
+
+**The dict() Constructor /El dictat() Constructor:**
+
+*També és possible utilitzar el constructor de dict) per fer un diccionari.*
+
+*Utilitzant el mètode dict() per fer un diccionari:*
+```python
+thisdict = dict(name = "John", age = 36, country = "Norway")
+
+print(thisdict) 
+```
+*aixo imprimira : {'name': 'John', 'age': 36, 'country': 'Norway'}.*
+
+**Accés a articles:**
+
+*Podeu accedir als elements d'un diccionari referint-vos al seu nom clau, a l'interior claudàtors:*
+
+```python
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"]
+print(x)
+```
+*Aixo mostrara Mustang.*
