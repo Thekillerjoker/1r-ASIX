@@ -204,3 +204,7 @@ x = thisdict["model"]
 print(x)
 ```
 *Aixo mostrara Mustang.*
+## Python Dictionaris:
+![Infografia-Python-Dictionari](./infografia-python-diccionaris.png)
+## Python Collections:
+![Infografia-Python-Collections](./infografia-python-collections.png)
