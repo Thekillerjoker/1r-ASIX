@@ -208,3 +208,20 @@ print(x)
 ![Infografia-Python-Dictionari](./infografia-python-diccionaris.png)
 ## Python Collections:
 ![Infografia-Python-Collections](./infografia-python-collections.png)
+
+*com mostrar el diccionari en Python tal i com demana el primer exercici?:*
+```python
+diccionari = dict()
+
+
+#...
+
+
+elements = [f"{nom}={data}" for nom, data in diccionari.items()]
+sortida = "{" + ", ".join(elements) + "}"
+print(sortida)
+
+
+# ...
+```
+
