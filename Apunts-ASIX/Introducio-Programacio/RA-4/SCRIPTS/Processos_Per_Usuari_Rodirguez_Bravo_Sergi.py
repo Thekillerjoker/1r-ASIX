@@ -1,24 +1,34 @@
 import os
 import time
-programa = True
-while programa == True:
-    sortida = os.popen(f'ps aux ')
-    linies = sortida.readlines()
-    processos = {}
-    for linea in linies[1:]:
-        camps = linea.split()
-        if len(camps) > 0:
-            usuari = camps[0]
-            if usuari not in processos:
-                processos[usuari] = 1
-            else:
-                processos[usuari] += 1
-    usuari_demanat = input('Introdueix el nom del usuari desitjat, per sortir del programa escriu FI: ')
-    if usuari_demanat in processos:
-        print(f'Nombre de processos del usuari {usuari_demanat}: {processos[usuari_demanat]}')
-    elif usuari_demanat == 'FI' or usuari_demanat == 'Fi' or usuari_demanat == 'fi':
-        print('sortint del programa.......')
+usuaris = {
+    "root": ["systemd", "sshd", "cron", "rm"],
+    "sergi": ["ls", "cd", "python"],
+    "alumne1": ["pwd", "cat", "echo", "whoami"],
+    "perepi": ["mkdir", "date", "rmdir"]
+}
+Entrada = input("Inrodueix l'usuari i la comanda amb arguments si cal: ").strip()
+parts = Entrada.split()
+if len(parts) < 2:
+    print("Error cal  introduir l'usuari i la comanda.")
+    print("Sortint del programa...")
+    time.sleep(2)
+else:
+    usuari = parts[0]
+    comanda = parts[1]
+    arguments = parts[2:]
+    if  usuari not in usuaris:
+        print("Error: Usuari no existeix en el diccionari.")
+        print("Sortint del programa...")
         time.sleep(2)
-        programa = False
     else:
-        print('Aquest usuari no existeix') 
+        if comanda in usuaris[usuari]:
+            comanda_completa = " ".join(parts[1:])
+            print(f"Executant {comanda_completa}...")
+            sortida = os.popen(comanda_completa).read()
+            print(sortida)
+            print("Sortint del programa...")
+            time.sleep(2)
+        else:
+            print("Error: Aquesta comanda no està permesa per aquest usuari.")
+            print("Sortint del programa...")
+            time.sleep(2)
