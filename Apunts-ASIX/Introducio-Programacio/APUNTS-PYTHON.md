@@ -221,7 +221,15 @@ elements = [f"{nom}={data}" for nom, data in diccionari.items()]
 sortida = "{" + ", ".join(elements) + "}"
 print(sortida)
 
-
-# ...
 ```
+# Fitchers:
 
+## Exceptions (Errors):
+*Quan hi ha un error les excepcions es per cuan salti un error mostrar un misatje personalitzat*
+
+
+**Exempe**
+```python
+print(x)
+#Com que no hi ha la variable x 
+```
