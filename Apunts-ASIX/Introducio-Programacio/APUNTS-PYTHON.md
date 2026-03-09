@@ -233,3 +233,18 @@ print(sortida)
 print(x)
 #Com que no hi ha la variable x 
 ```
+## Teoria Fitxers:
+fluxos: Es como la | de linux por ejemplo un input o un print que metes información por pàntalla y va al codigo o le informacion del programa y la muestra por pantalla.
+
+Si esta en otro directoreio:
+```python
+f = open("D:\\myfiles\welcome.txt", "r")
+
+print(f.read())
+```
+
+Basicamente tienes tu programa tienes los datos que los envias a tus fotcheros.
+Siempre poner \\ porque sino python si pones \ piensa que es un caracter especial.
+
+siempre cerrar el fitchero con f.close o hacer with open
+
