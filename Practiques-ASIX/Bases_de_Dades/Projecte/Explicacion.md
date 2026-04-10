@@ -77,6 +77,42 @@ EN UNA FRASE (IMPORTANTE PARA EXAMEN)
 
 “La vista vista_classificacio_gp permite consultar de forma sencilla la clasificación de los pilotos en cada Gran Premio, combinando los resultados con la información de los pilotos sin necesidad de realizar joins manualmente.”
 
+Segunda vista:
+🎯 FUNCIÓN DE LA VISTA
+
+👉 Esta vista sirve para:
+
+Calcular y mostrar el total de puntos acumulados por cada piloto en todas las carreras.
+
+🔍 EXPLICACIÓN PASO A PASO
+🧩 1. Usa la tabla PILOTS
+
+Contiene:
+
+ID del piloto
+nombre (nom)
+apellido (cognom)
+
+
+🧩 2. Hace un JOIN con RESULTATS
+JOIN RESULTATS r ON p.pilot_id = r.pilot_id
+
+👉 Para obtener los puntos (punts) de cada carrera
+
+
+🧩 3. Suma los puntos
+SUM(r.punts) AS total_punts
+
+👉 Calcula los puntos totales de cada piloto
+
+4. Agrupa por piloto
+GROUP BY p.pilot_id;
+
+👉 Junta todas las carreras de cada piloto en una sola fila
+
+EN UNA FRASE (IMPORTANTE PARA EXAMEN)
+
+“La vista vista_punts_pilots permite obtener el total de puntos acumulados por cada piloto, agregando los resultados de todas las carreras mediante una función de suma y agrupación.”
 ⚡ 3. Cal indexar columnes?
 
 👉 SÍ, per millorar:
