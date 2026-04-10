@@ -35,3 +35,41 @@ BEGIN
 END //
 
 DELIMITER ;
+
+/* Funcio 1 per Devuelve los puntos totales de un piloto */
+DELIMITER //
+
+CREATE FUNCTION total_punts_pilot(p_id INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    DECLARE total INT;
+
+    SELECT IFNULL(SUM(punts), 0)
+    INTO total
+    FROM RESULTATS
+    WHERE pilot_id = p_id;
+
+    RETURN total;
+END//
+
+DELIMITER ;
+
+/* Funcio 2 per Devuelve cuántas carreras ha corrido un piloto*/
+DELIMITER //
+
+CREATE FUNCTION total_curses_pilot(p_id INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    DECLARE total INT;
+
+    SELECT COUNT(*)
+    INTO total
+    FROM RESULTATS
+    WHERE pilot_id = p_id;
+
+    RETURN total;
+END//
+
+DELIMITER ;

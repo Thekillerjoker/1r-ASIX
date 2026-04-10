@@ -86,6 +86,9 @@ Calcular y mostrar el total de puntos acumulados por cada piloto en todas las ca
 
 🔍 EXPLICACIÓN PASO A PASO
 🧩 1. Usa la tabla PILOTS
+```sql
+JOIN RESULTATS r ON p.pilot_id = r.pilot_id
+```
 
 Contiene:
 
@@ -101,12 +104,15 @@ JOIN RESULTATS r ON p.pilot_id = r.pilot_id
 
 
 🧩 3. Suma los puntos
+```sql
 SUM(r.punts) AS total_punts
-
+```
 👉 Calcula los puntos totales de cada piloto
 
 4. Agrupa por piloto
+```sql
 GROUP BY p.pilot_id;
+```
 
 👉 Junta todas las carreras de cada piloto en una sola fila
 
