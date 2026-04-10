@@ -48,6 +48,34 @@ donar accés limitat als usuaris
 “Les vistes permeten als usuaris consultar informació sense accedir directament a totes les taules.”
 La vista classificacio_gp:
 
+🎯 FUNCIÓN DE LA VISTA
+
+👉 Esta vista sirve para:
+
+Mostrar la clasificación de los pilotos en cada Gran Premio, incluyendo su información personal y sus resultados.
+
+EXPLICACIÓN PASO A PASO
+🧩 1. Usa la tabla RESULTATS
+
+Contiene:
+
+qué piloto participó
+en qué carrera (cursa_id)
+su posición final
+los puntos
+
+
+🧩 2. Hace un JOIN con PILOTS
+JOIN PILOTS p ON r.pilot_id = p.pilot_id;
+
+👉 Para añadir:
+
+nombre (nom)
+apellido (cognom)
+
+EN UNA FRASE (IMPORTANTE PARA EXAMEN)
+
+“La vista vista_classificacio_gp permite consultar de forma sencilla la clasificación de los pilotos en cada Gran Premio, combinando los resultados con la información de los pilotos sin necesidad de realizar joins manualmente.”
 
 ⚡ 3. Cal indexar columnes?
 
