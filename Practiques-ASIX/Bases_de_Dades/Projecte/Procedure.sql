@@ -73,3 +73,40 @@ BEGIN
 END//
 
 DELIMITER ;
+
+/*triggers*/
+/* Triger para asignar puntos automáticos según el resultado de na carrera*/
+
+DELIMITER //
+
+CREATE TRIGGER assignar_punts_auto
+BEFORE INSERT ON RESULTATS
+FOR EACH ROW
+BEGIN
+    IF NEW.posicio_final = '1r' THEN
+        SET NEW.punts = 25;
+    ELSEIF NEW.posicio_final = '2gn' THEN
+        SET NEW.punts = 18;
+    ELSEIF NEW.posicio_final = '3r' THEN
+        SET NEW.punts = 15;
+    ELSEIF NEW.punts IS NULL THEN
+        SET NEW.punts = 0;
+    END IF;
+END //
+
+DELIMITER ;
+
+/*Triger para si pones puntos negativos cambiarlos a 0*/
+
+DELIMITER //
+
+CREATE TRIGGER check_punts_no_negatius
+BEFORE INSERT ON RESULTATS
+FOR EACH ROW
+BEGIN
+    IF NEW.punts < 0 THEN
+        SET NEW.punts = 0;
+    END IF;
+END //
+
+DELIMITER ;
