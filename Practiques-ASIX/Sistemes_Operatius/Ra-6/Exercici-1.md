@@ -16,9 +16,9 @@
 ---
 
 
-1. Scripts d'Automatització de Configuració
+## 2. Scripts d'Automatització de Configuració
 
-Exercici 2. Executa aquests scripts en una màquina virtual o un entorn de proves. Canviar la IP de la teva màquina principal pot tallar la teva connexió a internet. Fes una captura de pantalla dels resultats obtinguts i comenta’ls!
+### Exercici 2. Executa aquests scripts en una màquina virtual o un entorn de proves. Canviar la IP de la teva màquina principal pot tallar la teva connexió a internet. Fes una captura de pantalla dels resultats obtinguts i comenta’ls!
 
 
 A. Script per a Windows (PowerShell)
