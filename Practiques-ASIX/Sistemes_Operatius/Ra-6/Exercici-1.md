@@ -1,19 +1,19 @@
 # Configuració de xarxes i seguretat:
+## Excercici 1: Comprovacio de les comandes 
 
-Exercici 1. Prova cada una de les comandes i fes una taula d’explicació de la resposta que obtens per cada una. Posa una captura del resultat per explicar-ho. Amb route print explica les diferents línies.
 
+## B. Gestió de Firewall (Tallafoc)
+**El firewall és la primera línia de defensa. En CLI, utilitzem netsh (o mòduls de PowerShell) a Windows i ufw (Uncomplicated Firewall) o iptables a Linux.**
+**Windows (PowerShell):**
+**Estat: Get-NetFirewallProfile**
+**Obrir port (ex: 80): New-NetFirewallRule -DisplayName "HTTP" -Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow**
 
-B. Gestió de Firewall (Tallafoc)
-El firewall és la primera línia de defensa. En CLI, utilitzem netsh (o mòduls de PowerShell) a Windows i ufw (Uncomplicated Firewall) o iptables a Linux.
-Windows (PowerShell):
-Estat: Get-NetFirewallProfile
-Obrir port (ex: 80): New-NetFirewallRule -DisplayName "HTTP" -Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow
+**Linux (UFW):**
+**Activar: sudo ufw enable**
+**Estat: sudo ufw status**
+**Obrir port (ex: 80): sudo ufw allow 80/tcp**
 
-Linux (UFW):
-Activar: sudo ufw enable
-Estat: sudo ufw status
-Obrir port (ex: 80): sudo ufw allow 80/tcp
-
+---
 
 
 1. Scripts d'Automatització de Configuració
