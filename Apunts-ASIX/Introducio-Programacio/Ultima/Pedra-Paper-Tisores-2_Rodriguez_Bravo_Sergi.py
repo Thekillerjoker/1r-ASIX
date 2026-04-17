@@ -30,3 +30,5 @@ tria_jugador2 = int(input())
 
 resultat = qui_guanya(tria_jugador1, tria_jugador2)
 print(resultat)
+
+#Se tiene que hacer con if debajo y arriba el error = -1 y el else : guanya = "Error"
