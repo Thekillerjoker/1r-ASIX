@@ -91,22 +91,16 @@ ls /var/log/
 *Prova de càrrega de la CPU*
 [![Carrega-CPU](https://img.youtube.com/vi/BYnPvUrt2Gw/maxresdefault.jpg)](https://youtu.be/BYnPvUrt2Gw )
 
-Taula Comparativa de Comandes
-Concepte
-Windows 11 (PowerShell/CMD)
-Ubuntu 24 (Terminal)
-Llistar processos
-Get-Process / tasklist
-ps aux / top
-Finalitzar procés
-Stop-Process -ID [PID]
-kill [PID]
-Logs del sistema
-Get-EventLog -LogName System
-journalctl / dmesg
-Rendiment CPU/RAM
-perfmon
-htop / glances
+**
+---
+## ***Taula Comparativa de Comandes***
+| Concepte          | Windows 11 (Powershell/CMD) | Ubuntu 24 (Terminal) | 
+|-------------------|-----------------------------|----------------------|
+| LListar Processos | Get-Process /tasklist       | ps aux / top         |
+| Finalitzar procés | Stop-Process -ID [PID]      | kill [PID]           |
+| Logs del sistema  | Get-EventLog -LogName System| journalctl / dmesg   |
+| Rendiment CPU/RAM | perform                     | htop / glances       |
+
 
 
 
