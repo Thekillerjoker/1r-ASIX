@@ -48,7 +48,7 @@ $ Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 5
 ---
 
 ## Part 2: Ubuntu 24.04 LTS (Terminal i GUI)
-### *2.1. Registre de successos (Journald i logs)*
+### ***2.1. Registre de successos (Journald i logs)***
 A Linux, el registre centralitzat es gestiona amb systemd-journald.
 Tasca: Utilitza la comanda journalctl.
 Activitat: 1. Visualitza els logs en temps real: sudo journalctl -f.
