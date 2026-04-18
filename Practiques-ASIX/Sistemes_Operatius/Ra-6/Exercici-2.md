@@ -8,11 +8,11 @@ Tasca: Obre l'Event Viewer (eventvwr.msc).
 Activitat: Ves a Windows Logs > System. Filtra els esdeveniments per buscar només "Errors" i "Critical".
 ![Capt-1](./Exercici-2/EX-1_Windows_GUI_Filtrar.png)
 
-*Pregunta: Identifica un error recurrent. Quin és el seu Event ID i quina és la font (Source)?*
+**Pregunta: Identifica un error recurrent. Quin és el seu Event ID i quina és la font (Source)?**
 
 ![Capt-2](./Exercici-2/EX-1_Windows_GUI_Error.png)
 
-**L'id és 10317 i la seva font és NDIS "Vol dir que s'ha desactivat l'adaptador de xarxa de virtualBox"**
+*L'id és 10317 i la seva font és NDIS "Vol dir que s'ha desactivat l'adaptador de xarxa de virtualBox"*
 ---
 
 1.2. Monitoratge i Processos
@@ -37,7 +37,12 @@ Activitat: 1. Obre el navegador i reprodueix un vídeo en 4K.
 1.3. PowerShell: Monitoratge avançat
 Comanda: Utilitza Get-Process i Get-EventLog.
 Exercici: Executa una comanda per llistar els 5 processos que consumeixen més memòria RAM actualment.
+```powershell
 $ Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 5
+```
+![Llistar-5-Processos](./Exercici-2/EX-1_Windows_PS.png)
+
+---
 
 Part 2: Ubuntu 24.04 LTS (Terminal i GUI)
 2.1. Registre de successos (Journald i logs)
