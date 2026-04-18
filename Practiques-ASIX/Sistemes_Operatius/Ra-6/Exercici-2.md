@@ -55,6 +55,9 @@ $ Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 5
 **Tasca:** *Utilitza la comanda journalctl.*
 ***1. Visualitza els logs en temps real: sudo journalctl -f.:***
 
+[![Journal-Temps](https://img.youtube.com/vi/z7IQmeOrzV8/maxresdefault.jpg)](https://youtu.be/z7IQmeOrzV8)
+
+
 1. Filtra per veure només els errors de l'actual arrencada (boot): journalctl -b -p err.
 Pregunta: On es guarden físicament els logs tradicionals a Ubuntu? (Pista: /var/log/).
 2.2. Gestió de Processos (CLI)
