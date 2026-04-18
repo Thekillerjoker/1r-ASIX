@@ -30,7 +30,9 @@ Activitat: 1. Obre el navegador i reprodueix un vídeo en 4K.
 
 2. Localitza un procés que no respongui o consumeixi massa i finalitza l'arbre de processos des del Task Manager.
 
-(./Exercici-2/EX-1_Windows_GUI_Eliminar_Proces.mp4)
+ [![Finalitzar-Procces-No-Funciona](https://img.youtube.com/vi/p0uFXKZr0Ac/maxresdefault.jpg)](https://youtu.be/p0uFXKZr0Ac)
+
+
 
 1.3. PowerShell: Monitoratge avançat
 Comanda: Utilitza Get-Process i Get-EventLog.
