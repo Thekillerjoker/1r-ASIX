@@ -101,11 +101,28 @@ ls /var/log/
 | Logs del sistema  | Get-EventLog -LogName System| journalctl / dmesg   |
 | Rendiment CPU/RAM | perform                     | htop / glances       |
 
+*
+---
 
+## EXERCICIS ADDICIONALS
 
+***1. Provoca un error (per exemple, intentant aturar un servei crític) i mostra com queda registrat en el visor de successos de Windows i al journalctl d'Ubuntu.***
 
-EXERCICIS ADDICIONALS
-Resolució de problemes: Provoca un error (per exemple, intentant aturar un servei crític) i mostra com queda registrat en el visor de successos de Windows i al journalctl d'Ubuntu.
+1. **Error a linux:** *Provocarem un error intentant matar el proccés SSH i quant ens demani la contrasenya farem ctl + C per cancelar-ho*
+
+![Provocar-Error-Linux](./Exercici-2/EX-5_Linux_SSH.png)
+
+2. **Error a Windows:** *Per provocar un error critic a windows el que farem és el següent, obrirem una pestanya de CMD i posarem la següent comanda:*
+```powershell
+net stop wuauserv
+```
+*Aquesta comanda serveix per finalitzar el servei de Windows Update, aquest és un servei crític del sistema, i com l'estem executant com a usuari normal i no amb "Executar com Adminsitrador", els serveis del sistema només poden ser modificats per usuaris amb permisos d'Adminsitrador.*
+
+![Provocar-Error-Windows](./Exercici-2/EX-5_Windows_Proces.png)
+
+*Ara si anem al visor d'esdevediments de Windows podem veure l'error*
+
+![Visualitzar-Error-Windows](./Exercici-2/EX-5_Windows_Proces-1.png)
 
 Simularem un intent d'accés no autoritzat per aprendre a llegir registres de seguretat.
 Windows: Intenta iniciar sessió amb un usuari inexistent o una contrasenya errònia 5 vegades.
