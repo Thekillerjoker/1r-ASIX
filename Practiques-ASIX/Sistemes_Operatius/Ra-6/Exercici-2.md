@@ -50,16 +50,11 @@ $ Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 5
 ## Part 2: Ubuntu 24.04 LTS (Terminal i GUI)
 ### ***2.1. Registre de successos (Journald i logs)***
 
-*Hola buenos dias*
+*A Linux, el registre centralitzat es gestiona amb systemd-journald.*
 
-**Hola buenos dias como estas tu**
+**Tasca:** *Utilitza la comanda journalctl.*
+***1. Visualitza els logs en temps real: sudo journalctl -f.:***
 
-
-***Hola buenos dias como estas tu yo bine***
-
-A Linux, el registre centralitzat es gestiona amb systemd-journald.
-Tasca: Utilitza la comanda journalctl.
-Activitat: 1. Visualitza els logs en temps real: sudo journalctl -f.
 1. Filtra per veure només els errors de l'actual arrencada (boot): journalctl -b -p err.
 Pregunta: On es guarden físicament els logs tradicionals a Ubuntu? (Pista: /var/log/).
 2.2. Gestió de Processos (CLI)
