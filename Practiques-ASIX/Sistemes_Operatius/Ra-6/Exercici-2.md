@@ -8,7 +8,9 @@ Tasca: Obre l'Event Viewer (eventvwr.msc).
 Activitat: Ves a Windows Logs > System. Filtra els esdeveniments per buscar només "Errors" i "Critical".
 ![Capt-1](./Exercici-2/EX-1_Windows_GUI_Filtrar.png)
 
+
 **Pregunta: Identifica un error recurrent. Quin és el seu Event ID i quina és la font (Source)?**
+
 
 ![Capt-2](./Exercici-2/EX-1_Windows_GUI_Error.png)
 
