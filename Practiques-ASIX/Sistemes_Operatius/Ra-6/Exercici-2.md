@@ -75,9 +75,9 @@ ls /var/log/
 ### 2.2. Gestió de Processos (CLI):
 *Utilitzar top, htop i ps.*
 
-***Llança un procés en segon pla,Troba el seu PID, canvia la seva prioritat amb renice i finalment matarlo.***
+**Llança un procés en segon pla,Troba el seu PID, canvia la seva prioritat amb renice i finalment matarlo.**
 
-[![Video](https://img.youtube.com/vi/VJgjqBx5DfU /maxresdefault.jpg)](https://youtu.be/VJgjqBx5DfU)
+[![Video](https://img.youtube.com/vi/VJgjqBx5DfU/maxresdefault.jpg)](https://youtu.be/VJgjqBx5DfU)
 
 
 2.3. Monitoratge d'aplicacions
