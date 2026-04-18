@@ -58,8 +58,21 @@ $ Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 5
 [![Journal-Temps](https://img.youtube.com/vi/z7IQmeOrzV8/maxresdefault.jpg)](https://youtu.be/z7IQmeOrzV8)
 
 
-1. Filtra per veure només els errors de l'actual arrencada (boot): journalctl -b -p err.
-Pregunta: On es guarden físicament els logs tradicionals a Ubuntu? (Pista: /var/log/).
+***1. Filtra per veure només els errors de l'actual arrencada (boot):***
+![Filtrar-Errors-Arrancada](./Exercici-2/EX2_Linux_Journal_Boot.png)
+
+
+***On es guarden físicament els logs tradicionals a Ubuntu?*** 
+
+*Els logs per defecte és guarden fisicament a la carpeta /var/log.*
+
+```bash
+ls /var/log/
+# Podem veure tots els archius logs.
+```
+![Mostrar-Logs](./Exercici-2/EX-2_Linux_Logs.png)
+
+
 2.2. Gestió de Processos (CLI)
 Tasca: Utilitzar top, htop i ps.
 Activitat:
