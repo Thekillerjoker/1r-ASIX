@@ -124,11 +124,29 @@ net stop wuauserv
 
 ![Visualitzar-Error-Windows](./Exercici-2/EX-5_Windows_Proces-1.png)
 
-Simularem un intent d'accés no autoritzat per aprendre a llegir registres de seguretat.
-Windows: Intenta iniciar sessió amb un usuari inexistent o una contrasenya errònia 5 vegades.
-Tasca: Troba l'esdeveniment al Security Log. Quin és el Event ID per a un "Audit Failure"? (Hauria de ser el 4625).
-Ubuntu: Fes el mateix intentant fer sudo amb una contrasenya incorrecta o intentant entrar per SSH (si està configurat).
-Tasca: Revisa el fitxer /var/log/auth.log. Quina informació ens dóna sobre l'adreça IP o el terminal des d'on s'ha intentat l'atac?
-Automatització d’alertes
-Windows (Task Scheduler): Configura una "Scheduled Task" que s'activi automàticament quan aparegui un esdeveniment específic al log de sistema (per exemple, quan es connecti un dispositiu USB). L'acció ha de ser mostrar un missatge en pantalla o executar un script.
+***2. Simularem un intent d'accés no autoritzat per aprendre a llegir registres de seguretat.***
+
+1. **Windows:** *Intenta iniciar sessió amb un usuari inexistent o una contrasenya errònia 5 vegades.*
+
+**Troba l'esdeveniment al Security Log. Quin és el Event ID per a un "Audit Failure"?**
+![Acces-No-Autoritzat-Windows](./Exercici-2/EX-6_Windows_Error1.png)
+
+*L'ID de l'error és 4625.*
+
+1. **Ubuntu:** *Fes el mateix intentant fer sudo amb una contrasenya incorrecta.*
+
+![Acces-No-Autoritzat-Linux](./Exercici-2/EX-6_Linux_Error1.png)
+
+**Revisa el fitxer /var/log/auth.log. Quina informació ens dóna sobre l'adreça IP o el terminal des d'on s'ha intentat l'atac?**
+
+![Revisio_Log_Linux](./Exercici-2/EX-6_Linux_Error2.png)
+
+*En aquest cas ens dona la informació de la data i l'hora a la que s'ha inentat fer el sudo, El nom del equip que ha intentat fer sudo, l'usuari que ho ha intentat, el terminal des d'on s'ha intentat que en aquest cas es el TY0.*
+
+---
+
+## Automatització d’alertes:
+
+### **Windows (Task Scheduler): Configura una "Scheduled Task" que s'activi automàticament quan aparegui un esdeveniment específic al log de sistema (per exemple, quan es connecti un dispositiu USB). L'acció ha de ser mostrar un missatge en pantalla o executar un script.**
+
 Ubuntu (Scripts de monitoratge): Crea un petit script en Bash que revisi cada 10 segons si el servei d'Apache (o qualsevol altre) està actiu. Si s'atura, l'script l'ha de reiniciar i escriure una línia en un fitxer de log propi: /var/log/meu_monitoratge.log.
