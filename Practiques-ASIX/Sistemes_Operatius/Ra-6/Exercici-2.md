@@ -52,7 +52,7 @@ $ Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 5
 
 *A Linux, el registre centralitzat es gestiona amb systemd-journald.*
 
-**Tasca:** *Utilitza la comanda journalctl.*
+
 ***1. Visualitza els logs en temps real: sudo journalctl -f.:***
 
 [![Journal-Temps](https://img.youtube.com/vi/z7IQmeOrzV8/maxresdefault.jpg)](https://youtu.be/z7IQmeOrzV8)
