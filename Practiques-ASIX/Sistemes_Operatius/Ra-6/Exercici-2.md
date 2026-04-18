@@ -77,12 +77,19 @@ ls /var/log/
 
 **Llança un procés en segon pla,Troba el seu PID, canvia la seva prioritat amb renice i finalment matarlo.**
 
-[![Video](https://img.youtube.com/vi/VJgjqBx5DfU/hqdefault.jpg)](https://youtu.be/VJgjqBx5DfU)
+[![Gestio-Processos-Linux](https://img.youtube.com/vi/VJgjqBx5DfU/hqdefault.jpg)](https://youtu.be/VJgjqBx5DfU)
 
 
-2.3. Monitoratge d'aplicacions
-Tasca: Utilitzar l'System Monitor (interfície gràfica) i glances.
-Activitat: Compara la càrrega de la CPU entre un estat de repòs i obrint diverses pestanyes de Firefox. Dibuixa una petita gràfica o captura la variació del "Load Average".
+### ***2.3. Monitoratge d'aplicacions***
+*Utilitzar l'System Monitor (interfície gràfica) i glances.*
+
+***1.Compara la càrrega de la CPU entre un estat de repòs i obrint diverses pestanyes de Firefox. Dibuixa una petita gràfica o captura la variació del "Load Average".***
+
+*Estat de la cpu en repòs és de 3%.*
+![Estat-CPU-Repos](./Exercici-2/EX-4_Windows_CPU_Repos.png)
+
+*Prova de càrrega de la CPU*
+
 
 Taula Comparativa de Comandes
 Concepte
