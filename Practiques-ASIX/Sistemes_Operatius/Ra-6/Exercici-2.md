@@ -148,5 +148,40 @@ net stop wuauserv
 ## Automatització d’alertes:
 
 ### **Windows (Task Scheduler): Configura una "Scheduled Task" que s'activi automàticament quan aparegui un esdeveniment específic al log de sistema (per exemple, quan es connecti un dispositiu USB). L'acció ha de ser mostrar un missatge en pantalla o executar un script.**
+  > **⚠️ Important:** No funciona
+  > 
+  > *Ja no funcióna windows no executa res cuan és connecta un usb*
+   >
 
-Ubuntu (Scripts de monitoratge): Crea un petit script en Bash que revisi cada 10 segons si el servei d'Apache (o qualsevol altre) està actiu. Si s'atura, l'script l'ha de reiniciar i escriure una línia en un fitxer de log propi: /var/log/meu_monitoratge.log.
+### ***Ubuntu (Scripts de monitoratge):*** 
+**Crea un petit script en Bash que revisi cada 10 segons si el servei d'Apache (o qualsevol altre) està actiu. Si s'atura, l'script l'ha de reiniciar i escriure una línia en un fitxer de log propi: /var/log/meu_monitoratge.log.**
+> **💡 Explicació:**
+>
+> *Jo he fet el següent script.*
+>
+
+```bash
+#!/bin/bash
+LOG="/var/log/meu_monitoratge.log" #Indiquem la ruta al que guardara el lOG.
+while true  #mentre sigui cert "Sempre sera cert ja que no indiquem res per que canvi a false."
+do  
+    if systemctl is-active --quiet apache2 # Comprova si apache esta actiu fent systemctl apache2 i mira si esta active.
+    then   
+        echo "$(date) - Apache está actiu" >> $LOG #Guarda al archiu LOG la data i l'hora i el text Apache está actiú.
+    else
+        echo "$(date) - Apache caigut, reiniciant..." >> $LOG # Si al fer el systemclt apache2 detecta que no está actiu guarda al LOG  la data i el missatje de que ha caigut
+    fi
+    sleep 10 #Interval de 10 segons.
+done
+```
+**Demostració del funcionament:**
+
+
+[![Monitortge-Linux](https://img.youtube.com/vi/l5ZStKRTMZA/maxresdefault.jpg)](https://youtu.be/l5ZStKRTMZA)
+
+
+**Comprovacio a /var/log/meu_monitoratge.log:**
+
+![Comprovacio-Monitoratge](./Exercici-2/EX-7_Linux_Log.png)
+
+---
