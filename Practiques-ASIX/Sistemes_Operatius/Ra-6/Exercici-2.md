@@ -89,7 +89,7 @@ ls /var/log/
 ![Estat-CPU-Repos](./Exercici-2/EX-4_Windows_CPU_Repos.png)
 
 *Prova de càrrega de la CPU*
-
+[![Carrega-CPU](https://img.youtube.com/vi/BYnPvUrt2Gw/maxresdefault.jpg)](https://youtu.be/BYnPvUrt2Gw )
 
 Taula Comparativa de Comandes
 Concepte
