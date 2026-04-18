@@ -79,6 +79,7 @@ ls /var/log/
 
 [![Gestio-Processos-Linux](https://img.youtube.com/vi/VJgjqBx5DfU/maxresdefault.jpg)](https://youtu.be/VJgjqBx5DfU)
 
+
 2.3. Monitoratge d'aplicacions
 Tasca: Utilitzar l'System Monitor (interfície gràfica) i glances.
 Activitat: Compara la càrrega de la CPU entre un estat de repòs i obrint diverses pestanyes de Firefox. Dibuixa una petita gràfica o captura la variació del "Load Average".
