@@ -13,6 +13,7 @@ Activitat: Ves a Windows Logs > System. Filtra els esdeveniments per buscar nom�
 ![Capt-2](./Exercici-2/EX-1_Windows_GUI_Error.png)
 
 *L'id és 10317 i la seva font és NDIS "Vol dir que s'ha desactivat l'adaptador de xarxa de virtualBox"*
+
 ---
 
 1.2. Monitoratge i Processos
