@@ -72,13 +72,13 @@ ls /var/log/
 ```
 ![Mostrar-Logs](./Exercici-2/EX-2_Linux_Logs.png)
 
+### 2.2. Gestió de Processos (CLI):
+*Utilitzar top, htop i ps.*
 
-2.2. Gestió de Processos (CLI)
-Tasca: Utilitzar top, htop i ps.
-Activitat:
-Instal·la htop si no hi és: sudo apt install htop.
-Llança un procés en segon pla (per exemple, sleep 1000 &).
-Troba el seu PID, canvia la seva prioritat amb renice i finalment mata'l amb kill -9.
+***Llança un procés en segon pla,Troba el seu PID, canvia la seva prioritat amb renice i finalment matarlo.***
+
+[![Gestio-Processos-Linux](https://img.youtube.com/vi/VJgjqBx5DfU/maxresdefault.jpg)](https://youtu.be/VJgjqBx5DfU)
+
 2.3. Monitoratge d'aplicacions
 Tasca: Utilitzar l'System Monitor (interfície gràfica) i glances.
 Activitat: Compara la càrrega de la CPU entre un estat de repòs i obrint diverses pestanyes de Firefox. Dibuixa una petita gràfica o captura la variació del "Load Average".
