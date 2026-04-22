@@ -20,6 +20,7 @@
 - [Objectiu](#objectiu)
 - [Contingut](#contingut)
   - [Teoria](#teoria)
+  - [Part 1](#part-1-requisits-de-seguretat-del-sistema-i-de-les-dades-cerca-la-informació-per-internet)
 
 ---
 # Introducció:
@@ -70,3 +71,5 @@ Són les regles associades a **objectes específics** (fitxers, carpetes, impres
 - Si un administratiu només ha de llegir un PDF, no ha de tenir permisos d'escriptura.
 - Si un tècnic ha d'instal·lar un programa, usarà un compte d'admin només per a aquesta tasca, no per navegar per Internet.
 
+
+## Part 1: Requisits de seguretat del sistema i de les dades (cerca la informació per Internet)
