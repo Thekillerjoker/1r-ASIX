@@ -33,4 +33,10 @@ Documentar els requisits de seguretat i la política de privilegis d'un servidor
 ## Teoria
 1. ### ***Requisits de seguretat del sistema i de les dades.***
 
+La seguretat no és un producte que es compra, sinó un procés continu. Es basa en mantenir l'equilibri de la **Triada de la Seguretat (CIA)**:
+
+
+- **Confidencialitat:** Garantir que la informació només sigui accesible per a qui té autorització. (Exemple: Xifrat de dades).
+- **Integritat:** Assegurar que les dades no han estat modificades de forma no autoritzada o accidental. (Exemple:Firmes digitals o hashes).
+- **Disponibilitat:** Garantir que els sistemes i les dades esstiguin operatius quan es necessitin.(Exemple:Backups i redundància).
 
