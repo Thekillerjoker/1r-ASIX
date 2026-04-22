@@ -40,3 +40,4 @@ La seguretat no és un producte que es compra, sinó un procés continu. Es basa
 - **Integritat:** Assegurar que les dades no han estat modificades de forma no autoritzada o accidental. (Exemple:Firmes digitals o hashes).
 - **Disponibilitat:** Garantir que els sistemes i les dades esstiguin operatius quan es necessitin.(Exemple:Backups i redundància).
 
+### Tipus de requisits
