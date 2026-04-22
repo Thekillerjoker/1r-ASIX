@@ -48,4 +48,3 @@ La seguretat no és un producte que es compra, sinó un procés continu. Es basa
 3. **Requisits Legals:** Compliment de lleis com la _LOPDGDD_ (Protecció de dades).
 **
 ---
-The background color is `#ffffff` for light mode and `#000000` for dark mode.
