@@ -67,3 +67,6 @@ Són les regles associades a **objectes específics** (fitxers, carpetes, impres
 ### El Principi de Mínim Privilegi (PoLP)
 **Cada usuari ha de tenir només els drets i permisos estrictament necessaris per fer la seva feina, i durant el temps mínim necessari.**
 
+- Si un administratiu només ha de llegir un PDF, no ha de tenir permisos d'escriptura.
+- Si un tècnic ha d'instal·lar un programa, usarà un compte d'admin només per a aquesta tasca, no per navegar per Internet.
+
