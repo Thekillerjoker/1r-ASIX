@@ -73,3 +73,5 @@ Són les regles associades a **objectes específics** (fitxers, carpetes, impres
 
 
 ## Part 1: Requisits de seguretat del sistema i de les dades (cerca la informació per Internet)
+
+En aquest apartat, has de definir les tres potes de la seguretat (C-I-A): Confidencialitat, Integritat i Disponibilitat.
