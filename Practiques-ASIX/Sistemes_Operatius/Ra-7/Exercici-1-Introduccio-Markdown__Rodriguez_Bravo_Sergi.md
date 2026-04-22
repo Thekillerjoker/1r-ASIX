@@ -41,3 +41,11 @@ La seguretat no és un producte que es compra, sinó un procés continu. Es basa
 - **Disponibilitat:** Garantir que els sistemes i les dades esstiguin operatius quan es necessitin.(Exemple:Backups i redundància).
 
 ### Tipus de requisits
+
+1. **Requisits Físics:** Proteció del maquinari(Servidors tancats sota clau, càmeres, proteció contra incendis).
+   
+2. **Requisits Lògics:** Protecció del programari (antivirus, tallafocs, actualitzacions de seguretat).
+3. **Requisits Legals:** Compliment de lleis com la _LOPDGDD_ (Protecció de dades).
+**
+---
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
