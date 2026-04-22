@@ -51,6 +51,19 @@ La seguretat no és un producte que es compra, sinó un procés continu. Es basa
 2. ### Drets d'usuari
 
 Molt sovint es confonen els **"Drets"** amb els **"Permisos"**, però en administració de sistemes (especialment en entorns Windows/Active Directory i Linux) són conceptes diferents:
-
+ 
 ### A. Drets d'usuari (User Rights)
+
+Són les capacitats que té un usuari per realitzar tasques que afecten a **tot el sistema.** No es refereixen a un fitxer concret, sinó al comportament del S.O.
+
+- *Exemples:* Poder canviar l'hora del sistema, carregar controladors de dispositiu, tancar el sistema remotament o fer còpies de seguretat.
+
+### B. Permisos (Permissions)
+
+Són les regles associades a **objectes específics** (fitxers, carpetes, impressores).
+
+- *Exemples:* Lectura, escriptura, execució o control total sobre una carpeta compartida.
+
+### El Principi de Mínim Privilegi (PoLP)
+**Cada usuari ha de tenir només els drets i permisos estrictament necessaris per fer la seva feina, i durant el temps mínim necessari.**
 
