@@ -48,3 +48,9 @@ La seguretat no és un producte que es compra, sinó un procés continu. Es basa
 3. **Requisits Legals:** Compliment de lleis com la _LOPDGDD_ (Protecció de dades).
 **
 ---
+2. ### Drets d'usuari
+
+Molt sovint es confonen els **"Drets"** amb els **"Permisos"**, però en administració de sistemes (especialment en entorns Windows/Active Directory i Linux) són conceptes diferents:
+
+### A. Drets d'usuari (User Rights)
+
