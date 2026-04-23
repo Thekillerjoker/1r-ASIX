@@ -1,4 +1,4 @@
-# Seguretat i Drets d'Usuari
+![Portada](https://raw.githubusercontent.com/Thekillerjoker/1r-ASIX/main/Portada.png)
 
 ***Autor:*** *Sergi Rodríguez Bravo*
 
@@ -12,7 +12,7 @@
 - **CFGS ASIX**
 - ***Mòdul:*** *Implementació de Sistemas Operatius*
 
-![Portada](https://github.com/Thekillerjoker/1r-ASIX/blob/main/Portada.png)
+
 
 ---
 
