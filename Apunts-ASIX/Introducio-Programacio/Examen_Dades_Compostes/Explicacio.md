@@ -358,3 +358,101 @@ for i in range(len(array)):
 
 - **for x in array** → `valor`
 - **for i in range(...)** → `índice`
+
+*
+---
+>[!IMPORTANT]- EX2
+>El problema serà de tres línies. La primera tindrà un nombre, K que et dirà el tamany de l'array que has de crear La segona son K nombres, separats per espais que et dirà el contingut de l'array que has de llegir. La tercera serà N, un valor a sumar a tots els elements de l'array Sortida Tornaràs l'array sencer escrit, amb espais entre cada caràcter, després d'haver sumat N a cada posició. Exemple d'Entrada Copy 6 23 2 -4 0 42 69420 2 Exemple de Sortida Copy 25 4 -2 2 44 69422
+>
+*
+---
+
+## 🧠 1. ¿Qué me dan?
+
+- **K** → tamaño (no muy importante)
+- **lista de números**→ 👉 ARRAY
+- **N** → número a sumar
+
+## 🧠 2. ¿Qué tengo que hacer?
+
+**👉 “sumar N a todos los elementos”**
+
+*Traducción mental:*
+
+`recorrer array → sumar N → mostrar resultado`
+
+## 🧱 3. ¿Qué necesito usar?
+
+- **✔ array** → porque hay muchos números
+- **✔ bucle** → porque tienes que modificar TODOS
+*
+---
+
+## 🔥 4. Tipo de bucle → AQUÍ está la clave
+
+**Pregúntate:**
+
+*👉 “¿Tengo que cambiar los valores?”*
+
+- **✔ SÍ** → necesitas posiciones
+
+*👉 entonces:*
+
+`usar for con índices`
+
+### ⚠️ IMPORTANTE
+
+**Aquí hay dos formas de hacerlo:**
+
+***🟢 OPCIÓN 1 (la más simple mentalmente)***
+
+- *👉 no modificas el array, solo imprimes*
+
+*recorres valores → sumas → imprimes*
+
+***👉 usarías:***
+`for x in array`
+
+
+***🔵 OPCIÓN 2 (más “formal”)***
+
+- *👉 modificas el array*
+
+`array[i] = array[i] + N`
+
+- *👉 usarías:*
+
+`for i in range(...)`
+
+*
+---
+
+## 🧠 5. Estructura mental final
+1. leer K
+2. leer array
+3. leer N
+
+4. recorrer array
+   - → sumar N
+   - → mostrar resultado
+
+*
+---
+
+## 🎯 6. Cómo saber qué for usar (CLAVE)
+
+**👉 pregúntate:**
+
+| Situación       | Bucle               |
+|-----------------|---------------------|
+| solo imprimir   | for x in array      |
+| modificar array |	for i in range(...) |
+
+```python
+k = int(input())
+array = list(map(int, input().split()))
+N = int(input())
+for i in range(k):
+    array[i] = array[i] + N
+    print(array[i], end=" ")
+```
