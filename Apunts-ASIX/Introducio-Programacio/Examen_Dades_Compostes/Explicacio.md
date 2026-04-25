@@ -456,3 +456,55 @@ for i in range(k):
     array[i] = array[i] + N
     print(array[i], end=" ")
 ```
+*
+---
+
+>[!IMPORTANT]- EX-3
+>Entrada
+>La primera línia indica els casos de prova a considerar Cada cas conté tres linies. La primera té un nombre K. La segona conté K nombres del 0 al 100. La tercera conté un nombre P<K
+>Sortida
+>Per cada cas de prova es vol retornar el nombre que ocupava la posició P en la llista de nombres. Considereu que la primera posició és 0.
+>Exemple d'Entrada
+>2
+>3
+>1 2 3
+>0
+>5
+>5 6 7 8 9
+>2
+>Exemple de Sortida
+>1
+>7
+>
+
+🧠 2. Traducción mental
+
+Por cada caso:
+
+leer K
+leer lista de K números
+leer P (posición)
+
+🧠 3. ¿Qué te piden?
+
+“retornar el nombre que ocupava la posició P”
+
+👉 Traducción:
+
+quiero el valor en la posición P del array
+🔥 4. CLAVE del ejercicio
+
+👉 NO tienes que:
+
+buscar ❌
+recorrer ❌
+contar ❌
+
+👉 SOLO tienes que:
+
+acceder a una posición concreta
+🧠 5. Pregunta clave que debes hacerte
+
+👉 “¿Ya me dan la posición?”
+
+✔ SÍ → entonces NO necesitas bucle
