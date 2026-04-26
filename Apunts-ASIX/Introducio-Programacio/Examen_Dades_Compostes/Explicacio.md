@@ -967,6 +967,465 @@ Regla rápida:
 Si quiero buscar rápido por nombre, país, persona o mapa → diccionario.
 Si quiero contar cuántas veces aparece algo → diccionario.
 Si quiero actualizar el último valor de alguien → diccionario.
+---
+
+## Dicionariss
+
+### Un diccionario se usa cuando tienes una relación:
+
+`CLAVE → VALOR`
+
+**Ejemplos:**
+```
+persona → cumpleaños
+país → capital
+alumno → nota
+mapa → votos
+producto → precio
+usuario → contraseña
+```
+
+### 1. Cómo saber si el ejercicio pide diccionario
+
+**Cuando el enunciado diga cosas como:**
+```
+donat un nom, retorna la seva data
+donat un país, retorna la capital
+cada mapa suma vots
+el segon nom és amic del primer
+si la clau ja existeix, actualitza
+```
+
+*piensa:*
+```
+necesito guardar una relación → diccionario
+```
+*
+---
+
+### 2. Pregunta principal
+
+*Siempre pregúntate:*
+```
+¿Qué será la CLAVE?
+¿Qué será el VALOR?
+```
+
+*Ejemplo:*
+
+`ESPANYA-MADRID`
+
+*Aquí:*
+```
+clave = ESPANYA
+valor = MADRID
+```
+
+*Entonces mentalmente:*
+```python
+diccionari["ESPANYA"] = "MADRID"
+```
+*
+---
+
+### 3. Estructura típica de un ejercicio
+```
+leer casos
+para cada caso:
+    crear diccionario vacío
+    leer datos
+    guardar clave → valor
+    consultar / contar / buscar
+    imprimir resultado
+```
+*
+---
+
+### 4. Cuándo usar bucles
+
+**Caso A: llenar el diccionario**
+
+*Si te dicen que vienen `N` líneas:*
+```
+N
+Marc
+5/10
+Juli
+26/3
+```
+
+*Necesitas:*
+```
+for i in range(N)
+```
+
+*Porque sabes cuántas veces lees datos.*
+---
+
+**Caso B: recorrer el diccionario completo**
+
+*Si ya tienes el diccionario y quieres ver todo:*
+```python
+for clau, valor in diccionari.items():
+```
+
+*Ejemplo mental:*
+```
+quiero saber cuál tiene más votos
+```
+
+*Ahí tienes que mirar todos.*
+---
+
+**Caso C: solo consultar una clave**
+
+*Si te dan una consulta:*
+```
+ALEMANYA
+```
+
+*No necesitas recorrer todo.*
+
+*Haces:*
+```
+si "ALEMANYA" está en diccionario → imprimir valor
+si no → NO HO SE
+```
+*
+---
+
+### 5. Tipos de for en diccionarios
+
+**Recorrer claves**
+```python
+for clau in diccionari:
+```
+*o:*
+```python
+for clau in diccionari.keys():
+```
+
+*Sirve si solo necesitas las claves.*
+
+**Recorrer valores**
+```python
+for valor in diccionari.values():
+```
+
+*Sirve si solo te importan los valores.*
+---
+
+**Recorrer clave y valor**
+```python
+for clau, valor in diccionari.items():
+```
+
+*Este es el más útil.*
+
+*Ejemplo:*
+```
+quiero encontrar el mapa con más votos
+```
+
+*Necesitas saber:*
+```
+mapa → votos
+```
+
+*Entonces usas `.items()`.*
+---
+
+### 6. Añadir o cambiar valores
+
+*En diccionarios se hace igual:*
+```python
+diccionari[clau] = valor
+```
+
+*Si la clave no existe:*
+
+la crea
+
+*Si la clave ya existe:*
+
+actualiza el valor
+
+***Ejemplo:***
+```python
+amics["Asif"] = "Mudasir"
+amics["Asif"] = "Salman"
+```
+
+*Resultado:*
+```
+Asif → Salman
+```
+
+*Porque importa el último.*
+---
+
+### 7. Métodos importantes
+
+`.get()`
+
+*Sirve para obtener un valor sin que dé error si no existe.*
+```python
+vots[mapa] = vots.get(mapa, 0) + 1
+```
+
+*Significa:*
+
+- **si mapa existe** → dame sus votos
+
+- **si no existe** → empieza en 0
+
+*Muy útil para contar.*
+---
+
+`.items()`
+
+*Sirve para recorrer clave y valor.*
+```python
+for mapa, votos in vots.items():
+```
+
+*Útil para:*
+
+- buscar máximo
+
+- imprimir diccionario personalizado
+
+- recorrer todo
+*
+---
+
+`.keys()`
+
+*Devuelve las claves.*
+```python
+diccionari.keys()
+```
+
+*Normalmente no hace falta, porque esto:*
+```python
+for clau in diccionari:
+
+"ya recorre claves."
+```
+*
+---
+
+`.values()`
+
+*Devuelve valores.*
+
+*Útil si solo quieres mirar los valores.*
+
+Ejemplo:
+```
+sumar todas las notas
+```
+*
+---
+
+`.update()`
+
+*Actualiza un diccionario con otro.*
+```python
+dades.update({"Marc": "5/10"})
+```
+
+- Si la clave existe, cambia el valor.
+
+- Si no existe, la añade.
+
+*Útil cuando te dan otro bloque de datos ya preparado.*
+---
+
+`.pop(clau)`
+
+*Elimina una clave concreta y devuelve su valor.*
+```python
+valor = diccionari.pop("Marc")
+```
+
+*Útil si el enunciado dice:*
+
+- elimina aquest element
+
+- treu aquesta clau
+
+*
+---
+
+`.popitem()`
+
+*Elimina el último elemento insertado.*
+
+No suele usarse mucho en ejercicios básicos.
+
+Úsalo solo si el enunciado dice algo como:
+
+elimina l’últim element afegit
+*
+---
+
+`.clear()`
+
+*Vacía todo el diccionario.*
+```python
+diccionari.clear()
+```
+
+*Útil si quieres borrar todo.*
+---
+
+`.copy()`
+
+
+Hace una copia del diccionario.
+
+copia = diccionari.copy()
+
+Útil si quieres modificar una copia sin tocar el original.
+
+
+`dict.fromkeys()`
+
+Crea un diccionario con varias claves y el mismo valor inicial.
+```python
+
+diccionari = dict.fromkeys(["Marc", "Juli", "Angel"], 0)
+```
+
+Resultado mental:
+
+- Marc → 0
+
+- Juli → 0
+
+- Angel → 0
+
+Útil para inicializar contadores.
+*
+---
+
+1. Cuándo usar cada cosa
+Enunciado dice	Piensa	Herramienta
+“donat un nom, retorna…”	buscar por clave	diccionari[clau]
+“si no existeix…”	evitar error	.get() o if clau in diccionari
+“cada vegada que surt suma 1”	contador	.get(clau, 0) + 1
+“últim valor importa”	actualizar	diccionari[clau] = valor
+“recorre tots”	mirar todo	.items()
+“elimina una clau”	borrar	.pop(clau)
+“neteja tot”	borrar todo	.clear()
+“copia”	duplicar	.copy()
+
+1. Ejemplos de razonamiento
+Ejemplo 1: país-capital
+
+Enunciado:
+
+PAIS-CAPITAL
+consulta país
+
+Razonamiento:
+
+clave = país
+valor = capital
+necesito consultar por país
+diccionario
+
+No necesito recorrer para responder. Solo consultar.
+
+Ejemplo 2: mapa más votado
+
+Enunciado:
+
+cada mapa que aparece suma 1 voto
+devuelve el más votado
+
+Razonamiento:
+
+clave = mapa
+valor = votos
+cada repetición suma
+después recorro diccionario para encontrar máximo
+
+Aquí sí necesitas dos fases:
+
+1. llenar/contar
+2. recorrer para encontrar ganador
+Ejemplo 3: mejor amigo
+
+Enunciado:
+
+el segundo nombre es el mejor amigo del primero
+si cambia, importa el último
+
+Razonamiento:
+
+clave = persona
+valor = mejor amigo
+si aparece otra vez, se sobreescribe
+
+Eso lo hace natural:
+
+persona → amigo
+Ejemplo 4: amistad mutua
+
+Enunciado:
+
+los dos son amigos mutuamente
+
+Razonamiento:
+
+A → B
+B → A
+
+Aquí guardas dos relaciones por cada línea.
+
+10. Diferencia array vs diccionario
+Array/lista
+
+Usas lista cuando:
+
+hay varios valores sueltos
+importa la posición
+quieres recorrer en orden
+
+Ejemplo:
+
+[10, 20, 30]
+Diccionario
+
+Usas diccionario cuando:
+
+quieres buscar por nombre, país, mapa, persona...
+hay clave → valor
+quieres contar apariciones
+
+Ejemplo:
+
+{"Marc": "5/10"}
+11. Frases clave para memorizar
+Si me dan una relación A → B, uso diccionario.
+Si quiero contar apariciones, uso diccionario.
+Si quiero consultar rápido por nombre, uso diccionario.
+Si quiero posición, uso lista.
+Si quiero clave y valor, uso .items().
+Si puede no existir, uso get() o if clave in diccionario.
+12. Plantilla mental final
+
+Cuando leas un enunciado de diccionarios, haz esto:
+
+1. ¿Hay relación clave → valor?
+2. ¿Cuál es la clave?
+3. ¿Cuál es el valor?
+4. ¿Tengo que consultar una clave?
+5. ¿Tengo que contar?
+6. ¿Tengo que actualizar si se repite?
+7. ¿Tengo que recorrer todo para encontrar máximo/mínimo?
 
 ## Comandes amb arrays:
 
