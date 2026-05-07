@@ -286,3 +286,4 @@ AntivirusEnabled RealTimeProtectionEnabled
 
 **Anàlisi:**
 *S'han detectat els dispositius USB connectats reentment si son esl que se que sons necessaris o tinc el control bé, però si hi ha un USB que no identifiquem o no sabem que és podría haver estat utilitzat per copiar informació sensible.*
+
