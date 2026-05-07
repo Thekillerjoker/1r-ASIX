@@ -1,0 +1,32 @@
+{
+    "hostname": "archlinuxsergi",
+    "locale_config": {
+        "sys_lang": "es_ES.UTF-8",
+        "kb_layout": "es"
+    },
+    "timezone": "Europe/Madrid",
+    "ntp": true,
+    "bootloader": "grub",
+    "swap": true,
+    "kernels": [
+        "linux"
+    ],
+    "packages": [
+        "sudo",
+        "vim",
+        "openssh",
+        "networkmanager",
+        "virtualbox-guest-utils"
+    ],
+    "parallel_downloads": 5,
+    "network_config": {
+        "type": "iso"
+    },
+    "disk_config": {
+        "config_type": "default_layout"
+    },
+    "profile_config": {
+        "profile": "desktop",
+        "desktop": "xfce"
+    }
+}
