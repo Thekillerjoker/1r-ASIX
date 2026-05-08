@@ -112,9 +112,9 @@ La línea Interfaz indica la IP local del teu ordinador utilitzada per soritr, i
 ### Exercici 2. Executa aquests scripts en una màquina virtual o un entorn de proves. Canviar la IP de la teva màquina principal pot tallar la teva connexió a internet. Fes una captura de pantalla dels resultats obtinguts i comenta’ls!
 
 
-A. Script per a Windows (PowerShell)
-Aquest script configura una IP estàtica i defineix els servidors DNS. Desa'l com config_xarxa.ps1.
-
+### A. Script per a Windows (PowerShell)
+***Aquest script configura una IP estàtica i defineix els servidors DNS. Desa'l com config_xarxa.ps1.***
+```powershell
 # Sol·licitar permisos d'administrador si no en té
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
 
@@ -142,13 +142,14 @@ catch {
     Write-Host $_.Exception.Message
 }
 
+```
+ [![Script-Windows](https://img.youtube.com/vi/TwIVr2ASwqk/maxresdefault.jpg)](https://youtu.be/TwIVr2ASwqk)
 
 
+### B. Script per a Linux (Bash)
+***Aquest script utilitza la comanda ip (moderna). Tingues en compte que els canvis amb ip són volàtils (es perden al reiniciar) tret que modifiquis fitxers com /etc/netplan o /etc/network/interfaces. Desa'l com config_xarxa.sh.***
 
-B. Script per a Linux (Bash)
-Aquest script utilitza la comanda ip (moderna). Tingues en compte que els canvis amb ip són volàtils (es perden al reiniciar) tret que modifiquis fitxers com /etc/netplan o /etc/network/interfaces. Desa'l com config_xarxa.sh.
-
-
+```bash
 #!/bin/bash
 
 # Variables
@@ -184,24 +185,21 @@ echo "Configuració aplicada. Verificant..."
 ip addr show $IFACE
 echo "Prova de ping a Google:"
 ping -c 2 8.8.8.8
+```
 
+ [![Script-Linux](https://img.youtube.com/vi/aXGBeFvfQ6g/maxresdefault.jpg)](https://youtu.be/aXGBeFvfQ6g)
 
+*
+---
 
+## 3. Monitorització de Xarxa amb Python
+***Aquest exercici requereix Python i ho heu d’executar en cada un dels sistemes operatius. El codi següent mostra una gràfica en temps real dels bytes enviats i rebuts.***
+**Instal·la les llibreries necessàries:**
+`pip install matplotlib psutil`
 
+***Codi (monitor_xarxa.py):***
 
-
-
-
-
-
-3. Monitorització de Xarxa amb Python
-Aquest exercici requereix Python i ho heu d’executar en cada un dels sistemes operatius. El codi següent mostra una gràfica en temps real dels bytes enviats i rebuts.
-Instal·la les llibreries necessàries:
-pip install matplotlib psutil
-
-Codi (monitor_xarxa.py):
-
-
+```python
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import psutil
@@ -260,68 +258,121 @@ ani = animation.FuncAnimation(fig, update, interval=1000)
 print("Iniciant monitorització... Tanca la finestra gràfica per sortir.")
 plt.show()
 
+```
+
+- Mentre el codi s'executa, obre el navegador i posa un vídeo de YouTube o fes un test de velocitat (tipus fast.com).
+
+- Observa com canvia la gràfica.
+
+### Exercici 3. Fes una captura de pantalla del funcionament del codi de Python, per cada un dels sistemes operatius.
+
+[![Ex3-Windows](https://img.youtube.com/vi/luU7yvU0UG8/maxresdefault.jpg)](https://youtu.be/luU7yvU0UG8)
 
 
+[![Ex3-Linux](https://img.youtube.com/vi/kTN-20M6Azc/maxresdefault.jpg)](https://youtu.be/kTN-20M6Azc)
 
-Mentre el codi s'executa, obre el navegador i posa un vídeo de YouTube o fes un test de velocitat (tipus fast.com).
-Observa com canvia la gràfica.
+*
+---
 
+## 4. Ampliació: Gestió Avançada del Firewall:
 
+***Fins ara hem obert ports, però un administrador també ha de saber tancar-los i bloquejar amenaces.***
 
-
-Exercici 3. Fes una captura de pantalla del funcionament del codi de Python, per cada un dels sistemes operatius.
-
-4. Ampliació: Gestió Avançada del Firewall
-Fins ara hem obert ports, però un administrador també ha de saber tancar-los i bloquejar amenaces.
-A. Esborrar regles
+**A. Esborrar regles**
 Sovint ens equivoquem o un servei deixa d'utilitzar-se. Hem d'eliminar la regla per seguretat.
-Linux (UFW): Primer cal veure les regles numerades: sudo ufw status numbered Després, esborrem pel número (per exemple, la regla 2): sudo ufw delete 2
-Windows (PowerShell): Hem de buscar la regla pel nom i esborrar-la: Remove-NetFirewallRule -DisplayName "HTTP"
-B. Bloquejar una IP (Banear un intrús)
+
+- **Linux (UFW):** Primer cal veure les regles numerades: sudo ufw status numbered Després, esborrem pel número (per exemple, la regla 2): sudo ufw delete 2
+
+- **Windows (PowerShell):** Hem de buscar la regla pel nom i esborrar-la: Remove-NetFirewallRule -DisplayName "HTTP"
+
+
+**B. Bloquejar una IP (Banear un intrús)**
+
 Imagina que detectes que la IP 192.168.1.100 està intentant atacar-te.
-Linux (UFW): sudo ufw deny from 192.168.1.100
-Windows (PowerShell): New-NetFirewallRule -DisplayName "Bloqueig Atacant" -Direction Inbound -LocalPort Any -Protocol Any -Action Block -RemoteAddress 192.168.1.100
 
-Exercici 4 (Posa les comandes utilitzades o captura la pantalla):
-Crea una regla que obri el port 21 (FTP).
-Comprova que existeix.
-Elimina aquesta regla utilitzant les comandes d'esborrar vistes a dalt.
-Fes una captura de pantalla del procés d'eliminació.
+- **Linux (UFW):** sudo ufw deny from 192.168.1.100
+
+- **Windows (PowerShell):** New-NetFirewallRule -DisplayName "Bloqueig Atacant" -Direction Inbound -LocalPort Any -Protocol Any -Action Block -RemoteAddress 192.168.1.100
+
+### Exercici 4 (Posa les comandes utilitzades o captura la pantalla ):
+
+***Windows:***
+
+1. Crea una regla que obri el port 21 (FTP).
+   
+   ![Afegir_Port21_Windows](./Exercici-1/Afegir_Port21_Windows.png)
+
+2. Comprova que existeix.
+   
+   ![Comprovacio_FTP_Windows](./Exercici-1/Comprovacio_FTP_Windows.png)
+
+3. Elimina aquesta regla utilitzant les comandes d'esborrar vistes a dalt.
+   
+   ![Eliminacio_Comprovacio](./Exercici-1/Eliminacio_Comprovacio_FTP_Windows.png)
+
+4. Fes una captura de pantalla del procés d'eliminació.
 
 
+***Linux:***
 
+1. Crea una regla que obri el port 21 (FTP).
+   
+   ![Afegir_Port21_Linux](./Exercici-1/EX-4-AfegirFTP-Linux.png)
 
+3. Elimina aquesta regla utilitzant les comandes d'esborrar vistes a dalt.
+   
+   ![Eliminacio_Linux](./Exercici-1/Eliminar_FTP-1.png)
 
+   ![Eliminacio_Linux2](./Exercici-1/Eliminar_FTP-2.png)
 
+4. Fes una captura de pantalla del procés d'eliminació.
+   
+   ![Eliminacio_Comprovacio_Linux](./Exercici-1/FTP_FINAL.png)
 
-5. Millora dels Scripts: Fem-los Interactius
-Els scripts anteriors tenien la IP "incrustada" (Hardcoded). Això és poc pràctic si volem configurar molts ordinadors amb IPs diferents. Modificarem els scripts perquè preguntin a l'usuari quina IP vol configurar.
+*
+---
 
-Repte Windows (PowerShell)
+## 5. Millora dels Scripts: Fem-los Interactius:
+
+***Els scripts anteriors tenien la IP "incrustada" (Hardcoded). Això és poc pràctic si volem configurar molts ordinadors amb IPs diferents. Modificarem els scripts perquè preguntin a l'usuari quina IP vol configurar.***
+
+**Repte Windows (PowerShell):**
+
 Substitueix la línia $NewIP = "192.168.1.50" per una instrucció que demani dades (cerca la comanda).
 Codi a modificar:
 
-# ABANS IP FIXA, ARA DEMANADA A L’USUARI.
-# $NewIP = "192.168.1.50"
+ABANS IP FIXA, ARA DEMANADA A L’USUARI.
+
+ $NewIP = "192.168.1.50"
 
 
-Repte Linux (Bash)
+**Repte Linux (Bash):**
+
 Substitueix la variable IP per una lectura d'entrada (buscar la comanda).
+
 Codi a modificar:
-# ABANS IP FIXA:
-# IP="192.168.1.50/24"
+
+ ABANS IP FIXA:
+
+ IP="192.168.1.50/24"
 
 
-Exercici 5. Modifica els teus fitxers config_xarxa.ps1 i config_xarxa.sh amb aquests canvis. Executa'ls i assigna una IP diferent (ex: .60 o .70). Comprova amb un ping que la nova IP funciona.
+### Exercici 5. Modifica els teus fitxers config_xarxa.ps1 i config_xarxa.sh amb aquests canvis. Executa'ls i assigna una IP diferent (ex: .60 o .70). Comprova amb un ping que la nova IP funciona.
+
+**Windows:**
 
 
+[![Ex5-Windows](https://img.youtube.com/vi/2riOS9EMtP8/maxresdefault.jpg)](https://youtu.be/2riOS9EMtP8)
 
 
+**Linux:**
+
+[![Ex5-Linux](https://img.youtube.com/vi/wf2BSs6tfz4/maxresdefault.jpg)](https://youtu.be/wf2BSs6tfz4)
 
 
+**Comprovació:**
 
-
-
+[![Ex5-Comprovacio](https://img.youtube.com/vi/ZCQG2JLtkaI/maxresdefault.jpg)](https://youtu.be/ZCQG2JLtkaI)
 
 
 
