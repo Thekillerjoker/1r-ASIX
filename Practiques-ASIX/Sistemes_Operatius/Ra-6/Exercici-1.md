@@ -83,11 +83,15 @@ La línea Interfaz indica la IP local del teu ordinador utilitzada per soritr, i
 ![Netstat-8](./Exercici-1/Netstat-8.png)
 
 
-| Comanda | Què fa | Explicacio breu |
-|---------|--------|-----------------|
-|`ipconfi /all` | Mostra tota la configuració de xarxa del equip | Mostra tots els adaptadors físics i virutals del sistema(Les targetes Realtek i Intel WI-FI, els adaptadors virtuals de VirtualBox, Hyper-V i Tailescale). També apareicen les IPV4, IPV6, Màscares de subxarxa, gateway, DNS i si DHCP esta activat. |
-| `ping google` | Comprova que l'equip te conexiò a google | La captura mostra que el ping a l'adreca `8.8.8.8` (DNS de Google) funciona correctament per tant hi ha conexió. |
-|*
+| Comanda                  | Què fa                                                       | Explicacio breu |
+|--------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|`ipconfi /all`            | Mostra tota la configuració de xarxa del equip               | Mostra tots els adaptadors físics i virutals del sistema(Les targetes Realtek i Intel WI-FI, els adaptadors virtuals de VirtualBox, Hyper-V i Tailescale). També apareicen les IPV4, IPV6, Màscares de subxarxa, gateway, DNS i si DHCP esta activat. |
+| `ping google`            | Comprova que l'equip te conexiò a google                     | La captura mostra que el ping a l'adreca `8.8.8.8` (DNS de Google) funciona correctament per tant hi ha conexió                                                                                                                                           |
+| `tracert 217.124.116.57` | Mostra el recorregut que segueixen els paquets fins al destí | El primer salt és el router 127.24.0.1 i el segon salt es el servidor final `21.124.116.57` |
+| `route print`            | Mostra la taula d'enrutament del sistema                     | Ja ho he esplicat detalladament.                                                            |
+| `nslookup amazon.es`     | Resol noms DNS a adreçes IP                                  | El domini `amazon.es` és resol correctament a diverses IPs públiques (`3.254.238.145` `3.253.168.8` `3.253.182.49`)          |
+| `netstat -an`            | Mostra connexions i ports oberts                             | Mostra totes les conexions TCP i UDP actives i els ports en escolta, és poden veure connexions `ESTABLISHED` amb servidors externs utilitzant HTTPS (`port 443`) i també ports locals en `LISTENING` esperant connexions. |
+
 
 ## B. Gestió de Firewall (Tallafoc)
 **El firewall és la primera línia de defensa. En CLI, utilitzem netsh (o mòduls de PowerShell) a Windows i ufw (Uncomplicated Firewall) o iptables a Linux.**
