@@ -1,6 +1,93 @@
 # Configuració de xarxes i seguretat:
 ## Excercici 1: Comprovacio de les comandes 
 
+## A. Diagnòstic i Informació:
+
+### Ipconfig /all:
+
+![IPConfig-1](./Exercici-1/IPConfig-1.png)
+
+![IPConfig-2](./Exercici-1/IPConfig-2.png)
+
+![IPConfig-3](./Exercici-1/IPConfig-3.png)
+
+
+### Ping:
+
+![Ping-Google](./Exercici-1/Ping-Google.png)
+
+
+### tracert:
+
+![Tracert](./Exercici-1/Tracert.png)
+
+
+### Route print:
+
+El primer que veiem amb route print es `lista de interfaces` que et mostra totes les tarjetes/adaptadors de xarxa que existeixen en el teu ordinador tant:
+
+- [ ] Físiques
+- [ ] Virtuals
+- [ ] VPN
+- [ ] Virtualització.
+
+Cada línea és divideix aixi:
+```
+ 3...c8 7f 54 65 43 5e ......Realtek PCIe GbE Family Controller
+```
+`3` -> ID de l'interfaç.
+
+`c8 7f 54 65 43 5e` -> Direcció mac
+
+`Realtek PCIe GbE Family Cotroller` -> Nom de l'adaptador.
+
+
+![Route-Print-1](./Exercici-1/Route-Print.png)
+
+
+Route print veiem la taula d'enrutament que cada linea correspont a lo següent: La primera línea Destino de red  indica la xarxa o ip de destí a la que vols arribar. 
+
+La líniea Máscara de red indica la mascara de la xarxa.
+
+La línea Puerta de enlace indica el següyent salt o router al que ha d'enviar el trafic.
+
+La línea Interfaz indica la IP local del teu ordinador utilitzada per soritr, i per últim la línea Métrica indica la prioritat /cost de la ruta (més baixa = millor).
+
+![Route-Print-2](./Exercici-1/Route-Print-1.png)
+
+
+
+![Route-Print-3](./Exercici-1/Route-Print-2.png)
+
+### nslookup:
+
+![Nslookup](./Exercici-1/Nslookup.png)
+
+
+### netstat -an:
+
+![Netstat-1](./Exercici-1/Netstat-1.png)
+
+![Netstat-2](./Exercici-1/Netstat-2.png)
+
+![Netstat-3](./Exercici-1/Netstat-3.png)
+
+![Netstat-4](./Exercici-1/Netstat-4.png)
+
+![Netstat-5](./Exercici-1/Netstat-5.png)
+
+![Netstat-6](./Exercici-1/Netstat-6.png)
+
+![Netstat-7](./Exercici-1/Netstat-7.png)
+
+![Netstat-8](./Exercici-1/Netstat-8.png)
+
+
+| Comanda | Què fa | Explicacio breu |
+|---------|--------|-----------------|
+|`ipconfi /all` | Mostra tota la configuració de xarxa del equip | Mostra tots els adaptadors físics i virutals del sistema(Les targetes Realtek i Intel WI-FI, els adaptadors virtuals de VirtualBox, Hyper-V i Tailescale). També apareicen les IPV4, IPV6, Màscares de subxarxa, gateway, DNS i si DHCP esta activat. |
+| `ping google` | Comprova que l'equip te conexiò a google | La captura mostra que el ping a l'adreca `8.8.8.8` (DNS de Google) funciona correctament per tant hi ha conexió. |
+|*
 
 ## B. Gestió de Firewall (Tallafoc)
 **El firewall és la primera línia de defensa. En CLI, utilitzem netsh (o mòduls de PowerShell) a Windows i ufw (Uncomplicated Firewall) o iptables a Linux.**
