@@ -374,11 +374,16 @@ Codi a modificar:
 
 [![Ex5-Comprovacio](https://img.youtube.com/vi/ZCQG2JLtkaI/maxresdefault.jpg)](https://youtu.be/ZCQG2JLtkaI)
 
+*
+---
 
 
-6. Repte de Programació (Python): Alerta de Tràfic
-Anem a modificar el codi de Python perquè no només mostri la gràfica, sinó que ens avisi per consola si la velocitat de baixada supera un límit (per exemple, si estem descarregant molt ràpid).
+## 6. Repte de Programació (Python): Alerta de Tràfic
+
+***Anem a modificar el codi de Python perquè no només mostri la gràfica, sinó que ens avisi per consola si la velocitat de baixada supera un límit (per exemple, si estem descarregant molt ràpid).***
+
 Instruccions: Al fitxer monitor_xarxa.py, busca la funció def update(i):. Just després de calcular speed_recv, afegeix aquesta condició lògica (IF):
+```python
 Python
    # ... codi existent ...
     speed_recv = (current_recv - last_recv) / 1024 
@@ -390,10 +395,19 @@ Python
     # --------------------------
 
     # ... continuar amb el codi (last_sent = current_sent) ...
+```
 
-Exercici 6:
-Afegeix el codi de l'"Alerta".
-Executa el programa.
-Obre un vídeo 4K a YouTube o fes un test de velocitat per superar els 500 KB/s.
-Fes una captura de la terminal mostrant els missatges d'alerta ("ALERTA: Descàrrega alta...").
+![EX6-Codi](./Exercici-1/EX-6_Linux.png)
 
+
+### Exercici 6:
+- Afegeix el codi de l'"Alerta".
+
+- Executa el programa.
+
+- Obre un vídeo 4K a YouTube o fes un test de velocitat per superar els 500 KB/s.
+
+- Fes una captura de la terminal mostrant els missatges d'alerta ("ALERTA: Descàrrega alta...").
+
+
+[![Ex6-Comprovacio](https://img.youtube.com/vi/rBqrE4O8nQI/maxresdefault.jpg)](https://youtu.be/rBqrE4O8nQI)
