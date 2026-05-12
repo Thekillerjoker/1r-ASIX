@@ -26,7 +26,13 @@
         "config_type": "default_layout"
     },
     "profile_config": {
-        "profile": "desktop",
-        "desktop": "xfce"
+        "gfx_driver": "All open-source (default)",
+        "greeter": "lightdm",
+        "profile": {
+            "main": "Desktop",
+            "details": [
+                "Xfce4"
+            ]
+        }
     }
 }
