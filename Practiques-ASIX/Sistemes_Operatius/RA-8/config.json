@@ -1,38 +1,150 @@
 {
-    "hostname": "archlinuxsergi",
-    "locale_config": {
-        "sys_lang": "es_ES.UTF-8",
-        "kb_layout": "es"
+    "app_config": {
+        "audio_config": {
+            "audio": "pipewire"
+        },
+        "bluetooth_config": {
+            "enabled": true
+        }
     },
-    "timezone": "Europe/Madrid",
-    "ntp": true,
-    "bootloader": "grub",
-    "swap": true,
+    "archinstall-language": "English",
+    "auth_config": {},
+    "bootloader_config": {
+        "bootlodader": "Grub",
+        "removable": true,
+        "uki": false
+    },
+    "disk_config": {
+        "btrfs_options": {
+            "snapshot_config": null
+        },
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/sda",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mounypoint": "/boot",
+                        "obj_id": "f78d1eec-60d3-4cbc-88a1-a2f95a100b9a",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mounypoint": "/",
+                        "obj_id": "6731c308-ab38-42ca-a3dd-83c602371b0f",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 26746028032
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "hostname": "archlinuxsergi",
     "kernels": [
         "linux"
     ],
-    "packages": [
-        "sudo",
-        "vim",
-        "openssh",
-        "networkmanager",
-        "virtualbox-guest-utils"
-    ],
-    "parallel_downloads": 5,
+    "locale_config": {
+        "kb_layout": "es",
+        "sys_enc": "UTF-8",
+        "sys_lang": "es_ES.UTF-8"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {
+            "Spain": [
+                "https://ftp.rediris.es/mirror/archlinux/$repo/os/$arch",
+                "http://es.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://es.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "http://mirror.raiolanetworks.com/archlinux/$repo/os/$arch",
+                "https://mirror.raiolanetworks.com/archlinux/$repo/os/$arch",
+                "http://mirror.es.cdn-perfprod.com/archlinux/$repo/os/$arch",
+                "https://mirror.es.cdn-perfprod.com/archlinux/$repo/os/$arch"
+            ]
+        },
+        "optional_repositories": []
+    },
     "network_config": {
         "type": "iso"
     },
-    "disk_config": {
-        "config_type": "default_layout"
+    "ntp": true,
+    "packages": [
+        "networkmanager",
+        "openssh",
+        "sudo",
+        "vim",
+        "virtualbox-guest-utils",
+        "firefox",
+        "git"
+    ],
+    "pacman_config": {
+        "color": true,
+        "parallel_downloads": 5
     },
     "profile_config": {
-        "gfx_driver": "All open-source (default)",
-        "greeter": "lightdm",
+        "gfx_driver": "All open-source",
+        "greeter": null,
         "profile": {
-            "main": "Desktop",
+            "custom_settings": {
+                "Xfce4": {}
+            },
             "details": [
                 "Xfce4"
-            ]
+            ],
+            "main": "Desktop"
         }
-    }
+    },
+    "script": null,
+    "services": [],
+    "swap": {
+        "algorithm": "zstd",
+        "enabled": true
+    },
+    "timezone": "Europe/Madrid",
+    "version": "4.3"
 }
